@@ -1,0 +1,9 @@
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.AssemblyReference.cache
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.dll
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\bin\Debug\DVLD_DataAccess.pdb
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.dll
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\obj\Debug\DVLD_DataAccess.pdb
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\bin\Debug\DVLD_Models.dll
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\bin\Debug\DVLD_Models.pdb
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_DataAccess\obj\Debug\DVLD_Dat.AAF49C98.Up2Date
