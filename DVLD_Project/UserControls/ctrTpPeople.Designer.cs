@@ -203,7 +203,6 @@
             this.dgvPeople.EnableHeadersVisualStyles = false;
             this.dgvPeople.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
             this.dgvPeople.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
-            this.dgvPeople.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvPeople.HeaderForeColor = System.Drawing.Color.White;
             this.dgvPeople.Location = new System.Drawing.Point(5, 165);
             this.dgvPeople.MultiSelect = false;

@@ -30,6 +30,7 @@ namespace DVLD_Project
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddEditPerson));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -94,7 +95,7 @@ namespace DVLD_Project
             this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAddRemoveImage = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtAddress = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pbPerson = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.txtEmail = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtPhone = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -109,11 +110,13 @@ namespace DVLD_Project
             this.pnlTop = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblAddEditPerson = new System.Windows.Forms.Label();
             this.btnCloseForm = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).BeginInit();
             this.pnlTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -131,7 +134,6 @@ namespace DVLD_Project
             this.lblName.Text = "Name:";
             this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lblName.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // lblLast
             // 
@@ -742,81 +744,81 @@ namespace DVLD_Project
             this.btnAddRemoveImage.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Flat;
             this.btnAddRemoveImage.TabIndex = 35;
             // 
-            // bunifuTextBox1
+            // txtAddress
             // 
-            this.bunifuTextBox1.AcceptsReturn = false;
-            this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.AnimationSpeed = 200;
-            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox1.AutoSizeHeight = true;
-            this.bunifuTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
-            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.Gray;
-            this.bunifuTextBox1.BorderRadius = 10;
-            this.bunifuTextBox1.BorderThickness = 1;
-            this.bunifuTextBox1.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
-            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.bunifuTextBox1.DefaultText = "";
-            this.bunifuTextBox1.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBox1.HideSelection = true;
-            this.bunifuTextBox1.IconLeft = global::DVLD_Project.Properties.Resources.icons8_address_32;
-            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = null;
-            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(164, 405);
-            this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox1.Modified = false;
-            this.bunifuTextBox1.Multiline = false;
-            this.bunifuTextBox1.Name = "bunifuTextBox1";
+            this.txtAddress.AcceptsReturn = false;
+            this.txtAddress.AcceptsTab = false;
+            this.txtAddress.AnimationSpeed = 200;
+            this.txtAddress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAddress.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtAddress.AutoSizeHeight = true;
+            this.txtAddress.BackColor = System.Drawing.Color.Transparent;
+            this.txtAddress.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtAddress.BackgroundImage")));
+            this.txtAddress.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtAddress.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtAddress.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtAddress.BorderColorIdle = System.Drawing.Color.Gray;
+            this.txtAddress.BorderRadius = 10;
+            this.txtAddress.BorderThickness = 1;
+            this.txtAddress.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            this.txtAddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtAddress.DefaultText = "";
+            this.txtAddress.FillColor = System.Drawing.Color.White;
+            this.txtAddress.HideSelection = true;
+            this.txtAddress.IconLeft = global::DVLD_Project.Properties.Resources.icons8_address_32;
+            this.txtAddress.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.IconPadding = 10;
+            this.txtAddress.IconRight = null;
+            this.txtAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.Lines = new string[0];
+            this.txtAddress.Location = new System.Drawing.Point(164, 405);
+            this.txtAddress.MaxLength = 32767;
+            this.txtAddress.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtAddress.Modified = false;
+            this.txtAddress.Multiline = false;
+            this.txtAddress.Name = "txtAddress";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties5;
+            this.txtAddress.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties6;
+            this.txtAddress.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.FillColor = System.Drawing.Color.Empty;
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties7;
+            this.txtAddress.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Gray;
             stateProperties8.FillColor = System.Drawing.Color.White;
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties8;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
-            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.PlaceholderText = "Required";
-            this.bunifuTextBox1.ReadOnly = false;
-            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox1.SelectedText = "";
-            this.bunifuTextBox1.SelectionLength = 0;
-            this.bunifuTextBox1.SelectionStart = 0;
-            this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(471, 47);
-            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox1.TabIndex = 34;
-            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox1.TextMarginBottom = 0;
-            this.bunifuTextBox1.TextMarginLeft = 3;
-            this.bunifuTextBox1.TextMarginTop = 1;
-            this.bunifuTextBox1.TextPlaceholder = "Required";
-            this.bunifuTextBox1.UseSystemPasswordChar = false;
-            this.bunifuTextBox1.WordWrap = true;
+            this.txtAddress.OnIdleState = stateProperties8;
+            this.txtAddress.Padding = new System.Windows.Forms.Padding(3);
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtAddress.PlaceholderText = "Required";
+            this.txtAddress.ReadOnly = false;
+            this.txtAddress.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.SelectionLength = 0;
+            this.txtAddress.SelectionStart = 0;
+            this.txtAddress.ShortcutsEnabled = true;
+            this.txtAddress.Size = new System.Drawing.Size(471, 47);
+            this.txtAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtAddress.TabIndex = 34;
+            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAddress.TextMarginBottom = 0;
+            this.txtAddress.TextMarginLeft = 3;
+            this.txtAddress.TextMarginTop = 1;
+            this.txtAddress.TextPlaceholder = "Required";
+            this.txtAddress.UseSystemPasswordChar = false;
+            this.txtAddress.WordWrap = true;
             // 
             // pbPerson
             // 
@@ -1119,6 +1121,7 @@ namespace DVLD_Project
             this.txtNationalNo.TextPlaceholder = "Required";
             this.txtNationalNo.UseSystemPasswordChar = false;
             this.txtNationalNo.WordWrap = true;
+            this.txtNationalNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtNationalNo_Validating);
             // 
             // txtSecondName
             // 
@@ -1271,7 +1274,6 @@ namespace DVLD_Project
             this.txtThirdName.TextPlaceholder = "Optional";
             this.txtThirdName.UseSystemPasswordChar = false;
             this.txtThirdName.WordWrap = true;
-            this.txtThirdName.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged_1);
             // 
             // txtLastName
             // 
@@ -1424,7 +1426,6 @@ namespace DVLD_Project
             this.txtFirstName.TextPlaceholder = "Required";
             this.txtFirstName.UseSystemPasswordChar = false;
             this.txtFirstName.WordWrap = true;
-            this.txtFirstName.TextChanged += new System.EventHandler(this.bunifuTextBox1_TextChanged);
             // 
             // pnlTop
             // 
@@ -1498,6 +1499,10 @@ namespace DVLD_Project
             this.btnCloseForm.TabIndex = 0;
             this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmAddEditPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1510,7 +1515,7 @@ namespace DVLD_Project
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnAddRemoveImage);
-            this.Controls.Add(this.bunifuTextBox1);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.pbPerson);
             this.Controls.Add(this.dpdCountries);
@@ -1550,6 +1555,7 @@ namespace DVLD_Project
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1587,7 +1593,7 @@ namespace DVLD_Project
         private Bunifu.UI.WinForms.BunifuDropdown dpdCountries;
         private Bunifu.UI.WinForms.BunifuPictureBox pbPerson;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+        private Bunifu.UI.WinForms.BunifuTextBox txtAddress;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddRemoveImage;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSave;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnClose;
@@ -1595,5 +1601,6 @@ namespace DVLD_Project
         private Bunifu.UI.WinForms.BunifuTextBox txtPersonID;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.Label lblAddEditPerson;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

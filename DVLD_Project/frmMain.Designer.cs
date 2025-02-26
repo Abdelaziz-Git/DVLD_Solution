@@ -353,7 +353,6 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tcPagesMain.ResumeLayout(false);
             this.tpPeopleList.ResumeLayout(false);
             this.pnlMainTop.ResumeLayout(false);

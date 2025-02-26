@@ -1,4 +1,4 @@
-﻿using DVLD_Business;
+﻿using DVLD_Business1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,7 +80,7 @@ namespace DVLD_Project
 
         private void btnAddPerson_Click(object sender, EventArgs e)
         {
-            Form frmAddPerson = new frmAddEditPerson();
+            Form frmAddPerson = new frmAddEditPerson(-1);
             frmAddPerson.ShowDialog();
         }
     }

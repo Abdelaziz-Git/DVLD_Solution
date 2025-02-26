@@ -39,8 +39,8 @@
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.8.0.0\lib\net48\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="DVLD_Business">
-      <HintPath>..\DVLD_Business\bin\Debug\DVLD_Business.dll</HintPath>
+    <Reference Include="DVLD_Business1">
+      <HintPath>..\DVLD_Business1\bin\Debug\DVLD_Business1.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -201,5 +201,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-female-100.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

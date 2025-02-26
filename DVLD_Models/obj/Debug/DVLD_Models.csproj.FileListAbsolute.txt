@@ -1,6 +1,0 @@
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\bin\Debug\DVLD_Models.dll
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\bin\Debug\DVLD_Models.pdb
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\obj\Debug\DVLD_Models.csproj.AssemblyReference.cache
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\obj\Debug\DVLD_Models.csproj.CoreCompileInputs.cache
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\obj\Debug\DVLD_Models.dll
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Models\obj\Debug\DVLD_Models.pdb

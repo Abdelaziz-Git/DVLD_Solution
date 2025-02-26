@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\.dotnet\\windows forms projects\\dvld_solutions\\dvld_project\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\.dotnet\\windows forms projects\\dvld_solutions\\dvld_project\\usercontrols\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:usercontrols\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\.dotnet\\windows forms projects\\dvld_solutions\\dvld_project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 195,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:40:29.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmAddEditPerson.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\frmAddEditPerson.cs",
+              "RelativeDocumentMoniker": "frmAddEditPerson.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\frmAddEditPerson.cs",
+              "RelativeToolTip": "frmAddEditPerson.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:40:16.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrTpPeople.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\UserControls\\ctrTpPeople.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrTpPeople.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\UserControls\\ctrTpPeople.cs",
+              "RelativeToolTip": "UserControls\\ctrTpPeople.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:39:44.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 240,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

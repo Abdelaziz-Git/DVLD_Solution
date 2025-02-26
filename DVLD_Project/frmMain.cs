@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu;
-using DVLD_Business;
+using DVLD_Business1;
 
 namespace DVLD_Project
 {
@@ -19,10 +19,6 @@ namespace DVLD_Project
             InitializeComponent();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-        }
-
-      
+       
     }
 }
