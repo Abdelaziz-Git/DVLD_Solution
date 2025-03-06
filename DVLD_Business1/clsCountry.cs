@@ -20,14 +20,14 @@ namespace DVLD_Business1
         }
         public static clsCountry Find(int CountryID)
         {
-            CountryDTO Country = clsCountryData.GetCountryInfoByID(CountryID);
+            CountryDTO Country = clsCountryData.GetCountryInfo(CountryID);
             if (Country == null)
                 return null;
             return new clsCountry(Country);
         }
         public static clsCountry Find(string CountryName)
         {
-            CountryDTO Country = clsCountryData.GetCountryInfoByName(CountryName);
+            CountryDTO Country = clsCountryData.GetCountryInfo(CountryName);
             if (Country == null)
                 return null;
             return new clsCountry(Country);

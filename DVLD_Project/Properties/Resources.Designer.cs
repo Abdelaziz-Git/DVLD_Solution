@@ -93,6 +93,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_user_male_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-user-male-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_address_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-address-32", resourceCulture);
@@ -106,6 +116,46 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap icons8_cancel_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_country_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-country-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_date_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-date-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_denied_person_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-denied person-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Edit_Person_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-Edit Person-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +236,36 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap icons8_save_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-save-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_show_details_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-show-details-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_details_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-details-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_writer_male_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-writer-male-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

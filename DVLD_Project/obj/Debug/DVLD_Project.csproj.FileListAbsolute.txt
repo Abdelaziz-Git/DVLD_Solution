@@ -50,3 +50,5 @@ C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bi
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bin\Debug\DVLD_Business1.pdb
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bin\Debug\DVLD_Models1.pdb
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bin\Debug\DVLD_DataAccess1.pdb
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.UserControls.ucPersonInfo.resources
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.frmPersonDetails.resources

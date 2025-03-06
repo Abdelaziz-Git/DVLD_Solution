@@ -11,8 +11,8 @@ namespace DVLD_Business1
 {
     public class clsPerson
     {
-        public enum enMode { AddNewMode = 1, UpdateMode = 2 }
-        public enMode Mode = enMode.UpdateMode;
+        public enum enMode { AddNewMode = 0, UpdateMode = 1 }
+        public enMode Mode = enMode.AddNewMode;
 
         public int ID { get; set; }
         public string NationalNo { get; set; }
@@ -34,7 +34,13 @@ namespace DVLD_Business1
         public byte Gender { get; set; }
         public string ImagePath { get; set; }
         public short CountryID { get; set; }
-
+        public clsCountry Country
+        {
+            get
+            {
+                return clsCountry.Find(CountryID);
+            }
+        }
         public clsPerson()
         {
             this.ID = -1;
@@ -72,25 +78,25 @@ namespace DVLD_Business1
 
         public static clsPerson Find(int PersonID)
         {
-            if (!clsPersonData.IsPersonExistByID(PersonID))
+            if (!clsPersonData.IsPersonExist(PersonID))
                 return null;
 
-            return clsPersonData.GetPersonInfoByID(PersonID) == null ? null : new clsPerson(clsPersonData.GetPersonInfoByID(PersonID));
+            return clsPersonData.GetPersonInfo(PersonID) == null ? null : new clsPerson(clsPersonData.GetPersonInfo(PersonID));
         }
         public static clsPerson Find(string NationalNo)
         {
-            if (!clsPersonData.IsPersonExistByNationalNo(NationalNo))
+            if (!clsPersonData.IsPersonExist(NationalNo))
                 return null;
 
-            return clsPersonData.GetPersonInfoByNationalNo(NationalNo) == null ? null : new clsPerson(clsPersonData.GetPersonInfoByNationalNo(NationalNo));
+            return clsPersonData.GetPersonInfo(NationalNo) == null ? null : new clsPerson(clsPersonData.GetPersonInfo(NationalNo));
         }
         public static bool IsExist(string NationalNo)
         {
-            return clsPersonData.IsPersonExistByNationalNo(NationalNo);
+            return clsPersonData.IsPersonExist(NationalNo);
         }
         public static bool IsExist(int PersonID)
         {
-            return clsPersonData.IsPersonExistByID(PersonID);
+            return clsPersonData.IsPersonExist(PersonID);
         }
 
         private bool _AddNewPerson()

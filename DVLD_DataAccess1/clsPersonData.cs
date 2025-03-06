@@ -11,7 +11,7 @@ namespace DVLD_DataAccess1
 {
     public class clsPersonData
     {
-        public static PersonDTO GetPersonInfoByID(int personID)
+        public static PersonDTO GetPersonInfo(int personID)
         {
             PersonDTO person = null;
 
@@ -54,14 +54,12 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving person info by ID.");
                 throw new ApplicationException("An error occurred while retrieving person information.", ex);
             }
 
             return person;
         }
-        public static PersonDTO GetPersonInfoByNationalNo(string nationalNo)
+        public static PersonDTO GetPersonInfo(string nationalNo)
         {
             PersonDTO person = null;
 
@@ -101,8 +99,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving person info by ID.");
+                
                 throw new ApplicationException("An error occurred while retrieving person information.", ex);
             }
 
@@ -135,8 +132,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error adding new person.");
+                
                 throw new ApplicationException("An error occurred while adding new person.", ex);
             }
             return person.ID;
@@ -174,6 +170,7 @@ namespace DVLD_DataAccess1
                 // Log the exception (use a logging framework like Serilog, NLog, etc.)
                 // Example: Logger.LogError(ex, "Error updating person.");
                 throw new ApplicationException("An error occurred while updating person.", ex);
+               
             }
             return IsUpdated;
         }
@@ -183,7 +180,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection conn = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand cmd = new SqlCommand("DeletePerson", conn))
+                using (SqlCommand cmd = new SqlCommand("DeletePersonByID", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@PersonID", personID);
@@ -199,7 +196,7 @@ namespace DVLD_DataAccess1
             }
             return IsDeleted;
         }
-        public static bool IsPersonExistByID(int personID)
+        public static bool IsPersonExist(int personID)
         {
             bool IsExist = false;
             try
@@ -222,7 +219,7 @@ namespace DVLD_DataAccess1
 
             return IsExist;
         }
-        public static bool IsPersonExistByNationalNo(string nationalNo)
+        public static bool IsPersonExist(string nationalNo)
         {
             bool IsExist = false;
             try
@@ -265,8 +262,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving all people.");
+                
                 throw new ApplicationException("An error occurred while retrieving all people.", ex);
             }
             return dt;
@@ -292,8 +288,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving all people.");
+                
                 throw new ApplicationException("An error occurred while retrieving all people.", ex);
             }
             return dt;

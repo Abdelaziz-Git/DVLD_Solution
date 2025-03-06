@@ -71,7 +71,7 @@ namespace DVLD_Project
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblLast = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblThird = new Bunifu.UI.WinForms.BunifuLabel();
@@ -89,12 +89,11 @@ namespace DVLD_Project
             this.lblCountry = new Bunifu.UI.WinForms.BunifuLabel();
             this.dpdCountries = new Bunifu.UI.WinForms.BunifuDropdown();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblPersonID = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtPersonID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnAddRemoveImage = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.btnAddImage = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.txtAddress = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pbPerson = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.txtEmail = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -107,16 +106,15 @@ namespace DVLD_Project
             this.txtThirdName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtLastName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtFirstName = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pnlTop = new Bunifu.UI.WinForms.BunifuPanel();
-            this.lblAddEditPerson = new System.Windows.Forms.Label();
-            this.btnCloseForm = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
+            this.btnRemoveImage = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.pbImageTitle = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).BeginInit();
-            this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -126,7 +124,7 @@ namespace DVLD_Project
             this.lblName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(77, 208);
+            this.lblName.Location = new System.Drawing.Point(19, 164);
             this.lblName.Name = "lblName";
             this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblName.Size = new System.Drawing.Size(40, 17);
@@ -141,7 +139,7 @@ namespace DVLD_Project
             this.lblLast.AutoEllipsis = false;
             this.lblLast.CursorType = null;
             this.lblLast.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLast.Location = new System.Drawing.Point(708, 173);
+            this.lblLast.Location = new System.Drawing.Point(650, 129);
             this.lblLast.Name = "lblLast";
             this.lblLast.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblLast.Size = new System.Drawing.Size(25, 17);
@@ -156,7 +154,7 @@ namespace DVLD_Project
             this.lblThird.AutoEllipsis = false;
             this.lblThird.CursorType = null;
             this.lblThird.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThird.Location = new System.Drawing.Point(542, 173);
+            this.lblThird.Location = new System.Drawing.Point(484, 129);
             this.lblThird.Name = "lblThird";
             this.lblThird.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblThird.Size = new System.Drawing.Size(33, 17);
@@ -171,7 +169,7 @@ namespace DVLD_Project
             this.lblSecond.AutoEllipsis = false;
             this.lblSecond.CursorType = null;
             this.lblSecond.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecond.Location = new System.Drawing.Point(377, 173);
+            this.lblSecond.Location = new System.Drawing.Point(319, 129);
             this.lblSecond.Name = "lblSecond";
             this.lblSecond.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblSecond.Size = new System.Drawing.Size(44, 17);
@@ -186,7 +184,7 @@ namespace DVLD_Project
             this.lblFirst.AutoEllipsis = false;
             this.lblFirst.CursorType = null;
             this.lblFirst.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirst.Location = new System.Drawing.Point(228, 173);
+            this.lblFirst.Location = new System.Drawing.Point(170, 129);
             this.lblFirst.Name = "lblFirst";
             this.lblFirst.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFirst.Size = new System.Drawing.Size(27, 17);
@@ -202,7 +200,7 @@ namespace DVLD_Project
             this.lblNationalNo.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblNationalNo.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblNationalNo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationalNo.Location = new System.Drawing.Point(77, 262);
+            this.lblNationalNo.Location = new System.Drawing.Point(19, 218);
             this.lblNationalNo.Name = "lblNationalNo";
             this.lblNationalNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNationalNo.Size = new System.Drawing.Size(79, 17);
@@ -218,7 +216,7 @@ namespace DVLD_Project
             this.lblBirthDate.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblBirthDate.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblBirthDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.Location = new System.Drawing.Point(397, 264);
+            this.lblBirthDate.Location = new System.Drawing.Point(339, 220);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblBirthDate.Size = new System.Drawing.Size(65, 17);
@@ -234,7 +232,7 @@ namespace DVLD_Project
             this.lblGender.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblGender.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender.Location = new System.Drawing.Point(77, 317);
+            this.lblGender.Location = new System.Drawing.Point(19, 273);
             this.lblGender.Name = "lblGender";
             this.lblGender.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblGender.Size = new System.Drawing.Size(48, 17);
@@ -250,7 +248,7 @@ namespace DVLD_Project
             this.rbMale.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rbMale.BorderThickness = 1;
             this.rbMale.Checked = true;
-            this.rbMale.Location = new System.Drawing.Point(190, 317);
+            this.rbMale.Location = new System.Drawing.Point(140, 273);
             this.rbMale.Name = "rbMale";
             this.rbMale.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rbMale.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -270,7 +268,7 @@ namespace DVLD_Project
             this.lblMale.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblMale.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblMale.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(217, 319);
+            this.lblMale.Location = new System.Drawing.Point(164, 275);
             this.lblMale.Name = "lblMale";
             this.lblMale.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblMale.Size = new System.Drawing.Size(30, 17);
@@ -287,7 +285,7 @@ namespace DVLD_Project
             this.lblFemale.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblFemale.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblFemale.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(323, 319);
+            this.lblFemale.Location = new System.Drawing.Point(265, 275);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFemale.Size = new System.Drawing.Size(44, 17);
@@ -303,7 +301,7 @@ namespace DVLD_Project
             this.rbFemale.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rbFemale.BorderThickness = 1;
             this.rbFemale.Checked = false;
-            this.rbFemale.Location = new System.Drawing.Point(296, 317);
+            this.rbFemale.Location = new System.Drawing.Point(241, 273);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rbFemale.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -321,7 +319,7 @@ namespace DVLD_Project
             this.lblPhone.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPhone.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(397, 318);
+            this.lblPhone.Location = new System.Drawing.Point(339, 274);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPhone.Size = new System.Drawing.Size(43, 17);
@@ -337,7 +335,7 @@ namespace DVLD_Project
             this.lblEmail.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblEmail.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(77, 374);
+            this.lblEmail.Location = new System.Drawing.Point(19, 330);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblEmail.Size = new System.Drawing.Size(38, 17);
@@ -353,7 +351,7 @@ namespace DVLD_Project
             this.lblCountry.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCountry.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblCountry.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.Location = new System.Drawing.Point(397, 374);
+            this.lblCountry.Location = new System.Drawing.Point(339, 330);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCountry.Size = new System.Drawing.Size(53, 17);
@@ -398,7 +396,7 @@ namespace DVLD_Project
             this.dpdCountries.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.dpdCountries.ItemHighLightForeColor = System.Drawing.Color.White;
             this.dpdCountries.ItemTopMargin = 3;
-            this.dpdCountries.Location = new System.Drawing.Point(482, 364);
+            this.dpdCountries.Location = new System.Drawing.Point(424, 320);
             this.dpdCountries.Name = "dpdCountries";
             this.dpdCountries.Size = new System.Drawing.Size(153, 32);
             this.dpdCountries.TabIndex = 31;
@@ -413,7 +411,7 @@ namespace DVLD_Project
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(77, 420);
+            this.bunifuLabel1.Location = new System.Drawing.Point(19, 376);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(53, 17);
@@ -422,37 +420,21 @@ namespace DVLD_Project
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel2
+            // lblPersonID
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(77, 102);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(64, 17);
-            this.bunifuLabel2.TabIndex = 38;
-            this.bunifuLabel2.Text = "Person ID:";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.Add_Person_Icon8_96;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(409, 51);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(104, 104);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 40;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.lblPersonID.AllowParentOverrides = false;
+            this.lblPersonID.AutoEllipsis = false;
+            this.lblPersonID.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblPersonID.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblPersonID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonID.Location = new System.Drawing.Point(19, 62);
+            this.lblPersonID.Name = "lblPersonID";
+            this.lblPersonID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPersonID.Size = new System.Drawing.Size(64, 17);
+            this.lblPersonID.TabIndex = 38;
+            this.lblPersonID.Text = "Person ID:";
+            this.lblPersonID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblPersonID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // txtPersonID
             // 
@@ -469,7 +451,7 @@ namespace DVLD_Project
             this.txtPersonID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtPersonID.BorderColorIdle = System.Drawing.Color.Gray;
             this.txtPersonID.BorderRadius = 10;
-            this.txtPersonID.BorderThickness = 4;
+            this.txtPersonID.BorderThickness = 2;
             this.txtPersonID.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             this.txtPersonID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPersonID.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -484,7 +466,7 @@ namespace DVLD_Project
             this.txtPersonID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPersonID.Lines = new string[] {
         "N/A"};
-            this.txtPersonID.Location = new System.Drawing.Point(164, 91);
+            this.txtPersonID.Location = new System.Drawing.Point(106, 51);
             this.txtPersonID.MaxLength = 32767;
             this.txtPersonID.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPersonID.Modified = false;
@@ -555,7 +537,7 @@ namespace DVLD_Project
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
             this.btnClose.CustomizableEdges = borderEdges1;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.DisabledFillColor = System.Drawing.Color.Empty;
             this.btnClose.DisabledForecolor = System.Drawing.Color.Empty;
@@ -580,7 +562,7 @@ namespace DVLD_Project
             this.btnClose.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.icons8_cancel_32;
             this.btnClose.IdleIconRightImage = null;
             this.btnClose.IndicateFocus = false;
-            this.btnClose.Location = new System.Drawing.Point(290, 480);
+            this.btnClose.Location = new System.Drawing.Point(207, 479);
             this.btnClose.Name = "btnClose";
             this.btnClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnClose.OnDisabledState.BorderRadius = 39;
@@ -621,6 +603,7 @@ namespace DVLD_Project
             this.btnClose.TextMarginLeft = 0;
             this.btnClose.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnClose.UseDefaultRadiusAndThickness = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -671,7 +654,7 @@ namespace DVLD_Project
             this.btnSave.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.icons8_save_32;
             this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(485, 480);
+            this.btnSave.Location = new System.Drawing.Point(404, 479);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.OnDisabledState.BorderRadius = 39;
@@ -712,37 +695,39 @@ namespace DVLD_Project
             this.btnSave.TextMarginLeft = 0;
             this.btnSave.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSave.UseDefaultRadiusAndThickness = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnAddRemoveImage
+            // btnAddImage
             // 
-            this.btnAddRemoveImage.AllowAnimations = true;
-            this.btnAddRemoveImage.AllowBorderColorChanges = true;
-            this.btnAddRemoveImage.AllowMouseEffects = true;
-            this.btnAddRemoveImage.AnimationSpeed = 200;
-            this.btnAddRemoveImage.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddRemoveImage.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnAddRemoveImage.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddRemoveImage.BorderRadius = 1;
-            this.btnAddRemoveImage.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnAddRemoveImage.BorderThickness = 1;
-            this.btnAddRemoveImage.ColorContrastOnClick = 30;
-            this.btnAddRemoveImage.ColorContrastOnHover = 30;
-            this.btnAddRemoveImage.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddImage.AllowAnimations = true;
+            this.btnAddImage.AllowBorderColorChanges = true;
+            this.btnAddImage.AllowMouseEffects = true;
+            this.btnAddImage.AnimationSpeed = 200;
+            this.btnAddImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddImage.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddImage.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddImage.BorderRadius = 1;
+            this.btnAddImage.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnAddImage.BorderThickness = 1;
+            this.btnAddImage.ColorContrastOnClick = 30;
+            this.btnAddImage.ColorContrastOnHover = 30;
+            this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges3.BottomLeft = true;
             borderEdges3.BottomRight = true;
             borderEdges3.TopLeft = true;
             borderEdges3.TopRight = true;
-            this.btnAddRemoveImage.CustomizableEdges = borderEdges3;
-            this.btnAddRemoveImage.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddRemoveImage.Image = global::DVLD_Project.Properties.Resources.icons8_add_image_32;
-            this.btnAddRemoveImage.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnAddRemoveImage.Location = new System.Drawing.Point(699, 402);
-            this.btnAddRemoveImage.Name = "btnAddRemoveImage";
-            this.btnAddRemoveImage.RoundBorders = false;
-            this.btnAddRemoveImage.ShowBorders = false;
-            this.btnAddRemoveImage.Size = new System.Drawing.Size(50, 50);
-            this.btnAddRemoveImage.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Flat;
-            this.btnAddRemoveImage.TabIndex = 35;
+            this.btnAddImage.CustomizableEdges = borderEdges3;
+            this.btnAddImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddImage.Image = global::DVLD_Project.Properties.Resources.icons8_add_image_32;
+            this.btnAddImage.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnAddImage.Location = new System.Drawing.Point(666, 359);
+            this.btnAddImage.Name = "btnAddImage";
+            this.btnAddImage.RoundBorders = false;
+            this.btnAddImage.ShowBorders = true;
+            this.btnAddImage.Size = new System.Drawing.Size(50, 50);
+            this.btnAddImage.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnAddImage.TabIndex = 35;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
             // 
             // txtAddress
             // 
@@ -773,11 +758,11 @@ namespace DVLD_Project
             this.txtAddress.IconRight = null;
             this.txtAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.Lines = new string[0];
-            this.txtAddress.Location = new System.Drawing.Point(164, 405);
+            this.txtAddress.Location = new System.Drawing.Point(106, 360);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtAddress.Modified = false;
-            this.txtAddress.Multiline = false;
+            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
@@ -809,7 +794,7 @@ namespace DVLD_Project
             this.txtAddress.SelectionLength = 0;
             this.txtAddress.SelectionStart = 0;
             this.txtAddress.ShortcutsEnabled = true;
-            this.txtAddress.Size = new System.Drawing.Size(471, 47);
+            this.txtAddress.Size = new System.Drawing.Size(471, 48);
             this.txtAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtAddress.TabIndex = 34;
             this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -828,7 +813,7 @@ namespace DVLD_Project
             this.pbPerson.BorderRadius = 5;
             this.pbPerson.Image = global::DVLD_Project.Properties.Resources.icons8_male_100;
             this.pbPerson.IsCircle = false;
-            this.pbPerson.Location = new System.Drawing.Point(644, 246);
+            this.pbPerson.Location = new System.Drawing.Point(586, 199);
             this.pbPerson.Name = "pbPerson";
             this.pbPerson.Size = new System.Drawing.Size(153, 150);
             this.pbPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -865,7 +850,7 @@ namespace DVLD_Project
             this.txtEmail.IconRight = null;
             this.txtEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(164, 357);
+            this.txtEmail.Location = new System.Drawing.Point(106, 313);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmail.Modified = false;
@@ -911,6 +896,7 @@ namespace DVLD_Project
             this.txtEmail.TextPlaceholder = "Optional";
             this.txtEmail.UseSystemPasswordChar = false;
             this.txtEmail.WordWrap = true;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // txtPhone
             // 
@@ -941,7 +927,7 @@ namespace DVLD_Project
             this.txtPhone.IconRight = null;
             this.txtPhone.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(482, 306);
+            this.txtPhone.Location = new System.Drawing.Point(424, 262);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPhone.Modified = false;
@@ -996,7 +982,7 @@ namespace DVLD_Project
             this.pbFemale.BorderRadius = 14;
             this.pbFemale.Image = global::DVLD_Project.Properties.Resources.icons8_female_32;
             this.pbFemale.IsCircle = true;
-            this.pbFemale.Location = new System.Drawing.Point(264, 313);
+            this.pbFemale.Location = new System.Drawing.Point(207, 267);
             this.pbFemale.Name = "pbFemale";
             this.pbFemale.Size = new System.Drawing.Size(28, 28);
             this.pbFemale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1012,7 +998,7 @@ namespace DVLD_Project
             this.pbMale.BorderRadius = 14;
             this.pbMale.Image = global::DVLD_Project.Properties.Resources.person_male_icon_32;
             this.pbMale.IsCircle = true;
-            this.pbMale.Location = new System.Drawing.Point(158, 313);
+            this.pbMale.Location = new System.Drawing.Point(105, 267);
             this.pbMale.Name = "pbMale";
             this.pbMale.Size = new System.Drawing.Size(28, 28);
             this.pbMale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1027,19 +1013,20 @@ namespace DVLD_Project
             this.dpBirthDate.BorderRadius = 5;
             this.dpBirthDate.Color = System.Drawing.Color.DimGray;
             this.dpBirthDate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dpBirthDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Right;
+            this.dpBirthDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
             this.dpBirthDate.DisabledColor = System.Drawing.Color.Gray;
             this.dpBirthDate.DisplayWeekNumbers = false;
             this.dpBirthDate.DPHeight = 0;
+            this.dpBirthDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dpBirthDate.FillDatePicker = false;
             this.dpBirthDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dpBirthDate.ForeColor = System.Drawing.Color.Black;
             this.dpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpBirthDate.Icon = ((System.Drawing.Image)(resources.GetObject("dpBirthDate.Icon")));
             this.dpBirthDate.IconColor = System.Drawing.Color.Gray;
-            this.dpBirthDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Left;
+            this.dpBirthDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dpBirthDate.LeftTextMargin = 5;
-            this.dpBirthDate.Location = new System.Drawing.Point(482, 257);
+            this.dpBirthDate.Location = new System.Drawing.Point(424, 213);
             this.dpBirthDate.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpBirthDate.Name = "dpBirthDate";
             this.dpBirthDate.Size = new System.Drawing.Size(153, 32);
@@ -1075,7 +1062,7 @@ namespace DVLD_Project
             this.txtNationalNo.IconRight = null;
             this.txtNationalNo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNationalNo.Lines = new string[0];
-            this.txtNationalNo.Location = new System.Drawing.Point(164, 251);
+            this.txtNationalNo.Location = new System.Drawing.Point(106, 207);
             this.txtNationalNo.MaxLength = 32767;
             this.txtNationalNo.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNationalNo.Modified = false;
@@ -1152,7 +1139,7 @@ namespace DVLD_Project
             this.txtSecondName.IconRight = null;
             this.txtSecondName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSecondName.Lines = new string[0];
-            this.txtSecondName.Location = new System.Drawing.Point(323, 198);
+            this.txtSecondName.Location = new System.Drawing.Point(265, 154);
             this.txtSecondName.MaxLength = 32767;
             this.txtSecondName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtSecondName.Modified = false;
@@ -1228,7 +1215,7 @@ namespace DVLD_Project
             this.txtThirdName.IconRight = null;
             this.txtThirdName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtThirdName.Lines = new string[0];
-            this.txtThirdName.Location = new System.Drawing.Point(482, 198);
+            this.txtThirdName.Location = new System.Drawing.Point(424, 154);
             this.txtThirdName.MaxLength = 32767;
             this.txtThirdName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtThirdName.Modified = false;
@@ -1304,7 +1291,7 @@ namespace DVLD_Project
             this.txtLastName.IconRight = null;
             this.txtLastName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastName.Lines = new string[0];
-            this.txtLastName.Location = new System.Drawing.Point(644, 198);
+            this.txtLastName.Location = new System.Drawing.Point(586, 154);
             this.txtLastName.MaxLength = 32767;
             this.txtLastName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtLastName.Modified = false;
@@ -1380,7 +1367,7 @@ namespace DVLD_Project
             this.txtFirstName.IconRight = null;
             this.txtFirstName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.Lines = new string[0];
-            this.txtFirstName.Location = new System.Drawing.Point(164, 198);
+            this.txtFirstName.Location = new System.Drawing.Point(106, 154);
             this.txtFirstName.MaxLength = 32767;
             this.txtFirstName.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtFirstName.Modified = false;
@@ -1427,94 +1414,89 @@ namespace DVLD_Project
             this.txtFirstName.UseSystemPasswordChar = false;
             this.txtFirstName.WordWrap = true;
             // 
-            // pnlTop
-            // 
-            this.pnlTop.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnlTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTop.BackgroundImage")));
-            this.pnlTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlTop.BorderColor = System.Drawing.Color.Silver;
-            this.pnlTop.BorderRadius = 5;
-            this.pnlTop.BorderThickness = 1;
-            this.pnlTop.Controls.Add(this.lblAddEditPerson);
-            this.pnlTop.Controls.Add(this.btnCloseForm);
-            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Name = "pnlTop";
-            this.pnlTop.ShowBorders = true;
-            this.pnlTop.Size = new System.Drawing.Size(915, 42);
-            this.pnlTop.TabIndex = 1;
-            // 
-            // lblAddEditPerson
-            // 
-            this.lblAddEditPerson.AutoSize = true;
-            this.lblAddEditPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddEditPerson.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblAddEditPerson.Location = new System.Drawing.Point(3, 9);
-            this.lblAddEditPerson.Name = "lblAddEditPerson";
-            this.lblAddEditPerson.Size = new System.Drawing.Size(186, 25);
-            this.lblAddEditPerson.TabIndex = 41;
-            this.lblAddEditPerson.Text = "Add New Person";
-            // 
-            // btnCloseForm
-            // 
-            this.btnCloseForm.AllowAnimations = true;
-            this.btnCloseForm.AllowBorderColorChanges = true;
-            this.btnCloseForm.AllowDefaults = true;
-            this.btnCloseForm.AllowMouseEffects = true;
-            this.btnCloseForm.AnimationSpeed = 200;
-            this.btnCloseForm.AutoSizeCaptions = true;
-            this.btnCloseForm.BackColor = System.Drawing.Color.Transparent;
-            this.btnCloseForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.btnCloseForm.BackHoverColor = System.Drawing.Color.Red;
-            this.btnCloseForm.BackPressedColor = System.Drawing.Color.Gray;
-            this.btnCloseForm.BorderColor = System.Drawing.Color.LightGray;
-            this.btnCloseForm.BorderHoverColor = System.Drawing.Color.DarkGray;
-            this.btnCloseForm.BorderPressedColor = System.Drawing.Color.DarkGray;
-            this.btnCloseForm.BorderRadius = 5;
-            this.btnCloseForm.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
-            this.btnCloseForm.BorderThickness = 1;
-            this.btnCloseForm.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Close;
-            this.btnCloseForm.ColorContrastOnClick = 30;
-            this.btnCloseForm.ColorContrastOnHover = 30;
-            this.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnCloseForm.CustomizableEdges = borderEdges4;
-            this.btnCloseForm.DefaultBorderColor = System.Drawing.Color.Silver;
-            this.btnCloseForm.DefaultColor = System.Drawing.Color.Gainsboro;
-            this.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCloseForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCloseForm.IconColor = System.Drawing.Color.Black;
-            this.btnCloseForm.IconHoverColor = System.Drawing.Color.Black;
-            this.btnCloseForm.IconPressedColor = System.Drawing.Color.Black;
-            this.btnCloseForm.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseForm.Image")));
-            this.btnCloseForm.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.btnCloseForm.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCloseForm.Location = new System.Drawing.Point(857, 0);
-            this.btnCloseForm.Name = "btnCloseForm";
-            this.btnCloseForm.ShowBorders = false;
-            this.btnCloseForm.Size = new System.Drawing.Size(58, 42);
-            this.btnCloseForm.TabIndex = 0;
-            this.btnCloseForm.Click += new System.EventHandler(this.btnCloseForm_Click);
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
+            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.DoubleEdgeFaded;
+            this.bunifuSeparator2.LineThickness = 2;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(19, 435);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator2.Size = new System.Drawing.Size(720, 14);
+            this.bunifuSeparator2.TabIndex = 41;
+            // 
+            // btnRemoveImage
+            // 
+            this.btnRemoveImage.AllowAnimations = true;
+            this.btnRemoveImage.AllowBorderColorChanges = true;
+            this.btnRemoveImage.AllowMouseEffects = true;
+            this.btnRemoveImage.AnimationSpeed = 200;
+            this.btnRemoveImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemoveImage.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.btnRemoveImage.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnRemoveImage.BorderRadius = 1;
+            this.btnRemoveImage.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnRemoveImage.BorderThickness = 1;
+            this.btnRemoveImage.ColorContrastOnClick = 30;
+            this.btnRemoveImage.ColorContrastOnHover = 30;
+            this.btnRemoveImage.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnRemoveImage.CustomizableEdges = borderEdges4;
+            this.btnRemoveImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRemoveImage.Image = global::DVLD_Project.Properties.Resources.icons8_remove_image_32;
+            this.btnRemoveImage.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnRemoveImage.Location = new System.Drawing.Point(610, 359);
+            this.btnRemoveImage.Name = "btnRemoveImage";
+            this.btnRemoveImage.RoundBorders = false;
+            this.btnRemoveImage.ShowBorders = true;
+            this.btnRemoveImage.Size = new System.Drawing.Size(50, 50);
+            this.btnRemoveImage.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnRemoveImage.TabIndex = 42;
+            this.btnRemoveImage.Click += new System.EventHandler(this.btnRemoveImage_Click);
+            // 
+            // pbImageTitle
+            // 
+            this.pbImageTitle.AllowFocused = false;
+            this.pbImageTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbImageTitle.AutoSizeHeight = true;
+            this.pbImageTitle.BorderRadius = 0;
+            this.pbImageTitle.Image = global::DVLD_Project.Properties.Resources.Add_Person_Icon8_96;
+            this.pbImageTitle.IsCircle = true;
+            this.pbImageTitle.Location = new System.Drawing.Point(334, 10);
+            this.pbImageTitle.Name = "pbImageTitle";
+            this.pbImageTitle.Size = new System.Drawing.Size(95, 95);
+            this.pbImageTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImageTitle.TabIndex = 43;
+            this.pbImageTitle.TabStop = false;
+            this.pbImageTitle.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
             // frmAddEditPerson
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(915, 542);
-            this.Controls.Add(this.bunifuPictureBox1);
+            this.CancelButton = this.btnClose;
+            this.ClientSize = new System.Drawing.Size(783, 539);
+            this.Controls.Add(this.pbImageTitle);
+            this.Controls.Add(this.btnRemoveImage);
+            this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.txtPersonID);
-            this.Controls.Add(this.bunifuLabel2);
+            this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnAddRemoveImage);
+            this.Controls.Add(this.btnAddImage);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.pbPerson);
@@ -1544,27 +1526,22 @@ namespace DVLD_Project
             this.Controls.Add(this.lblThird);
             this.Controls.Add(this.lblLast);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.pnlTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmAddEditPerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add New Person";
             this.Load += new System.EventHandler(this.frmAddEditPerson_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).EndInit();
-            this.pnlTop.ResumeLayout(false);
-            this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageTitle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuFormCaptionButton btnCloseForm;
-        private Bunifu.UI.WinForms.BunifuPanel pnlTop;
         private Bunifu.UI.WinForms.BunifuLabel lblName;
         private Bunifu.UI.WinForms.BunifuLabel lblLast;
         private Bunifu.UI.WinForms.BunifuLabel lblThird;
@@ -1594,13 +1571,14 @@ namespace DVLD_Project
         private Bunifu.UI.WinForms.BunifuPictureBox pbPerson;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuTextBox txtAddress;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddRemoveImage;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddImage;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSave;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnClose;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel lblPersonID;
         private Bunifu.UI.WinForms.BunifuTextBox txtPersonID;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private System.Windows.Forms.Label lblAddEditPerson;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnRemoveImage;
+        private Bunifu.UI.WinForms.BunifuPictureBox pbImageTitle;
     }
 }

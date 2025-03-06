@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,20 +52,30 @@
             this.clmnSecondName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnThirdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnAdrress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnBirthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnCountryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnAdrress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnImagePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmsListPeople = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoneCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblManagePeople = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnAddPerson = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.txtFilterBy = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.txtNumberOfPeople = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).BeginInit();
+            this.cmsListPeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,15 +116,15 @@
             this.dpdFilterBy.ItemHighLightForeColor = System.Drawing.Color.White;
             this.dpdFilterBy.Items.AddRange(new object[] {
             "None",
-            "PersonID",
-            "NationalNo",
-            "FirstName",
-            "LastName",
+            "Person ID",
+            "National No",
+            "First Name",
+            "Last Name",
             "Email",
             "Phone",
             "Address",
             "Gender",
-            "CountryName"});
+            "Country"});
             this.dpdFilterBy.ItemTopMargin = 3;
             this.dpdFilterBy.Location = new System.Drawing.Point(69, 113);
             this.dpdFilterBy.Name = "dpdFilterBy";
@@ -166,14 +177,15 @@
             this.clmnSecondName,
             this.clmnThirdName,
             this.clmnLastName,
-            this.clmnEmail,
-            this.clmnPhone,
-            this.clmnAdrress,
             this.clmnGender,
             this.clmnBirthDate,
+            this.clmnPhone,
+            this.clmnEmail,
             this.clmnCountry,
             this.clmnCountryID,
+            this.clmnAdrress,
             this.clmnImagePath});
+            this.dgvPeople.ContextMenuStrip = this.cmsListPeople;
             this.dgvPeople.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.dgvPeople.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvPeople.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -203,6 +215,7 @@
             this.dgvPeople.EnableHeadersVisualStyles = false;
             this.dgvPeople.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
             this.dgvPeople.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
+            this.dgvPeople.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvPeople.HeaderForeColor = System.Drawing.Color.White;
             this.dgvPeople.Location = new System.Drawing.Point(5, 165);
             this.dgvPeople.MultiSelect = false;
@@ -221,7 +234,7 @@
             this.dgvPeople.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dgvPeople.RowTemplate.Height = 40;
             this.dgvPeople.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPeople.Size = new System.Drawing.Size(1012, 429);
+            this.dgvPeople.Size = new System.Drawing.Size(1005, 429);
             this.dgvPeople.TabIndex = 6;
             this.dgvPeople.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             // 
@@ -251,6 +264,7 @@
             this.clmnSecondName.HeaderText = "SecondName";
             this.clmnSecondName.Name = "clmnSecondName";
             this.clmnSecondName.ReadOnly = true;
+            this.clmnSecondName.Visible = false;
             this.clmnSecondName.Width = 132;
             // 
             // clmnThirdName
@@ -258,6 +272,7 @@
             this.clmnThirdName.HeaderText = "ThirdName";
             this.clmnThirdName.Name = "clmnThirdName";
             this.clmnThirdName.ReadOnly = true;
+            this.clmnThirdName.Visible = false;
             this.clmnThirdName.Width = 115;
             // 
             // clmnLastName
@@ -266,27 +281,6 @@
             this.clmnLastName.Name = "clmnLastName";
             this.clmnLastName.ReadOnly = true;
             this.clmnLastName.Width = 106;
-            // 
-            // clmnEmail
-            // 
-            this.clmnEmail.HeaderText = "Email";
-            this.clmnEmail.Name = "clmnEmail";
-            this.clmnEmail.ReadOnly = true;
-            this.clmnEmail.Width = 72;
-            // 
-            // clmnPhone
-            // 
-            this.clmnPhone.HeaderText = "Phone";
-            this.clmnPhone.Name = "clmnPhone";
-            this.clmnPhone.ReadOnly = true;
-            this.clmnPhone.Width = 80;
-            // 
-            // clmnAdrress
-            // 
-            this.clmnAdrress.HeaderText = "Adrress";
-            this.clmnAdrress.Name = "clmnAdrress";
-            this.clmnAdrress.ReadOnly = true;
-            this.clmnAdrress.Width = 90;
             // 
             // clmnGender
             // 
@@ -301,6 +295,20 @@
             this.clmnBirthDate.Name = "clmnBirthDate";
             this.clmnBirthDate.ReadOnly = true;
             this.clmnBirthDate.Width = 107;
+            // 
+            // clmnPhone
+            // 
+            this.clmnPhone.HeaderText = "Phone";
+            this.clmnPhone.Name = "clmnPhone";
+            this.clmnPhone.ReadOnly = true;
+            this.clmnPhone.Width = 80;
+            // 
+            // clmnEmail
+            // 
+            this.clmnEmail.HeaderText = "Email";
+            this.clmnEmail.Name = "clmnEmail";
+            this.clmnEmail.ReadOnly = true;
+            this.clmnEmail.Width = 72;
             // 
             // clmnCountry
             // 
@@ -317,12 +325,80 @@
             this.clmnCountryID.Visible = false;
             this.clmnCountryID.Width = 109;
             // 
+            // clmnAdrress
+            // 
+            this.clmnAdrress.HeaderText = "Adrress";
+            this.clmnAdrress.Name = "clmnAdrress";
+            this.clmnAdrress.ReadOnly = true;
+            this.clmnAdrress.Width = 90;
+            // 
             // clmnImagePath
             // 
             this.clmnImagePath.HeaderText = "ImagePath";
             this.clmnImagePath.Name = "clmnImagePath";
             this.clmnImagePath.ReadOnly = true;
+            this.clmnImagePath.Visible = false;
             this.clmnImagePath.Width = 112;
+            // 
+            // cmsListPeople
+            // 
+            this.cmsListPeople.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDetailsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addNewPersonToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.deleteToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.sendEmailToolStripMenuItem,
+            this.phoneCallToolStripMenuItem});
+            this.cmsListPeople.Name = "cmsListPeople";
+            this.cmsListPeople.Size = new System.Drawing.Size(181, 170);
+            // 
+            // showDetailsToolStripMenuItem
+            // 
+            this.showDetailsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_show_details_32;
+            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showDetailsToolStripMenuItem.Text = "Show details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
+            // 
+            // addNewPersonToolStripMenuItem
+            // 
+            this.addNewPersonToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_add_user_male_32;
+            this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
+            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewPersonToolStripMenuItem.Text = "Add new Person";
+            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_denied_person_32;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // sendEmailToolStripMenuItem
+            // 
+            this.sendEmailToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_email_32;
+            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sendEmailToolStripMenuItem.Text = "Send Email";
+            // 
+            // phoneCallToolStripMenuItem
+            // 
+            this.phoneCallToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_phone_number_32;
+            this.phoneCallToolStripMenuItem.Name = "phoneCallToolStripMenuItem";
+            this.phoneCallToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoneCallToolStripMenuItem.Text = "Phone Call";
             // 
             // lblManagePeople
             // 
@@ -364,7 +440,7 @@
             this.btnAddPerson.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddPerson.Image = global::DVLD_Project.Properties.Resources.Add_Person_Icon8_96;
             this.btnAddPerson.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnAddPerson.Location = new System.Drawing.Point(939, 92);
+            this.btnAddPerson.Location = new System.Drawing.Point(937, 92);
             this.btnAddPerson.Name = "btnAddPerson";
             this.btnAddPerson.RoundBorders = false;
             this.btnAddPerson.ShowBorders = false;
@@ -450,6 +526,7 @@
             this.txtFilterBy.Visible = false;
             this.txtFilterBy.WordWrap = true;
             this.txtFilterBy.TextChange += new System.EventHandler(this.txtFilterBy_TextChange_1);
+            this.txtFilterBy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterBy_KeyPress);
             // 
             // bunifuPictureBox1
             // 
@@ -459,7 +536,7 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.People_icon_100;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(441, 4);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(440, 4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(106, 106);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -546,6 +623,16 @@
             this.txtNumberOfPeople.UseSystemPasswordChar = false;
             this.txtNumberOfPeople.WordWrap = true;
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
             // ctrTpPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -559,9 +646,10 @@
             this.Controls.Add(this.txtNumberOfPeople);
             this.Controls.Add(this.dgvPeople);
             this.Name = "ctrTpPeople";
-            this.Size = new System.Drawing.Size(1023, 640);
+            this.Size = new System.Drawing.Size(1021, 640);
             this.Load += new System.EventHandler(this.ctrTpPeople_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).EndInit();
+            this.cmsListPeople.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -576,21 +664,30 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuTextBox txtNumberOfPeople;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvPeople;
+        private Bunifu.UI.WinForms.BunifuLabel lblManagePeople;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddPerson;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnPersonID;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnNationalNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnFirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnSecondName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnThirdName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnLastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnAdrress;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnBirthDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnCountry;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnCountryID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnAdrress;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnImagePath;
-        private Bunifu.UI.WinForms.BunifuLabel lblManagePeople;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddPerson;
+        private System.Windows.Forms.ContextMenuStrip cmsListPeople;
+        private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewPersonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phoneCallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }

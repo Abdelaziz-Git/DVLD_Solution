@@ -34,8 +34,6 @@
             this.tcPagesMain = new Bunifu.UI.WinForms.BunifuPages();
             this.tpPeopleList = new System.Windows.Forms.TabPage();
             this.ctrTpPeople1 = new DVLD_Project.ctrTpPeople();
-            this.pnlMainTop = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuFormControlBox1 = new Bunifu.UI.WinForms.BunifuFormControlBox();
             this.pnlMainLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblUsername = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -43,7 +41,6 @@
             this.pbCurrentUser = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.tcPagesMain.SuspendLayout();
             this.tpPeopleList.SuspendLayout();
-            this.pnlMainTop.SuspendLayout();
             this.pnlMainLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +51,7 @@
             this.tcPagesMain.AllowTransitions = false;
             this.tcPagesMain.Controls.Add(this.tpPeopleList);
             this.tcPagesMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcPagesMain.Location = new System.Drawing.Point(217, 32);
+            this.tcPagesMain.Location = new System.Drawing.Point(217, 0);
             this.tcPagesMain.Multiline = true;
             this.tcPagesMain.Name = "tcPagesMain";
             this.tcPagesMain.Page = this.tpPeopleList;
@@ -62,7 +59,7 @@
             this.tcPagesMain.PageName = "tpPeopleList";
             this.tcPagesMain.PageTitle = "People";
             this.tcPagesMain.SelectedIndex = 0;
-            this.tcPagesMain.Size = new System.Drawing.Size(1081, 709);
+            this.tcPagesMain.Size = new System.Drawing.Size(1081, 741);
             this.tcPagesMain.TabIndex = 3;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -88,7 +85,7 @@
             this.tpPeopleList.Location = new System.Drawing.Point(4, 4);
             this.tpPeopleList.Name = "tpPeopleList";
             this.tpPeopleList.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPeopleList.Size = new System.Drawing.Size(1073, 683);
+            this.tpPeopleList.Size = new System.Drawing.Size(1073, 715);
             this.tpPeopleList.TabIndex = 0;
             this.tpPeopleList.Text = "People";
             this.tpPeopleList.UseVisualStyleBackColor = true;
@@ -98,87 +95,8 @@
             this.ctrTpPeople1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ctrTpPeople1.Location = new System.Drawing.Point(3, 3);
             this.ctrTpPeople1.Name = "ctrTpPeople1";
-            this.ctrTpPeople1.Size = new System.Drawing.Size(1067, 677);
+            this.ctrTpPeople1.Size = new System.Drawing.Size(1067, 709);
             this.ctrTpPeople1.TabIndex = 0;
-            // 
-            // pnlMainTop
-            // 
-            this.pnlMainTop.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(115)))), ((int)(((byte)(123)))));
-            this.pnlMainTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMainTop.BackgroundImage")));
-            this.pnlMainTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlMainTop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(115)))), ((int)(((byte)(123)))));
-            this.pnlMainTop.BorderRadius = 0;
-            this.pnlMainTop.BorderThickness = 0;
-            this.pnlMainTop.Controls.Add(this.bunifuFormControlBox1);
-            this.pnlMainTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMainTop.Location = new System.Drawing.Point(217, 0);
-            this.pnlMainTop.Name = "pnlMainTop";
-            this.pnlMainTop.ShowBorders = true;
-            this.pnlMainTop.Size = new System.Drawing.Size(1081, 32);
-            this.pnlMainTop.TabIndex = 2;
-            // 
-            // bunifuFormControlBox1
-            // 
-            this.bunifuFormControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(115)))), ((int)(((byte)(123)))));
-            this.bunifuFormControlBox1.BunifuFormDrag = null;
-            this.bunifuFormControlBox1.CloseBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.CloseBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.CloseBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.CloseBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.CloseBoxOptions.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.bunifuFormControlBox1.CloseBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.CloseBoxOptions.Icon")));
-            this.bunifuFormControlBox1.CloseBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconHoverColor = System.Drawing.Color.White;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconPressedColor = System.Drawing.Color.White;
-            this.bunifuFormControlBox1.CloseBoxOptions.IconSize = new System.Drawing.Size(18, 18);
-            this.bunifuFormControlBox1.CloseBoxOptions.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.bunifuFormControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuFormControlBox1.HelpBox = true;
-            this.bunifuFormControlBox1.HelpBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.HelpBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.HelpBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.HelpBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.HelpBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.HelpBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.HelpBoxOptions.Icon")));
-            this.bunifuFormControlBox1.HelpBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.HelpBoxOptions.IconSize = new System.Drawing.Size(22, 22);
-            this.bunifuFormControlBox1.HelpBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.Location = new System.Drawing.Point(944, 0);
-            this.bunifuFormControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuFormControlBox1.MaximizeBox = true;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MaximizeBoxOptions.Icon")));
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconAlt = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MaximizeBoxOptions.IconAlt")));
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MaximizeBoxOptions.IconSize = new System.Drawing.Size(16, 16);
-            this.bunifuFormControlBox1.MaximizeBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.MinimizeBox = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.BorderRadius = 0;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.Enabled = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.EnableDefaultAction = true;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.HoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuFormControlBox1.MinimizeBoxOptions.Icon")));
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconAlt = null;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormControlBox1.MinimizeBoxOptions.IconSize = new System.Drawing.Size(14, 14);
-            this.bunifuFormControlBox1.MinimizeBoxOptions.PressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormControlBox1.Name = "bunifuFormControlBox1";
-            this.bunifuFormControlBox1.ShowDesignBorders = false;
-            this.bunifuFormControlBox1.Size = new System.Drawing.Size(137, 32);
-            this.bunifuFormControlBox1.TabIndex = 1;
             // 
             // pnlMainLeft
             // 
@@ -347,15 +265,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1298, 741);
             this.Controls.Add(this.tcPagesMain);
-            this.Controls.Add(this.pnlMainTop);
             this.Controls.Add(this.pnlMainLeft);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
+            this.IsMdiContainer = true;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Main";
             this.tcPagesMain.ResumeLayout(false);
             this.tpPeopleList.ResumeLayout(false);
-            this.pnlMainTop.ResumeLayout(false);
             this.pnlMainLeft.ResumeLayout(false);
             this.pnlMainLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).EndInit();
@@ -366,8 +284,6 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel pnlMainLeft;
-        private Bunifu.UI.WinForms.BunifuFormControlBox bunifuFormControlBox1;
-        private Bunifu.UI.WinForms.BunifuPanel pnlMainTop;
         private Bunifu.UI.WinForms.BunifuPictureBox pbCurrentUser;
         private Bunifu.UI.WinForms.BunifuPages tcPagesMain;
         private System.Windows.Forms.TabPage tpPeopleList;

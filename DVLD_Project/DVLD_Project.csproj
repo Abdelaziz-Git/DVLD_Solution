@@ -97,16 +97,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddEditPerson.cs">
+    <Compile Include="GlobalClasses\clsUtil.cs" />
+    <Compile Include="GlobalClasses\clsValidation.cs" />
+    <Compile Include="People\frmAddEditPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddEditPerson.Designer.cs">
+    <Compile Include="People\frmAddEditPerson.Designer.cs">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ctrTpPeople.cs">
+    <Compile Include="People\frmPersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmPersonDetails.Designer.cs">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\Controls\ctrTpPeople.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ctrTpPeople.Designer.cs">
+    <Compile Include="People\Controls\ctrTpPeople.Designer.cs">
       <DependentUpon>ctrTpPeople.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
@@ -117,10 +125,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAddEditPerson.resx">
+    <Compile Include="People\Controls\ucPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\ucPersonInfo.Designer.cs">
+      <DependentUpon>ucPersonInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="People\frmAddEditPerson.resx">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ctrTpPeople.resx">
+    <EmbeddedResource Include="People\frmPersonDetails.resx">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ctrTpPeople.resx">
       <DependentUpon>ctrTpPeople.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
@@ -130,6 +147,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Controls\ucPersonInfo.resx">
+      <DependentUpon>ucPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -201,6 +221,29 @@
   <ItemGroup>
     <None Include="Resources\icons8-female-100.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-Edit Person-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-denied person-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-details-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-writer-male-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-date-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-country-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-details-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

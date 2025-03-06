@@ -11,7 +11,7 @@ namespace DVLD_DataAccess1
 {
     public class clsCountryData
     {
-        public static CountryDTO GetCountryInfoByID(int CountryID)
+        public static CountryDTO GetCountryInfo(int CountryID)
         {
             CountryDTO Country = null;
 
@@ -32,7 +32,7 @@ namespace DVLD_DataAccess1
                             {
                                 Country = new CountryDTO
                                 {
-                                    Id = reader.GetInt32(reader.GetOrdinal("CountryID")),
+                                    Id = (int)reader.GetInt16(reader.GetOrdinal("CountryID")),
                                     Name = reader.GetString(reader.GetOrdinal("CountryName"))
                                 };
                             }
@@ -42,14 +42,13 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving Country info by ID.");
+                
                 throw new ApplicationException("An error occurred while retrieving Country information.", ex);
             }
 
             return Country;
         }
-        public static CountryDTO GetCountryInfoByName(string CountryName)
+        public static CountryDTO GetCountryInfo(string CountryName)
         {
             CountryDTO Country = null;
 
@@ -70,7 +69,7 @@ namespace DVLD_DataAccess1
                             {
                                 Country = new CountryDTO
                                 {
-                                    Id = reader.GetInt32(reader.GetOrdinal("CountryID")),
+                                    Id = (int)reader.GetInt16(reader.GetOrdinal("CountryID")),
                                     Name = reader.GetString(reader.GetOrdinal("CountryName"))
                                 };
                             }
@@ -80,8 +79,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving Country info by ID.");
+                
                 throw new ApplicationException("An error occurred while retrieving Country information.", ex);
             }
 
@@ -110,8 +108,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error retrieving all Countries.");
+                
                 throw new ApplicationException("An error occurred while retrieving all Countries.", ex);
             }
             return dt;
@@ -134,8 +131,7 @@ namespace DVLD_DataAccess1
             }
             catch (Exception ex)
             {
-                // Log the exception (use a logging framework like Serilog, NLog, etc.)
-                // Example: Logger.LogError(ex, "Error checking if Country exists by name.");
+               
                 throw new ApplicationException("An error occurred while checking if Country exists by name.", ex);
             }
             return result;
