@@ -21,10 +21,9 @@ namespace DVLD_Project
         }
         private void RefreshListPeople()
         {
-            DataView dvListPeople = clsPerson.GetAllPeopleDetails().DefaultView;
             dgvPeople.Rows.Clear();
             dgvPeople.SuspendLayout();
-            foreach (DataRowView Row in dvListPeople)
+            foreach (DataRowView Row in clsPerson.GetAllPeopleDetails().DefaultView)
             {
                 dgvPeople.Rows.Add(Row.Row.ItemArray);
             }
@@ -59,22 +58,18 @@ namespace DVLD_Project
                     return "None";
             }
         }
-        private void FilterListPeople(string columnName, string text)
+        private void FilterListPeople(string columnName, string SearchText)
         {
             if (columnName == "None")
             {
                 RefreshListPeople();
-                txtFilterBy.Visible = false;
                 return;
             }
-
-            txtFilterBy.Visible = true;
-            txtFilterBy.PlaceholderText = dpdFilterBy.Text;
 
             if (!string.IsNullOrWhiteSpace(txtFilterBy.Text))
             {
                 DataView dv = clsPerson.GetAllPeopleDetails().DefaultView;
-                dv.RowFilter = columnName == "PersonID" ? $"{columnName} = {text}" : $"{columnName} LIKE '{text}%'";
+                dv.RowFilter = columnName == "PersonID" ? $"{columnName} = {SearchText}" : $"{columnName} LIKE '{SearchText}%'";
                 dgvPeople.Rows.Clear();
                 dgvPeople.SuspendLayout();
                 foreach (DataRowView rowView in dv)
@@ -97,7 +92,14 @@ namespace DVLD_Project
 
         private void dpdFilterBy_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            FilterListPeople(GetSelectedColumnNameInDropDown(), "");
+            txtFilterBy.Visible = dpdFilterBy.SelectedIndex != 0;
+            if(txtFilterBy.Visible)
+            {
+                txtFilterBy.Focus();
+                txtFilterBy.PlaceholderText = dpdFilterBy.Text;
+                txtFilterBy.Text = "";
+            }
+            RefreshListPeople();    
         }
 
         private void txtFilterBy_TextChange_1(object sender, EventArgs e)
@@ -140,12 +142,6 @@ namespace DVLD_Project
             }
 
             var selectedRow = dgvPeople.SelectedRows[0];
-            if (selectedRow.Cells["clmnPersonID"].Value == null)
-            {
-                MessageBox.Show("Selected person does not have a valid ID.", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             if (!int.TryParse(selectedRow.Cells["clmnPersonID"].Value.ToString(), out int personID))
             {
                 MessageBox.Show("Selected person ID is not valid.", "Invalid ID", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -181,11 +177,6 @@ namespace DVLD_Project
             }
 
             var selectedRow = dgvPeople.SelectedRows[0];
-            if (selectedRow.Cells["clmnPersonID"].Value == null)
-            {
-                MessageBox.Show("Selected person does not have a valid ID.", "Invalid Selection", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
 
             if (!int.TryParse(selectedRow.Cells["clmnPersonID"].Value.ToString(), out int personID))
             {

@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\.dotnet\\windows forms projects\\dvld_solutions\\dvld_project\\people\\controls\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:people\\controls\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\.dotnet\\windows forms projects\\dvld_solutions\\dvld_project\\people\\controls\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:people\\controls\\ctrtppeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ctrTpPeople.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\People\\Controls\\ctrTpPeople.cs",
+              "RelativeDocumentMoniker": "People\\Controls\\ctrTpPeople.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\People\\Controls\\ctrTpPeople.cs*",
+              "RelativeToolTip": "People\\Controls\\ctrTpPeople.cs*",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwGUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:48:35.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ctrTpPeople.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\People\\Controls\\ctrTpPeople.cs",
+              "RelativeDocumentMoniker": "People\\Controls\\ctrTpPeople.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\People\\Controls\\ctrTpPeople.cs [Design]*",
+              "RelativeToolTip": "People\\Controls\\ctrTpPeople.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:46:44.054Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

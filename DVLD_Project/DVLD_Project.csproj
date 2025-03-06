@@ -99,6 +99,12 @@
   <ItemGroup>
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidation.cs" />
+    <Compile Include="People\Controls\usTpUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\Controls\usTpUsers.Designer.cs">
+      <DependentUpon>usTpUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\frmAddEditPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="People\Controls\ucPersonInfo.Designer.cs">
       <DependentUpon>ucPersonInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="People\Controls\usTpUsers.resx">
+      <DependentUpon>usTpUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddEditPerson.resx">
       <DependentUpon>frmAddEditPerson.cs</DependentUpon>
     </EmbeddedResource>

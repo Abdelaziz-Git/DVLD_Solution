@@ -18,6 +18,11 @@ namespace DVLD_Project
             ucPersonInfo1.LoadPersonInfo(PersonID);
         }
 
+        public frmPersonDetails(string  NationalNo)
+        {
+            InitializeComponent();
+            ucPersonInfo1.LoadPersonInfo(NationalNo);
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
