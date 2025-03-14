@@ -97,12 +97,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalClasses\clsGlobal.cs" />
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidation.cs" />
-    <Compile Include="People\Controls\usTpUsers.cs">
+    <Compile Include="Users\Controls\usTpUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="People\Controls\usTpUsers.Designer.cs">
+    <Compile Include="Users\Controls\usTpUsers.Designer.cs">
       <DependentUpon>usTpUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="People\frmAddEditPerson.cs">
@@ -137,7 +138,13 @@
     <Compile Include="People\Controls\ucPersonInfo.Designer.cs">
       <DependentUpon>ucPersonInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="People\Controls\usTpUsers.resx">
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Users\Controls\usTpUsers.resx">
       <DependentUpon>usTpUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmAddEditPerson.resx">
@@ -159,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ucPersonInfo.resx">
       <DependentUpon>ucPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -253,6 +263,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-user-details-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-settings-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-driver-license-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-in-form-password-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

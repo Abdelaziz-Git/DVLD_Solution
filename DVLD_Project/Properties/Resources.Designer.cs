@@ -93,6 +93,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_user_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-user-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_add_user_male_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-user-male-32", resourceCulture);
@@ -153,6 +163,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_driver_license_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-driver-license-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Edit_Person_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-Edit Person-32", resourceCulture);
@@ -196,6 +216,26 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap icons8_key_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-key-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_log_out_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-log-out-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_login_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-login-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +293,29 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_in_form_password_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-in-form-password-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_details_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-details-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_users_settings_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-users-settings-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

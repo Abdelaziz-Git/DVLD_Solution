@@ -39,8 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnAddPerson = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
-            this.lblManagePeople = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnAddUser = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.lblManageUsers = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtFilterValue = new Bunifu.UI.WinForms.BunifuTextBox();
             this.phoneCallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,79 +50,71 @@
             this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsListPeople = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.clmnImagePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmsListUsers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.clmnAdrress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnBirthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnThirdName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnSecondName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnNationalNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblFilterBy = new System.Windows.Forms.Label();
             this.dgvUsers = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.clmnCountryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ddFilterBy = new Bunifu.UI.WinForms.BunifuDropdown();
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblNumberOfRecords = new System.Windows.Forms.Label();
-            this.cmsListPeople.SuspendLayout();
+            this.clmnUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnIsActive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.clmnPermissions = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmsListUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAddPerson
+            // btnAddUser
             // 
-            this.btnAddPerson.AllowAnimations = true;
-            this.btnAddPerson.AllowBorderColorChanges = true;
-            this.btnAddPerson.AllowMouseEffects = true;
-            this.btnAddPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddPerson.AnimationSpeed = 200;
-            this.btnAddPerson.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddPerson.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.btnAddPerson.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddPerson.BorderRadius = 1;
-            this.btnAddPerson.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.btnAddPerson.BorderThickness = 1;
-            this.btnAddPerson.ColorContrastOnClick = 30;
-            this.btnAddPerson.ColorContrastOnHover = 30;
-            this.btnAddPerson.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddUser.AllowAnimations = true;
+            this.btnAddUser.AllowBorderColorChanges = true;
+            this.btnAddUser.AllowMouseEffects = true;
+            this.btnAddUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddUser.AnimationSpeed = 200;
+            this.btnAddUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddUser.BackgroundColor = System.Drawing.Color.Silver;
+            this.btnAddUser.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddUser.BorderRadius = 1;
+            this.btnAddUser.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnAddUser.BorderThickness = 1;
+            this.btnAddUser.ColorContrastOnClick = 30;
+            this.btnAddUser.ColorContrastOnHover = 30;
+            this.btnAddUser.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.btnAddPerson.CustomizableEdges = borderEdges1;
-            this.btnAddPerson.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddPerson.Image = global::DVLD_Project.Properties.Resources.Add_Person_Icon8_96;
-            this.btnAddPerson.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnAddPerson.Location = new System.Drawing.Point(898, 89);
-            this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.RoundBorders = false;
-            this.btnAddPerson.ShowBorders = false;
-            this.btnAddPerson.Size = new System.Drawing.Size(70, 70);
-            this.btnAddPerson.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnAddPerson.TabIndex = 21;
+            this.btnAddUser.CustomizableEdges = borderEdges1;
+            this.btnAddUser.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddUser.Image = global::DVLD_Project.Properties.Resources.icons8_add_user_32;
+            this.btnAddUser.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnAddUser.Location = new System.Drawing.Point(792, 89);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.RoundBorders = false;
+            this.btnAddUser.ShowBorders = false;
+            this.btnAddUser.Size = new System.Drawing.Size(77, 70);
+            this.btnAddUser.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnAddUser.TabIndex = 21;
             // 
-            // lblManagePeople
+            // lblManageUsers
             // 
-            this.lblManagePeople.AllowParentOverrides = false;
-            this.lblManagePeople.AutoEllipsis = false;
-            this.lblManagePeople.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblManagePeople.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblManagePeople.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagePeople.Location = new System.Drawing.Point(6, 4);
-            this.lblManagePeople.Name = "lblManagePeople";
-            this.lblManagePeople.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblManagePeople.Size = new System.Drawing.Size(86, 17);
-            this.lblManagePeople.TabIndex = 20;
-            this.lblManagePeople.Text = "Manage Users";
-            this.lblManagePeople.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblManagePeople.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblManageUsers.AllowParentOverrides = false;
+            this.lblManageUsers.AutoEllipsis = false;
+            this.lblManageUsers.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblManageUsers.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblManageUsers.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageUsers.Location = new System.Drawing.Point(6, 4);
+            this.lblManageUsers.Name = "lblManageUsers";
+            this.lblManageUsers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblManageUsers.Size = new System.Drawing.Size(86, 17);
+            this.lblManageUsers.TabIndex = 20;
+            this.lblManageUsers.Text = "Manage Users";
+            this.lblManageUsers.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblManageUsers.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // txtFilterValue
             // 
@@ -205,57 +197,58 @@
             // 
             this.phoneCallToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_phone_number_32;
             this.phoneCallToolStripMenuItem.Name = "phoneCallToolStripMenuItem";
-            this.phoneCallToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.phoneCallToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.phoneCallToolStripMenuItem.Text = "Phone Call";
             // 
             // sendEmailToolStripMenuItem
             // 
             this.sendEmailToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_email_32;
             this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.sendEmailToolStripMenuItem.Text = "Send Email";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_denied_person_32;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // addNewPersonToolStripMenuItem
             // 
             this.addNewPersonToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_add_user_male_32;
             this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
-            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.addNewPersonToolStripMenuItem.Text = "Add new Person";
+            this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.addNewPersonToolStripMenuItem.Text = "Add new User";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_show_details_32;
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.showDetailsToolStripMenuItem.Text = "Show details";
             // 
-            // cmsListPeople
+            // cmsListUsers
             // 
-            this.cmsListPeople.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsListUsers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsListUsers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showDetailsToolStripMenuItem,
             this.toolStripSeparator1,
             this.addNewPersonToolStripMenuItem,
@@ -264,16 +257,8 @@
             this.toolStripSeparator2,
             this.sendEmailToolStripMenuItem,
             this.phoneCallToolStripMenuItem});
-            this.cmsListPeople.Name = "cmsListPeople";
-            this.cmsListPeople.Size = new System.Drawing.Size(161, 148);
-            // 
-            // clmnImagePath
-            // 
-            this.clmnImagePath.HeaderText = "ImagePath";
-            this.clmnImagePath.Name = "clmnImagePath";
-            this.clmnImagePath.ReadOnly = true;
-            this.clmnImagePath.Visible = false;
-            this.clmnImagePath.Width = 112;
+            this.cmsListUsers.Name = "cmsListPeople";
+            this.cmsListUsers.Size = new System.Drawing.Size(181, 194);
             // 
             // bunifuPictureBox1
             // 
@@ -281,101 +266,15 @@
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.People_icon_100;
+            this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.icons8_users_settings_100;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(448, 4);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(491, 4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(106, 106);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 16;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
-            // clmnAdrress
-            // 
-            this.clmnAdrress.HeaderText = "Adrress";
-            this.clmnAdrress.Name = "clmnAdrress";
-            this.clmnAdrress.ReadOnly = true;
-            this.clmnAdrress.Width = 90;
-            // 
-            // clmnCountry
-            // 
-            this.clmnCountry.HeaderText = "Country";
-            this.clmnCountry.Name = "clmnCountry";
-            this.clmnCountry.ReadOnly = true;
-            this.clmnCountry.Width = 93;
-            // 
-            // clmnEmail
-            // 
-            this.clmnEmail.HeaderText = "Email";
-            this.clmnEmail.Name = "clmnEmail";
-            this.clmnEmail.ReadOnly = true;
-            this.clmnEmail.Width = 72;
-            // 
-            // clmnPhone
-            // 
-            this.clmnPhone.HeaderText = "Phone";
-            this.clmnPhone.Name = "clmnPhone";
-            this.clmnPhone.ReadOnly = true;
-            this.clmnPhone.Width = 80;
-            // 
-            // clmnBirthDate
-            // 
-            this.clmnBirthDate.HeaderText = "Birth Date";
-            this.clmnBirthDate.Name = "clmnBirthDate";
-            this.clmnBirthDate.ReadOnly = true;
-            this.clmnBirthDate.Width = 107;
-            // 
-            // clmnGender
-            // 
-            this.clmnGender.HeaderText = "Gender";
-            this.clmnGender.Name = "clmnGender";
-            this.clmnGender.ReadOnly = true;
-            this.clmnGender.Width = 88;
-            // 
-            // clmnLastName
-            // 
-            this.clmnLastName.HeaderText = "LastName";
-            this.clmnLastName.Name = "clmnLastName";
-            this.clmnLastName.ReadOnly = true;
-            this.clmnLastName.Width = 106;
-            // 
-            // clmnThirdName
-            // 
-            this.clmnThirdName.HeaderText = "ThirdName";
-            this.clmnThirdName.Name = "clmnThirdName";
-            this.clmnThirdName.ReadOnly = true;
-            this.clmnThirdName.Visible = false;
-            this.clmnThirdName.Width = 115;
-            // 
-            // clmnSecondName
-            // 
-            this.clmnSecondName.HeaderText = "SecondName";
-            this.clmnSecondName.Name = "clmnSecondName";
-            this.clmnSecondName.ReadOnly = true;
-            this.clmnSecondName.Visible = false;
-            this.clmnSecondName.Width = 132;
-            // 
-            // clmnFirstName
-            // 
-            this.clmnFirstName.HeaderText = "FirstName";
-            this.clmnFirstName.Name = "clmnFirstName";
-            this.clmnFirstName.ReadOnly = true;
-            this.clmnFirstName.Width = 108;
-            // 
-            // clmnNationalNo
-            // 
-            this.clmnNationalNo.HeaderText = "National No";
-            this.clmnNationalNo.Name = "clmnNationalNo";
-            this.clmnNationalNo.ReadOnly = true;
-            this.clmnNationalNo.Width = 121;
-            // 
-            // clmnPersonID
-            // 
-            this.clmnPersonID.HeaderText = "PersonID";
-            this.clmnPersonID.Name = "clmnPersonID";
-            this.clmnPersonID.ReadOnly = true;
-            this.clmnPersonID.Width = 99;
             // 
             // lblFilterBy
             // 
@@ -392,8 +291,8 @@
             this.dgvUsers.AllowCustomTheming = false;
             this.dgvUsers.AllowUserToAddRows = false;
             this.dgvUsers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             this.dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -404,62 +303,54 @@
             this.dgvUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.ColumnHeadersHeight = 40;
             this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmnUserID,
             this.clmnPersonID,
-            this.clmnNationalNo,
-            this.clmnFirstName,
-            this.clmnSecondName,
-            this.clmnThirdName,
-            this.clmnLastName,
-            this.clmnGender,
-            this.clmnBirthDate,
-            this.clmnPhone,
-            this.clmnEmail,
-            this.clmnCountry,
-            this.clmnCountryID,
-            this.clmnAdrress,
-            this.clmnImagePath});
-            this.dgvUsers.ContextMenuStrip = this.cmsListPeople;
-            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            this.clmnFullName,
+            this.clmnUserName,
+            this.clmnIsActive,
+            this.clmnPermissions});
+            this.dgvUsers.ContextMenuStrip = this.cmsListUsers;
+            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
             this.dgvUsers.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
-            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvUsers.CurrentTheme.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.dgvUsers.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.dgvUsers.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.dgvUsers.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvUsers.CurrentTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.dgvUsers.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.dgvUsers.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.dgvUsers.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             this.dgvUsers.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvUsers.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.dgvUsers.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.dgvUsers.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dgvUsers.CurrentTheme.Name = null;
-            this.dgvUsers.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.dgvUsers.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.dgvUsers.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvUsers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvUsers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
-            this.dgvUsers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvUsers.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUsers.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            this.dgvUsers.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
-            this.dgvUsers.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
+            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.dgvUsers.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
             this.dgvUsers.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvUsers.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvUsers.Location = new System.Drawing.Point(3, 165);
+            this.dgvUsers.Location = new System.Drawing.Point(248, 165);
             this.dgvUsers.MultiSelect = false;
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
@@ -476,17 +367,9 @@
             this.dgvUsers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dgvUsers.RowTemplate.Height = 40;
             this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsers.Size = new System.Drawing.Size(965, 379);
+            this.dgvUsers.Size = new System.Drawing.Size(621, 379);
             this.dgvUsers.TabIndex = 14;
-            this.dgvUsers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
-            // 
-            // clmnCountryID
-            // 
-            this.clmnCountryID.HeaderText = "CountryID";
-            this.clmnCountryID.Name = "clmnCountryID";
-            this.clmnCountryID.ReadOnly = true;
-            this.clmnCountryID.Visible = false;
-            this.clmnCountryID.Width = 109;
+            this.dgvUsers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
             // 
             // ddFilterBy
             // 
@@ -523,17 +406,6 @@
             this.ddFilterBy.ItemHeight = 26;
             this.ddFilterBy.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.ddFilterBy.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.ddFilterBy.Items.AddRange(new object[] {
-            "None",
-            "Person ID",
-            "National No",
-            "First Name",
-            "Last Name",
-            "Email",
-            "Phone",
-            "Address",
-            "Gender",
-            "Country"});
             this.ddFilterBy.ItemTopMargin = 3;
             this.ddFilterBy.Location = new System.Drawing.Point(67, 113);
             this.ddFilterBy.Name = "ddFilterBy";
@@ -545,9 +417,10 @@
             // 
             // lblRecords
             // 
+            this.lblRecords.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecords.Location = new System.Drawing.Point(3, 558);
+            this.lblRecords.Location = new System.Drawing.Point(245, 563);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(66, 15);
             this.lblRecords.TabIndex = 22;
@@ -555,30 +428,75 @@
             // 
             // lblNumberOfRecords
             // 
+            this.lblNumberOfRecords.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblNumberOfRecords.AutoSize = true;
             this.lblNumberOfRecords.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberOfRecords.Location = new System.Drawing.Point(75, 558);
+            this.lblNumberOfRecords.Location = new System.Drawing.Point(317, 563);
             this.lblNumberOfRecords.Name = "lblNumberOfRecords";
             this.lblNumberOfRecords.Size = new System.Drawing.Size(21, 15);
             this.lblNumberOfRecords.TabIndex = 23;
             this.lblNumberOfRecords.Text = "??";
             // 
+            // clmnUserID
+            // 
+            this.clmnUserID.HeaderText = "User ID";
+            this.clmnUserID.Name = "clmnUserID";
+            this.clmnUserID.ReadOnly = true;
+            this.clmnUserID.Width = 87;
+            // 
+            // clmnPersonID
+            // 
+            this.clmnPersonID.HeaderText = "Person ID";
+            this.clmnPersonID.Name = "clmnPersonID";
+            this.clmnPersonID.ReadOnly = true;
+            this.clmnPersonID.Width = 103;
+            // 
+            // clmnFullName
+            // 
+            this.clmnFullName.HeaderText = "Full Name";
+            this.clmnFullName.Name = "clmnFullName";
+            this.clmnFullName.ReadOnly = true;
+            this.clmnFullName.Width = 106;
+            // 
+            // clmnUserName
+            // 
+            this.clmnUserName.HeaderText = "User Name";
+            this.clmnUserName.Name = "clmnUserName";
+            this.clmnUserName.ReadOnly = true;
+            this.clmnUserName.Width = 114;
+            // 
+            // clmnIsActive
+            // 
+            this.clmnIsActive.HeaderText = "Is Active";
+            this.clmnIsActive.Name = "clmnIsActive";
+            this.clmnIsActive.ReadOnly = true;
+            this.clmnIsActive.Width = 77;
+            // 
+            // clmnPermissions
+            // 
+            this.clmnPermissions.HeaderText = "Permissions";
+            this.clmnPermissions.Name = "clmnPermissions";
+            this.clmnPermissions.ReadOnly = true;
+            this.clmnPermissions.Width = 119;
+            // 
             // usTpUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblNumberOfRecords);
             this.Controls.Add(this.lblRecords);
-            this.Controls.Add(this.btnAddPerson);
-            this.Controls.Add(this.lblManagePeople);
+            this.Controls.Add(this.btnAddUser);
+            this.Controls.Add(this.lblManageUsers);
             this.Controls.Add(this.txtFilterValue);
             this.Controls.Add(this.bunifuPictureBox1);
             this.Controls.Add(this.lblFilterBy);
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.ddFilterBy);
             this.Name = "usTpUsers";
-            this.Size = new System.Drawing.Size(971, 590);
-            this.cmsListPeople.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1057, 590);
+            this.Load += new System.EventHandler(this.usTpUsers_Load);
+            this.cmsListUsers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.ResumeLayout(false);
@@ -588,8 +506,8 @@
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddPerson;
-        private Bunifu.UI.WinForms.BunifuLabel lblManagePeople;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnAddUser;
+        private Bunifu.UI.WinForms.BunifuLabel lblManageUsers;
         private Bunifu.UI.WinForms.BunifuTextBox txtFilterValue;
         private System.Windows.Forms.ToolStripMenuItem phoneCallToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
@@ -599,26 +517,18 @@
         private System.Windows.Forms.ToolStripMenuItem addNewPersonToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip cmsListPeople;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnImagePath;
+        private System.Windows.Forms.ContextMenuStrip cmsListUsers;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnAdrress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnCountry;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnEmail;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnBirthDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnGender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnLastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnThirdName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnSecondName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnFirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnNationalNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPersonID;
         private System.Windows.Forms.Label lblFilterBy;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvUsers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmnCountryID;
         private Bunifu.UI.WinForms.BunifuDropdown ddFilterBy;
         private System.Windows.Forms.Label lblRecords;
         private System.Windows.Forms.Label lblNumberOfRecords;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnUserID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPersonID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnFullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnUserName;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clmnIsActive;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnPermissions;
     }
 }

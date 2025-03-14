@@ -19,7 +19,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("GetCountryInfoByID", connection))
+                    using (SqlCommand cmd = new SqlCommand("Countries.GetCountryInfoByID", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@CountryID", CountryID);
@@ -56,7 +56,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("GetCountryInfoByName", connection))
+                    using (SqlCommand cmd = new SqlCommand("Countries.GetCountryInfoByName", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@CountryName", CountryName);
@@ -92,7 +92,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("GetAllCountries", connection))
+                    using (SqlCommand cmd = new SqlCommand("Countries.GetAllCountries", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         connection.Open();
@@ -120,7 +120,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("IsCountryExistByName", connection))
+                    using (SqlCommand cmd = new SqlCommand("Countries.IsCountryExistByName", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@CountryName", CountryName);

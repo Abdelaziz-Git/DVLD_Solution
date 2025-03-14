@@ -1,11 +1,11 @@
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.csproj.AssemblyReference.cache
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.csproj.CoreCompileInputs.cache
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_Business1.dll
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_Business1.pdb
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_DataAccess1.dll
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_Models1.dll
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_DataAccess1.pdb
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\bin\Debug\DVLD_Models1.pdb
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.csproj.AssemblyReference.cache
-C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.csproj.CoreCompileInputs.cache
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Bus.83AC282E.Up2Date
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.dll
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Business1\obj\Debug\DVLD_Business1.pdb

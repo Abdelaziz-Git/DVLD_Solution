@@ -19,7 +19,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("GetPersonInfoByID", connection))
+                    using (SqlCommand cmd = new SqlCommand("Persons.GetPersonInfoByID", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@PersonID", personID);
@@ -67,7 +67,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    using (SqlCommand cmd = new SqlCommand("GetPersonInfoByNationalNo", connection))
+                    using (SqlCommand cmd = new SqlCommand("Persons.GetPersonInfoByNationalNo", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@NationalNo", nationalNo);
@@ -111,7 +111,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection conn = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand cmd = new SqlCommand("AddNewPerson", conn))
+                using (SqlCommand cmd = new SqlCommand("Persons.AddNewPerson", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@NationalNo", person.NationalNo);
@@ -144,7 +144,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection conn = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand cmd = new SqlCommand("UpdatePerson", conn))
+                using (SqlCommand cmd = new SqlCommand("Persons.UpdatePerson", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@PersonID", person.ID);
@@ -180,7 +180,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection conn = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand cmd = new SqlCommand("DeletePersonByID", conn))
+                using (SqlCommand cmd = new SqlCommand("Persons.DeletePersonByID", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@PersonID", personID);
@@ -202,7 +202,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand command = new SqlCommand("IsPersonExistByID", connection))
+                using (SqlCommand command = new SqlCommand("Persons.IsPersonExistByID", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("PersonID", personID);
@@ -225,7 +225,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand command = new SqlCommand("IsPersonExistByNationalNo", connection))
+                using (SqlCommand command = new SqlCommand("Persons.IsPersonExistByNationalNo", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("NationalNo", nationalNo);
@@ -247,7 +247,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand command = new SqlCommand("GetAllPeople", connection))
+                using (SqlCommand command = new SqlCommand("Persons.GetAllPeople", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     connection.Open();
@@ -273,7 +273,7 @@ namespace DVLD_DataAccess1
             try
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
-                using (SqlCommand command = new SqlCommand("GetAllPeopleDetails", connection))
+                using (SqlCommand command = new SqlCommand("Persons.GetAllPeopleDetails", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     connection.Open();

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace DVLD_Project.GlobalClasses
 {
@@ -54,6 +55,39 @@ namespace DVLD_Project.GlobalClasses
             SourceFile = DestinationFile;
             return true;
 
+        }
+        public readonly string Key= "XexE5Zg6I9j12A15";
+        public static string Encrypt(string text, string key= "XexE5Zg6I9j12A15")
+        {
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = keyBytes;
+                aes.IV = new byte[16]; // Simple IV (should be randomized in real apps)
+                using (MemoryStream ms = new MemoryStream())
+                using (CryptoStream cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write))
+                {
+                    byte[] inputBytes = Encoding.UTF8.GetBytes(text);
+                    cs.Write(inputBytes, 0, inputBytes.Length);
+                    cs.FlushFinalBlock();
+                    return Convert.ToBase64String(ms.ToArray()); // Convert to readable string
+                }
+            }
+        }
+        public static string Decrypt(string text, string key= "XexE5Zg6I9j12A15")
+        {
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = keyBytes;
+                aes.IV = new byte[16];
+                using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(text)))
+                using (CryptoStream cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Read))
+                using (StreamReader reader = new StreamReader(cs))
+                {
+                    return reader.ReadToEnd();
+                }
+            }
         }
     }
 }
