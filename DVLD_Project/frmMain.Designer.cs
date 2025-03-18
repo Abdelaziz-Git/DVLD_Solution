@@ -62,10 +62,10 @@
             this.tcPagesMain.Location = new System.Drawing.Point(217, 0);
             this.tcPagesMain.Multiline = true;
             this.tcPagesMain.Name = "tcPagesMain";
-            this.tcPagesMain.Page = this.tpPeopleList;
-            this.tcPagesMain.PageIndex = 0;
-            this.tcPagesMain.PageName = "tpPeopleList";
-            this.tcPagesMain.PageTitle = "People";
+            this.tcPagesMain.Page = this.tpUsersList;
+            this.tcPagesMain.PageIndex = 1;
+            this.tcPagesMain.PageName = "tpUsersList";
+            this.tcPagesMain.PageTitle = "Users";
             this.tcPagesMain.SelectedIndex = 0;
             this.tcPagesMain.Size = new System.Drawing.Size(1081, 741);
             this.tcPagesMain.TabIndex = 3;
@@ -119,12 +119,15 @@
             // 
             // usTpUsers1
             // 
+            this.usTpUsers1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.usTpUsers1.BackColor = System.Drawing.Color.White;
-            this.usTpUsers1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usTpUsers1.Location = new System.Drawing.Point(3, 3);
             this.usTpUsers1.Name = "usTpUsers1";
             this.usTpUsers1.Size = new System.Drawing.Size(1067, 709);
             this.usTpUsers1.TabIndex = 0;
+            this.usTpUsers1.Load += new System.EventHandler(this.usTpUsers1_Load);
             // 
             // pnlMainLeft
             // 
@@ -488,6 +491,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tcPagesMain.ResumeLayout(false);

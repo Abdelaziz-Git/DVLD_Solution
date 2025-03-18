@@ -19,32 +19,22 @@ namespace DVLD_Project
     {
         enum enMode { AddNewMode = 1, UpdateMode = 2 }
         enum enGender { Male=1,Female=2}
-        enGender Gender;
         enMode _Mode;
         clsPerson _Person;
         int _PersonID = -1;
-        string PeopleImagesPath = @"C:\DVLD_People_Image";
 
         public frmAddEditPerson(int PersonID)
         {
             InitializeComponent();
             _Mode = enMode.UpdateMode;
             _PersonID = PersonID;
-            if (!Directory.Exists(PeopleImagesPath))
-            {
-                Directory.CreateDirectory(PeopleImagesPath);
-            }
+            
 
         }
         public frmAddEditPerson()
         {
             InitializeComponent();
             _Mode = enMode.AddNewMode;  
-            if (!Directory.Exists(PeopleImagesPath))
-            {
-                Directory.CreateDirectory(PeopleImagesPath);
-            }
-
         }
 
         private void FillDropDownCountries()

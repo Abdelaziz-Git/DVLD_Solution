@@ -48,5 +48,10 @@ namespace DVLD_Project
         private void btnLogOut_Click(object sender, EventArgs e)
         {
         }
+
+        private void usTpUsers1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

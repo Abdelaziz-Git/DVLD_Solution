@@ -28,7 +28,7 @@ namespace DVLD_Project.UserControls
         {
             InitializeComponent();
         }
-        public void LoadPersonImage()
+        private void LoadPersonImage()
         {
             pbPerson.Image = _Person.Gender == 1 ? pbPerson.Image = Properties.Resources.icons8_male_100 : pbPerson.Image = Properties.Resources.icons8_female_100;
 
@@ -49,7 +49,7 @@ namespace DVLD_Project.UserControls
             _Person = clsPerson.Find(personID);
             if (_Person == null)
             {
-                ResetPersonInfo();
+                SetDefaultValues();
                 MessageBox.Show($"Person with ID = {personID} not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -61,7 +61,7 @@ namespace DVLD_Project.UserControls
             clsPerson Person = clsPerson.Find(NationalNo);
             if (Person == null)
             {
-                ResetPersonInfo();
+                SetDefaultValues();
                 MessageBox.Show($"Person with National No = {NationalNo} not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -84,9 +84,10 @@ namespace DVLD_Project.UserControls
             lblCountryValue.Text = _Person.Country.Name;
             LoadPersonImage();
         }
-        private void ResetPersonInfo()
+        public void SetDefaultValues()
         {
             _PersonID = -1;
+            _Person = null;
             lblPersonIDValue.Text = "[???]";
             lblNationalNoValue.Text = "[???]";
             lblNameValue.Text = "[???]";
@@ -101,10 +102,9 @@ namespace DVLD_Project.UserControls
         {
             if(_PersonID == -1)
             {
-                ResetPersonInfo();
+                SetDefaultValues();
             }
         }
-
         private void btnEditPerson_Click(object sender, EventArgs e)
         {
             using(Form frmEdit=new frmAddEditPerson(_PersonID))

@@ -54,3 +54,5 @@ C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\ob
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bin\Debug\DVLD_Project.exe.config
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bin\Debug\DVLD_Project.pdb
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Pro.F4BE20FF.Up2Date
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.People.Controls.ucPersonInfoWithFilter.resources
+C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.Users.frmAddEditUser.resources

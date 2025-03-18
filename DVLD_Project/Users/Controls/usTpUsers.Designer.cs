@@ -54,15 +54,15 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblFilterBy = new System.Windows.Forms.Label();
             this.dgvUsers = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.ddFilterBy = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.lblRecords = new System.Windows.Forms.Label();
-            this.lblNumberOfRecords = new System.Windows.Forms.Label();
             this.clmnUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnPersonID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnIsActive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.clmnPermissions = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ddFilterBy = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.lblRecords = new System.Windows.Forms.Label();
+            this.lblNumberOfRecords = new System.Windows.Forms.Label();
             this.cmsListUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
@@ -92,13 +92,14 @@
             this.btnAddUser.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddUser.Image = global::DVLD_Project.Properties.Resources.icons8_add_user_32;
             this.btnAddUser.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnAddUser.Location = new System.Drawing.Point(792, 89);
+            this.btnAddUser.Location = new System.Drawing.Point(902, 165);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.RoundBorders = false;
             this.btnAddUser.ShowBorders = false;
             this.btnAddUser.Size = new System.Drawing.Size(77, 70);
             this.btnAddUser.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
             this.btnAddUser.TabIndex = 21;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // lblManageUsers
             // 
@@ -218,6 +219,7 @@
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -225,6 +227,7 @@
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // addNewPersonToolStripMenuItem
             // 
@@ -232,6 +235,7 @@
             this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
             this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.addNewPersonToolStripMenuItem.Text = "Add new User";
+            this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -371,6 +375,48 @@
             this.dgvUsers.TabIndex = 14;
             this.dgvUsers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
             // 
+            // clmnUserID
+            // 
+            this.clmnUserID.HeaderText = "User ID";
+            this.clmnUserID.Name = "clmnUserID";
+            this.clmnUserID.ReadOnly = true;
+            this.clmnUserID.Width = 87;
+            // 
+            // clmnPersonID
+            // 
+            this.clmnPersonID.HeaderText = "Person ID";
+            this.clmnPersonID.Name = "clmnPersonID";
+            this.clmnPersonID.ReadOnly = true;
+            this.clmnPersonID.Width = 103;
+            // 
+            // clmnFullName
+            // 
+            this.clmnFullName.HeaderText = "Full Name";
+            this.clmnFullName.Name = "clmnFullName";
+            this.clmnFullName.ReadOnly = true;
+            this.clmnFullName.Width = 106;
+            // 
+            // clmnUserName
+            // 
+            this.clmnUserName.HeaderText = "User Name";
+            this.clmnUserName.Name = "clmnUserName";
+            this.clmnUserName.ReadOnly = true;
+            this.clmnUserName.Width = 114;
+            // 
+            // clmnIsActive
+            // 
+            this.clmnIsActive.HeaderText = "Is Active";
+            this.clmnIsActive.Name = "clmnIsActive";
+            this.clmnIsActive.ReadOnly = true;
+            this.clmnIsActive.Width = 77;
+            // 
+            // clmnPermissions
+            // 
+            this.clmnPermissions.HeaderText = "Permissions";
+            this.clmnPermissions.Name = "clmnPermissions";
+            this.clmnPermissions.ReadOnly = true;
+            this.clmnPermissions.Width = 119;
+            // 
             // ddFilterBy
             // 
             this.ddFilterBy.BackColor = System.Drawing.Color.Transparent;
@@ -436,48 +482,6 @@
             this.lblNumberOfRecords.Size = new System.Drawing.Size(21, 15);
             this.lblNumberOfRecords.TabIndex = 23;
             this.lblNumberOfRecords.Text = "??";
-            // 
-            // clmnUserID
-            // 
-            this.clmnUserID.HeaderText = "User ID";
-            this.clmnUserID.Name = "clmnUserID";
-            this.clmnUserID.ReadOnly = true;
-            this.clmnUserID.Width = 87;
-            // 
-            // clmnPersonID
-            // 
-            this.clmnPersonID.HeaderText = "Person ID";
-            this.clmnPersonID.Name = "clmnPersonID";
-            this.clmnPersonID.ReadOnly = true;
-            this.clmnPersonID.Width = 103;
-            // 
-            // clmnFullName
-            // 
-            this.clmnFullName.HeaderText = "Full Name";
-            this.clmnFullName.Name = "clmnFullName";
-            this.clmnFullName.ReadOnly = true;
-            this.clmnFullName.Width = 106;
-            // 
-            // clmnUserName
-            // 
-            this.clmnUserName.HeaderText = "User Name";
-            this.clmnUserName.Name = "clmnUserName";
-            this.clmnUserName.ReadOnly = true;
-            this.clmnUserName.Width = 114;
-            // 
-            // clmnIsActive
-            // 
-            this.clmnIsActive.HeaderText = "Is Active";
-            this.clmnIsActive.Name = "clmnIsActive";
-            this.clmnIsActive.ReadOnly = true;
-            this.clmnIsActive.Width = 77;
-            // 
-            // clmnPermissions
-            // 
-            this.clmnPermissions.HeaderText = "Permissions";
-            this.clmnPermissions.Name = "clmnPermissions";
-            this.clmnPermissions.ReadOnly = true;
-            this.clmnPermissions.Width = 119;
             // 
             // usTpUsers
             // 
