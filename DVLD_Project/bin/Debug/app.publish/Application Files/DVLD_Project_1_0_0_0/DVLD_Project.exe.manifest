@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DVLD_Project.exe" version="1.0.0.0" publicKeyToken="6ab3adc6877cd251" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DVLD_Project" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DVLD_Project.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.Licensing.dll" size="1012736">
+      <assemblyIdentity name="Bunifu.Licensing" version="4.0.0.0" publicKeyToken="F89B4760BA7DCB6B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4Nx2er7D8nlkUfOTwEJnhw0tt7sjv15ZOd7eEb8HOTs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.dll" size="1784832">
+      <assemblyIdentity name="Bunifu.UI.WinForms" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tyZIPS2bAvlR9h1bEBqgP9rtkXaW1/i1WTILFba1MLI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DVLD_Business1.dll" size="13312">
+      <assemblyIdentity name="DVLD_Business1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0UGWjjYZ4K23mMUpJ2D7Ocpm3gPTxnVF9LjqbC+awMA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DVLD_DataAccess1.dll" size="20992">
+      <assemblyIdentity name="DVLD_DataAccess1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JrkUV7WHnzyDIcguhfQ6c4PY8heZynNAbvNHBSqvfLo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DVLD_Models1.dll" size="8704">
+      <assemblyIdentity name="DVLD_Models1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eqNiQvwSU/forNruDfU402F4nE0TBCyyvQX598yE+Yo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DVLD_Project.exe" size="544760">
+      <assemblyIdentity name="DVLD_Project" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UmI2PNg4c1DDIRXZxOq/clC4K/Ag3yjIb+KSwyy0wrM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="711952">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4eJ697B+7t9c5xqSVfBCKBam/FhJpIPGcU4bRyBE+p0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.CodeDom.dll" size="30496">
+      <assemblyIdentity name="System.CodeDom" version="9.0.0.2" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xiP2CnpdyKdP8vntHHkzgTx/jhBSIkyeXT+5Y5aLoww=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DVLD_Project.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-AE19F06\ABDELAZIZ" issuerKeyHash="31f792b6d492d8423d49683b18be39ab756bd287" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YmYrGx6fUNe4MQmMaFxTBTH6T4QMkVY6rPNSkoNB9Uc=</DigestValue></Reference></SignedInfo><SignatureValue>bXn8JqTYv9xVQld3WXxJfq1RVzf3oxNzrhJOFAgrJjupkQA7K3HtLfMpsrY1XmBax0Ln/vRL0DdrCQYnZBBcCneC3k4U6/zgscMaQxMsLq1C3ngkuJGOQka7fPkHVoH1QTT8SQSP+DtuqtF+GljZb85gZ+k9nZy3jwEkKKV4oz8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tNW46spoAXPE6CKJ1RRGkbQCMTGnwqT/1nsiaNRG8Fu0n3RDGFS70pqXjT7mP4FHCUbXVUhzdOQrdERkXfaX1ftV/PIgPqYRyiUf6gIcVuhCqRkn2G0UiH3Q4R/xw0z4eaJyveVl+pOhqSB8A9HqSsUj1ooaOx3II65ZJTXKc8k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="47f541839252f3ac3a56910c844ffa3105535c688c0931b8d7509f1e1b2b6662" Description="" Url=""><as:assemblyIdentity name="DVLD_Project.exe" version="1.0.0.0" publicKeyToken="6ab3adc6877cd251" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-AE19F06\ABDELAZIZ</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1I57OM2rWuGPHN5jRbOqwlXtWi/4WDNgvAfuEZShMVo=</DigestValue></Reference></SignedInfo><SignatureValue>DlhzM0ScAiJB2YYJP+MBWf67zoY4WrZ76tT65AuLiTyFkx23CAVBLrbNMOjaUY5+sRx2SMaD2jlkI8g3TOlzqoaqnWE0dXkhdPCQsCFcqXO1pBDTUODQo67bSukUZec8vsMIazuKWrnKEG1lpv49lg937CG5tMKuoP8DjfeUklQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tNW46spoAXPE6CKJ1RRGkbQCMTGnwqT/1nsiaNRG8Fu0n3RDGFS70pqXjT7mP4FHCUbXVUhzdOQrdERkXfaX1ftV/PIgPqYRyiUf6gIcVuhCqRkn2G0UiH3Q4R/xw0z4eaJyveVl+pOhqSB8A9HqSsUj1ooaOx3II65ZJTXKc8k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQWTUf7/A4L5ZBhhVZ2gcdgjANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtAEEARQAxADkARgAwADYAXABBAEIARABFAEwAQQBaAEkAWjAeFw0yNTAzMjUxMDU5MjNaFw0yNjAzMjUxNjU5MjNaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0AQQBFADEAOQBGADAANgBcAEEAQgBEAEUATABBAFoASQBaMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC01bjqymgBc8ToIonVFEaRtAIxMafCpP/WeyJo1EbwW7SfdEMYVLvSmpeNPuY/gUcJRtdVSHN05Ct0RGRd9pfV+1X88iA+phHKJR/qAhxW6EKpGSfYbRSIfdDhH/HDTPh5onK95WX6k6GpIHwD0epKxSPWiho7HcgjrlklNcpzyQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABejC+q9vA0thKTjHrZANLqRAsLECXqd+nkJGu6nD/Grkt32be2QE3JlljQ+hJfzLHqgJtMmiDhQIsO5qI2CKiWn8eXiZnPEa08SDd65YXUKs5lz0jlFTMrCm6XMHflNxioEyXIxKlsZ4/Ux3n1QIPeRjqTvitMdxMkDXNqr2Ze8</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

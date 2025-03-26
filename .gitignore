@@ -1,0 +1,8 @@
+# تجاهل مجلدات bin و obj
+bin/
+obj/
+
+# تجاهل ملفات المنشورات والتحديثات
+*.exe.manifest
+*.application
+ECHO is on.
