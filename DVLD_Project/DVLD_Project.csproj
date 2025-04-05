@@ -97,6 +97,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.Designer.cs">
+      <DependentUpon>ucTpApplicationsTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationsTypes\frmEditApplicationsTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationsTypes\frmEditApplicationsTypes.Designer.cs">
+      <DependentUpon>frmEditApplicationsTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationsTypes\frmManageApplicationsTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationsTypes\frmManageApplicationsTypes.Designer.cs">
+      <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalClasses\clsGlobal.cs" />
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidation.cs" />
@@ -105,6 +123,30 @@
     </Compile>
     <Compile Include="People\Controls\ucPersonInfoWithFilter.Designer.cs">
       <DependentUpon>ucPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestTypes\Controls\ucManageTestTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestTypes\Controls\ucManageTestTypes.Designer.cs">
+      <DependentUpon>ucManageTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestTypes\frmEditTestTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestTypes\frmEditTestTypes.Designer.cs">
+      <DependentUpon>frmEditTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestTypes\frmManageTestTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestTypes\frmManageTestTypes.Designer.cs">
+      <DependentUpon>frmManageTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Controls\ucUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ucUserInfo.Designer.cs">
+      <DependentUpon>ucUserInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Controls\usTpUsers.cs">
       <SubType>UserControl</SubType>
@@ -144,10 +186,10 @@
     <Compile Include="People\Controls\ucPersonInfo.Designer.cs">
       <DependentUpon>ucPersonInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="Login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmAddEditUser.cs">
@@ -156,8 +198,41 @@
     <Compile Include="Users\frmAddEditUser.Designer.cs">
       <DependentUpon>frmAddEditUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUserInfo.Designer.cs">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.resx">
+      <DependentUpon>ucTpApplicationsTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationsTypes\frmEditApplicationsTypes.resx">
+      <DependentUpon>frmEditApplicationsTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationsTypes\frmManageApplicationsTypes.resx">
+      <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ucPersonInfoWithFilter.resx">
       <DependentUpon>ucPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestTypes\Controls\ucManageTestTypes.resx">
+      <DependentUpon>ucManageTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestTypes\frmEditTestTypes.resx">
+      <DependentUpon>frmEditTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestTypes\frmManageTestTypes.resx">
+      <DependentUpon>frmManageTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\ucUserInfo.resx">
+      <DependentUpon>ucUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Controls\usTpUsers.resx">
       <DependentUpon>usTpUsers.cs</DependentUpon>
@@ -182,11 +257,17 @@
     <EmbeddedResource Include="People\Controls\ucPersonInfo.resx">
       <DependentUpon>ucPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
+    <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmAddEditUser.resx">
       <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUserInfo.resx">
+      <DependentUpon>frmUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -311,6 +392,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-previous-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-symbol 32.png" />
+    <Content Include="Resources\edit applications Type.png" />
+    <None Include="Resources\edit applications Type1.png" />
+    <Content Include="Resources\icons8-applications-32.png" />
+    <None Include="Resources\icons8-applications-321.png" />
+    <Content Include="Resources\icons8-change-password-40.png" />
+    <None Include="Resources\icons8-change-password-401.png" />
+    <Content Include="Resources\icons8-hide-Password-48.png" />
+    <None Include="Resources\icons8-hide-Password-481.png" />
+    <Content Include="Resources\icons8-Permissions-32.png" />
+    <None Include="Resources\icons8-Permissions-321.png" />
+    <Content Include="Resources\icons8-settings-32.png" />
+    <None Include="Resources\icons8-settings-321.png" />
+    <Content Include="Resources\management Applications.png" />
+    <None Include="Resources\management Applications1.png" />
+    <Content Include="Resources\money.png" />
+    <None Include="Resources\test-management-128.png" />
+    <None Include="Resources\Test-management-32.png" />
+    <Content Include="Resources\title.png" />
+    <None Include="Resources\title1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

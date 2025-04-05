@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPersonInfo));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.gbPersonInfo = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.bunifuPictureBox9 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -283,11 +283,11 @@
             this.btnEditPerson.ColorContrastOnClick = 45;
             this.btnEditPerson.ColorContrastOnHover = 45;
             this.btnEditPerson.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnEditPerson.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnEditPerson.CustomizableEdges = borderEdges1;
             this.btnEditPerson.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditPerson.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditPerson.DisabledFillColor = System.Drawing.Color.Empty;
@@ -295,12 +295,12 @@
             this.btnEditPerson.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnEditPerson.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEditPerson.ForeColor = System.Drawing.Color.White;
-            this.btnEditPerson.IconLeft = null;
+            this.btnEditPerson.IconLeft = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
             this.btnEditPerson.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditPerson.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnEditPerson.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnEditPerson.IconMarginLeft = 11;
-            this.btnEditPerson.IconPadding = 10;
+            this.btnEditPerson.IconPadding = 5;
             this.btnEditPerson.IconRight = null;
             this.btnEditPerson.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditPerson.IconRightCursor = System.Windows.Forms.Cursors.Default;
@@ -310,7 +310,7 @@
             this.btnEditPerson.IdleBorderRadius = 0;
             this.btnEditPerson.IdleBorderThickness = 0;
             this.btnEditPerson.IdleFillColor = System.Drawing.Color.Empty;
-            this.btnEditPerson.IdleIconLeftImage = null;
+            this.btnEditPerson.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
             this.btnEditPerson.IdleIconRightImage = null;
             this.btnEditPerson.IndicateFocus = false;
             this.btnEditPerson.Location = new System.Drawing.Point(510, 32);
@@ -337,7 +337,7 @@
             this.btnEditPerson.OnIdleState.BorderThickness = 1;
             this.btnEditPerson.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnEditPerson.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnEditPerson.OnIdleState.IconLeftImage = null;
+            this.btnEditPerson.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
             this.btnEditPerson.OnIdleState.IconRightImage = null;
             this.btnEditPerson.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnEditPerson.OnPressedState.BorderRadius = 39;

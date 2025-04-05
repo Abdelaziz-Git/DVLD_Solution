@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ABDELAZIZ\\.dotnet\\Windows Forms Projects\\DVLD_Solutions\\DVLD_Project\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\source\\repos\\dvld_solution\\dvld_project\\testtypes\\frmmanagetesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:testtypes\\frmmanagetesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\source\\repos\\dvld_solution\\dvld_project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\source\\repos\\dvld_solution\\dvld_project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmManageTestTypes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\TestTypes\\frmManageTestTypes.cs",
+              "RelativeDocumentMoniker": "TestTypes\\frmManageTestTypes.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\TestTypes\\frmManageTestTypes.cs [Design]*",
+              "RelativeToolTip": "TestTypes\\frmManageTestTypes.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:15:37.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAArwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:13:00.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:11:36.054Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

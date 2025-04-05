@@ -189,7 +189,7 @@
             this.btnLogin.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnLogin.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnLogin.IconMarginLeft = 11;
-            this.btnLogin.IconPadding = 10;
+            this.btnLogin.IconPadding = 5;
             this.btnLogin.IconRight = null;
             this.btnLogin.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogin.IconRightCursor = System.Windows.Forms.Cursors.Default;
@@ -270,7 +270,7 @@
             this.txtPassword.HideSelection = true;
             this.txtPassword.IconLeft = global::DVLD_Project.Properties.Resources.icons8_sign_in_form_password_40;
             this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.IconPadding = 10;
+            this.txtPassword.IconPadding = 5;
             this.txtPassword.IconRight = null;
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
@@ -346,7 +346,7 @@
             this.txtUserName.HideSelection = true;
             this.txtUserName.IconLeft = global::DVLD_Project.Properties.Resources.Name_Icon__48;
             this.txtUserName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserName.IconPadding = 10;
+            this.txtUserName.IconPadding = 5;
             this.txtUserName.IconRight = null;
             this.txtUserName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName.Lines = new string[0];

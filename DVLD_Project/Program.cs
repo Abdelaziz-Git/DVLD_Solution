@@ -1,4 +1,5 @@
-﻿using DVLD_Project.Users;
+﻿using DVLD_Project.TestTypes.Controls;
+using DVLD_Project.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace DVLD_Project
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {   
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());

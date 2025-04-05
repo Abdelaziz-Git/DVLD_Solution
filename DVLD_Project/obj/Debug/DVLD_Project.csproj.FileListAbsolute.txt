@@ -56,3 +56,44 @@ C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\bi
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Pro.F4BE20FF.Up2Date
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.People.Controls.ucPersonInfoWithFilter.resources
 C:\Users\ABDELAZIZ\.dotnet\Windows Forms Projects\DVLD_Solutions\DVLD_Project\obj\Debug\DVLD_Project.Users.frmAddEditUser.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Project.exe.config
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Project.exe
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Project.pdb
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\Bunifu.Licensing.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\Bunifu.UI.WinForms.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Business1.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\System.CodeDom.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Models1.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_DataAccess1.dll
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Business1.pdb
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\System.CodeDom.xml
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_Models1.pdb
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\bin\Debug\DVLD_DataAccess1.pdb
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.csproj.AssemblyReference.cache
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.People.Controls.ucPersonInfoWithFilter.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.People.Controls.usTpUsers.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.frmAddEditPerson.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.frmPersonDetails.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.ctrTpPeople.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.frmMain.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Properties.Resources.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.UserControls.ucPersonInfo.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Users.frmLogin.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Users.frmAddEditUser.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.csproj.GenerateResource.cache
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.csproj.CoreCompileInputs.cache
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Pro.F4BE20FF.Up2Date
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.exe
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.pdb
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.ApplicationsTypes.Controls.ucTpApplicationsTypes.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.ApplicationsTypes.frmEditApplicationsTypes.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Users.Controls.ucUserInfo.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Users.frmChangePassword.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Users.frmUserInfo.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.ApplicationsTypes.frmManageApplicationsTypes.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.Controls.ucManageTestTypes.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.frmEditTestTypes.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.frmManageTestTypes.resources

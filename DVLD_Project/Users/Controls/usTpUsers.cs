@@ -31,7 +31,6 @@ namespace DVLD_Project.People.Controls
         {
             RefreshListUsers();
         }
-
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             using(Form frm = new frmAddEditUser())
@@ -40,7 +39,6 @@ namespace DVLD_Project.People.Controls
                 RefreshListUsers();
             }
         }
-
         private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (Form frm = new frmAddEditUser())
@@ -49,7 +47,6 @@ namespace DVLD_Project.People.Controls
                 RefreshListUsers();
             }
         }
-
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int UserID;
@@ -77,7 +74,6 @@ namespace DVLD_Project.People.Controls
                 MessageBox.Show("Please select a user first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dgvUsers.SelectedRows.Count == 0)

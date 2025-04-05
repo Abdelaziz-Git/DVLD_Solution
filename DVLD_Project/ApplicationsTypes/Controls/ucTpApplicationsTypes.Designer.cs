@@ -201,26 +201,25 @@
             this.EditApplicationTypeToolStripMenuItem,
             this.toolStripSeparator2});
             this.cmsListApplicationsTypes.Name = "cmsListPeople";
-            this.cmsListApplicationsTypes.Size = new System.Drawing.Size(241, 54);
+            this.cmsListApplicationsTypes.Size = new System.Drawing.Size(225, 42);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // EditApplicationTypeToolStripMenuItem
             // 
-            this.EditApplicationTypeToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.edit_applications_Type;
             this.EditApplicationTypeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.EditApplicationTypeToolStripMenuItem.Name = "EditApplicationTypeToolStripMenuItem";
-            this.EditApplicationTypeToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.EditApplicationTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.EditApplicationTypeToolStripMenuItem.Text = "Edit Application Type";
             this.EditApplicationTypeToolStripMenuItem.Click += new System.EventHandler(this.EditApplicationTypeToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // pbManageApp
             // 
