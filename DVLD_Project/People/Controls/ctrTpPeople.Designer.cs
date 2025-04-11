@@ -81,6 +81,7 @@
             // 
             // dpdFilterBy
             // 
+            this.dpdFilterBy.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dpdFilterBy.BackColor = System.Drawing.Color.Transparent;
             this.dpdFilterBy.BackgroundColor = System.Drawing.Color.White;
             this.dpdFilterBy.BorderColor = System.Drawing.Color.Silver;
@@ -126,7 +127,7 @@
             "Gender",
             "Country"});
             this.dpdFilterBy.ItemTopMargin = 3;
-            this.dpdFilterBy.Location = new System.Drawing.Point(69, 113);
+            this.dpdFilterBy.Location = new System.Drawing.Point(96, 200);
             this.dpdFilterBy.Name = "dpdFilterBy";
             this.dpdFilterBy.Size = new System.Drawing.Size(178, 32);
             this.dpdFilterBy.TabIndex = 10;
@@ -137,9 +138,10 @@
             // 
             // lblFilterBy
             // 
+            this.lblFilterBy.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblFilterBy.AutoSize = true;
             this.lblFilterBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilterBy.Location = new System.Drawing.Point(5, 121);
+            this.lblFilterBy.Location = new System.Drawing.Point(32, 208);
             this.lblFilterBy.Name = "lblFilterBy";
             this.lblFilterBy.Size = new System.Drawing.Size(58, 16);
             this.lblFilterBy.TabIndex = 9;
@@ -150,17 +152,15 @@
             this.dgvPeople.AllowCustomTheming = false;
             this.dgvPeople.AllowUserToAddRows = false;
             this.dgvPeople.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvPeople.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPeople.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvPeople.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvPeople.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvPeople.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvPeople.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvPeople.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvPeople.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvPeople.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -217,11 +217,11 @@
             this.dgvPeople.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.dgvPeople.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvPeople.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvPeople.Location = new System.Drawing.Point(5, 165);
+            this.dgvPeople.Location = new System.Drawing.Point(32, 252);
             this.dgvPeople.MultiSelect = false;
             this.dgvPeople.Name = "dgvPeople";
             this.dgvPeople.ReadOnly = true;
-            this.dgvPeople.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvPeople.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -234,7 +234,7 @@
             this.dgvPeople.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dgvPeople.RowTemplate.Height = 40;
             this.dgvPeople.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPeople.Size = new System.Drawing.Size(1005, 429);
+            this.dgvPeople.Size = new System.Drawing.Size(951, 371);
             this.dgvPeople.TabIndex = 6;
             this.dgvPeople.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             // 
@@ -353,7 +353,7 @@
             this.sendEmailToolStripMenuItem,
             this.phoneCallToolStripMenuItem});
             this.cmsListPeople.Name = "cmsListPeople";
-            this.cmsListPeople.Size = new System.Drawing.Size(193, 194);
+            this.cmsListPeople.Size = new System.Drawing.Size(193, 172);
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -414,14 +414,16 @@
             // lblManagePeople
             // 
             this.lblManagePeople.AllowParentOverrides = false;
+            this.lblManagePeople.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblManagePeople.AutoEllipsis = false;
             this.lblManagePeople.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblManagePeople.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblManagePeople.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagePeople.Location = new System.Drawing.Point(8, 4);
+            this.lblManagePeople.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagePeople.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblManagePeople.Location = new System.Drawing.Point(404, 124);
             this.lblManagePeople.Name = "lblManagePeople";
             this.lblManagePeople.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblManagePeople.Size = new System.Drawing.Size(95, 17);
+            this.lblManagePeople.Size = new System.Drawing.Size(203, 40);
             this.lblManagePeople.TabIndex = 12;
             this.lblManagePeople.Text = "Manage People";
             this.lblManagePeople.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -432,7 +434,7 @@
             this.btnAddPerson.AllowAnimations = true;
             this.btnAddPerson.AllowBorderColorChanges = true;
             this.btnAddPerson.AllowMouseEffects = true;
-            this.btnAddPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddPerson.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAddPerson.AnimationSpeed = 200;
             this.btnAddPerson.BackColor = System.Drawing.Color.Transparent;
             this.btnAddPerson.BackgroundColor = System.Drawing.Color.DarkGray;
@@ -451,7 +453,7 @@
             this.btnAddPerson.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddPerson.Image = global::DVLD_Project.Properties.Resources.Add_Person_Icon8_96;
             this.btnAddPerson.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.btnAddPerson.Location = new System.Drawing.Point(937, 92);
+            this.btnAddPerson.Location = new System.Drawing.Point(913, 176);
             this.btnAddPerson.Name = "btnAddPerson";
             this.btnAddPerson.RoundBorders = false;
             this.btnAddPerson.ShowBorders = false;
@@ -464,6 +466,7 @@
             // 
             this.txtFilterBy.AcceptsReturn = false;
             this.txtFilterBy.AcceptsTab = false;
+            this.txtFilterBy.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtFilterBy.AnimationSpeed = 200;
             this.txtFilterBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtFilterBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -475,7 +478,7 @@
             this.txtFilterBy.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtFilterBy.BorderColorIdle = System.Drawing.Color.Silver;
             this.txtFilterBy.BorderRadius = 5;
-            this.txtFilterBy.BorderThickness = 2;
+            this.txtFilterBy.BorderThickness = 1;
             this.txtFilterBy.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             this.txtFilterBy.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtFilterBy.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -489,7 +492,7 @@
             this.txtFilterBy.IconRight = null;
             this.txtFilterBy.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFilterBy.Lines = new string[0];
-            this.txtFilterBy.Location = new System.Drawing.Point(250, 113);
+            this.txtFilterBy.Location = new System.Drawing.Point(277, 200);
             this.txtFilterBy.MaxLength = 32767;
             this.txtFilterBy.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtFilterBy.Modified = false;
@@ -547,7 +550,7 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.People_icon_100;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(440, 4);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(452, 3);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(106, 106);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -559,7 +562,7 @@
             // 
             this.txtNumberOfPeople.AcceptsReturn = false;
             this.txtNumberOfPeople.AcceptsTab = false;
-            this.txtNumberOfPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNumberOfPeople.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txtNumberOfPeople.AnimationSpeed = 200;
             this.txtNumberOfPeople.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtNumberOfPeople.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -587,7 +590,7 @@
             this.txtNumberOfPeople.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNumberOfPeople.Lines = new string[] {
         "Number of people: 00"};
-            this.txtNumberOfPeople.Location = new System.Drawing.Point(5, 597);
+            this.txtNumberOfPeople.Location = new System.Drawing.Point(32, 629);
             this.txtNumberOfPeople.MaxLength = 32767;
             this.txtNumberOfPeople.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNumberOfPeople.Modified = false;
@@ -647,7 +650,7 @@
             this.Controls.Add(this.txtNumberOfPeople);
             this.Controls.Add(this.dgvPeople);
             this.Name = "ctrTpPeople";
-            this.Size = new System.Drawing.Size(1021, 640);
+            this.Size = new System.Drawing.Size(1019, 681);
             this.Load += new System.EventHandler(this.ctrTpPeople_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).EndInit();
             this.cmsListPeople.ResumeLayout(false);

@@ -30,7 +30,9 @@ namespace DVLD_Project.UserControls
         }
         private void LoadPersonImage()
         {
-            pbPerson.Image = _Person.Gender == 1 ? pbPerson.Image = Properties.Resources.icons8_male_100 : pbPerson.Image = Properties.Resources.icons8_female_100;
+            if (_Person != null)
+                pbPerson.Image = _Person.Gender == 1 ? pbPerson.Image = Properties.Resources.icons8_male_100 :
+                        pbPerson.Image = Properties.Resources.icons8_female_100;
 
             if (!string.IsNullOrWhiteSpace(_Person.ImagePath))
             {
@@ -97,6 +99,7 @@ namespace DVLD_Project.UserControls
             lblBirthDateValue.Text = "[???]";
             lblGenderValue.Text = "[???]";
             lblCountryValue.Text = "[???]";
+            pbPerson.Image = Properties.Resources.icons8_male_100;
         }
         private void ucPersonInfo_Load(object sender, EventArgs e)
         {

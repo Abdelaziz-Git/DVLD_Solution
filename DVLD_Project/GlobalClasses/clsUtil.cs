@@ -11,6 +11,22 @@ namespace DVLD_Project.GlobalClasses
 {
     public class clsUtil
     {
+        public enum enApplicationStatus
+        {
+            New = 1,
+            Cancelled ,
+            Completed
+        }
+        public enum enApplicationType
+        {
+            NewLocalDrivingLicenseService = 1,
+            RenewDrivingLicenseService,
+            ReplacementforaLostDrivingLicense,
+            ReplacementforaDamagedDrivingLicense,
+            ReleaseDetainedDrivingLicenseService,
+            NewInternationalLicense,
+            RetakTest
+        }
         public static string GetGUID()
         {
             return Guid.NewGuid().ToString();
@@ -56,6 +72,7 @@ namespace DVLD_Project.GlobalClasses
             return true;
 
         }
+
         public readonly string Key= "XexE5Zg6I9j12A15";
         public static string Encrypt(string text, string key= "XexE5Zg6I9j12A15")
         {

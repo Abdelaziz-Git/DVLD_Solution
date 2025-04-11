@@ -85,16 +85,19 @@ namespace DVLD_Project.People.Controls
 
         private void ucPersonInfoWithFilter_Load(object sender, EventArgs e)
         {
+            ddFindBy.SelectedIndex = 0;
         }
 
         private void ddFindBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ddFindBy.SelectedIndex == 0)
             {
+                txtFindValue.Text = "";
                 txtFindValue.TextPlaceholder = "Enter National No";
             }
             else if (ddFindBy.SelectedIndex == 1)
             {
+                txtFindValue.Text = "";
                 txtFindValue.TextPlaceholder = "Enter Person ID";
             }
 

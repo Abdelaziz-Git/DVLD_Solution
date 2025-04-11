@@ -38,15 +38,15 @@
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblManageTestTypes = new Bunifu.UI.WinForms.BunifuLabel();
             this.dgvTestTypes = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.clmnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnFees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pbManageTest = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.cmsTestTypes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.EditApplicationTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.clmnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmnFees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTestTypes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbManageTest)).BeginInit();
             this.cmsTestTypes.SuspendLayout();
@@ -101,6 +101,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvTestTypes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTestTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvTestTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTestTypes.BackgroundColor = System.Drawing.Color.LightBlue;
             this.dgvTestTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTestTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -119,6 +120,7 @@
             this.clmnTitle,
             this.clmnDescription,
             this.clmnFees});
+            this.dgvTestTypes.ContextMenuStrip = this.cmsTestTypes;
             this.dgvTestTypes.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvTestTypes.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvTestTypes.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -171,6 +173,30 @@
             this.dgvTestTypes.TabIndex = 35;
             this.dgvTestTypes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // clmnID
+            // 
+            this.clmnID.HeaderText = "ID";
+            this.clmnID.Name = "clmnID";
+            this.clmnID.ReadOnly = true;
+            // 
+            // clmnTitle
+            // 
+            this.clmnTitle.HeaderText = "Title";
+            this.clmnTitle.Name = "clmnTitle";
+            this.clmnTitle.ReadOnly = true;
+            // 
+            // clmnDescription
+            // 
+            this.clmnDescription.HeaderText = "Description";
+            this.clmnDescription.Name = "clmnDescription";
+            this.clmnDescription.ReadOnly = true;
+            // 
+            // clmnFees
+            // 
+            this.clmnFees.HeaderText = "Fees";
+            this.clmnFees.Name = "clmnFees";
+            this.clmnFees.ReadOnly = true;
+            // 
             // pbManageTest
             // 
             this.pbManageTest.AllowFocused = false;
@@ -209,39 +235,12 @@
             this.EditApplicationTypeToolStripMenuItem.Name = "EditApplicationTypeToolStripMenuItem";
             this.EditApplicationTypeToolStripMenuItem.Size = new System.Drawing.Size(195, 38);
             this.EditApplicationTypeToolStripMenuItem.Text = "Edit Test Types";
+            this.EditApplicationTypeToolStripMenuItem.Click += new System.EventHandler(this.EditTestTypesToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(192, 6);
-            // 
-            // clmnID
-            // 
-            this.clmnID.HeaderText = "ID";
-            this.clmnID.Name = "clmnID";
-            this.clmnID.ReadOnly = true;
-            this.clmnID.Width = 97;
-            // 
-            // clmnTitle
-            // 
-            this.clmnTitle.HeaderText = "Title";
-            this.clmnTitle.Name = "clmnTitle";
-            this.clmnTitle.ReadOnly = true;
-            this.clmnTitle.Width = 150;
-            // 
-            // clmnDescription
-            // 
-            this.clmnDescription.HeaderText = "Description";
-            this.clmnDescription.Name = "clmnDescription";
-            this.clmnDescription.ReadOnly = true;
-            this.clmnDescription.Width = 300;
-            // 
-            // clmnFees
-            // 
-            this.clmnFees.HeaderText = "Fees";
-            this.clmnFees.Name = "clmnFees";
-            this.clmnFees.ReadOnly = true;
-            this.clmnFees.Width = 97;
             // 
             // ucManageTestTypes
             // 

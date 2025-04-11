@@ -28,64 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            this.tcPagesMain = new Bunifu.UI.WinForms.BunifuPages();
-            this.tpPeopleList = new System.Windows.Forms.TabPage();
-            this.ctrTpPeople1 = new DVLD_Project.ctrTpPeople();
-            this.tpUsersList = new System.Windows.Forms.TabPage();
-            this.usTpUsers1 = new DVLD_Project.People.Controls.usTpUsers();
-            this.tpSettings = new System.Windows.Forms.TabPage();
-            this.msSettings = new System.Windows.Forms.MenuStrip();
-            this.currentUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tpApplications = new System.Windows.Forms.TabPage();
+            this.tcMain = new Bunifu.UI.WinForms.BunifuPages();
+            this.tpMain = new System.Windows.Forms.TabPage();
+            this.tcSubMain = new Bunifu.UI.WinForms.BunifuPages();
+            this.tpPersons = new System.Windows.Forms.TabPage();
+            this.ctrTpPeople2 = new DVLD_Project.ctrTpPeople();
+            this.tpUsers = new System.Windows.Forms.TabPage();
+            this.usTpUsers2 = new DVLD_Project.People.Controls.usTpUsers();
+            this.tpLocalDrivingLicenseApplications = new System.Windows.Forms.TabPage();
+            this.ucManageLocalDrivingLicenseApplications1 = new DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications();
             this.msApplications = new System.Windows.Forms.MenuStrip();
+            this.manageApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localDrivingLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intenationalLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.drivingLicensesServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.internationalDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationsTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.currentUserToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMainLeft = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnApplications = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.btnSettings = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnManageUsers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.lblUsername = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnManagePeople = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pbCurrentUser = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.testTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tcPagesMain.SuspendLayout();
-            this.tpPeopleList.SuspendLayout();
-            this.tpUsersList.SuspendLayout();
-            this.tpSettings.SuspendLayout();
-            this.msSettings.SuspendLayout();
-            this.tpApplications.SuspendLayout();
+            this.tcMain.SuspendLayout();
+            this.tpMain.SuspendLayout();
+            this.tcSubMain.SuspendLayout();
+            this.tpPersons.SuspendLayout();
+            this.tpUsers.SuspendLayout();
+            this.tpLocalDrivingLicenseApplications.SuspendLayout();
             this.msApplications.SuspendLayout();
             this.pnlMainLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // tcPagesMain
+            // tcMain
             // 
-            this.tcPagesMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tcPagesMain.AllowTransitions = false;
-            this.tcPagesMain.Controls.Add(this.tpPeopleList);
-            this.tcPagesMain.Controls.Add(this.tpUsersList);
-            this.tcPagesMain.Controls.Add(this.tpSettings);
-            this.tcPagesMain.Controls.Add(this.tpApplications);
-            this.tcPagesMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcPagesMain.Location = new System.Drawing.Point(217, 0);
-            this.tcPagesMain.Multiline = true;
-            this.tcPagesMain.Name = "tcPagesMain";
-            this.tcPagesMain.Page = this.tpApplications;
-            this.tcPagesMain.PageIndex = 3;
-            this.tcPagesMain.PageName = "tpApplications";
-            this.tcPagesMain.PageTitle = "Applications";
-            this.tcPagesMain.SelectedIndex = 0;
-            this.tcPagesMain.Size = new System.Drawing.Size(1002, 701);
-            this.tcPagesMain.TabIndex = 3;
+            this.tcMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tcMain.AllowTransitions = false;
+            this.tcMain.Controls.Add(this.tpMain);
+            this.tcMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcMain.Location = new System.Drawing.Point(217, 0);
+            this.tcMain.Multiline = true;
+            this.tcMain.Name = "tcMain";
+            this.tcMain.Page = this.tpMain;
+            this.tcMain.PageIndex = 0;
+            this.tcMain.PageName = "tpMain";
+            this.tcMain.PageTitle = "Main";
+            this.tcMain.SelectedIndex = 0;
+            this.tcMain.Size = new System.Drawing.Size(1002, 701);
+            this.tcMain.TabIndex = 3;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.tcMain.Transition = animation2;
+            this.tcMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // tpMain
+            // 
+            this.tpMain.Controls.Add(this.tcSubMain);
+            this.tpMain.Controls.Add(this.msApplications);
+            this.tpMain.Location = new System.Drawing.Point(4, 4);
+            this.tpMain.Name = "tpMain";
+            this.tpMain.Padding = new System.Windows.Forms.Padding(3);
+            this.tpMain.Size = new System.Drawing.Size(994, 675);
+            this.tpMain.TabIndex = 3;
+            this.tpMain.Text = "Main";
+            this.tpMain.UseVisualStyleBackColor = true;
+            // 
+            // tcSubMain
+            // 
+            this.tcSubMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tcSubMain.AllowTransitions = false;
+            this.tcSubMain.Controls.Add(this.tpPersons);
+            this.tcSubMain.Controls.Add(this.tpUsers);
+            this.tcSubMain.Controls.Add(this.tpLocalDrivingLicenseApplications);
+            this.tcSubMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcSubMain.Location = new System.Drawing.Point(3, 39);
+            this.tcSubMain.Multiline = true;
+            this.tcSubMain.Name = "tcSubMain";
+            this.tcSubMain.Page = this.tpLocalDrivingLicenseApplications;
+            this.tcSubMain.PageIndex = 2;
+            this.tcSubMain.PageName = "tpLocalDrivingLicenseApplications";
+            this.tcSubMain.PageTitle = "LDLApp";
+            this.tcSubMain.SelectedIndex = 0;
+            this.tcSubMain.Size = new System.Drawing.Size(988, 633);
+            this.tcSubMain.TabIndex = 1;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
@@ -101,127 +154,153 @@
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
-            this.tcPagesMain.Transition = animation1;
-            this.tcPagesMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.tcSubMain.Transition = animation1;
+            this.tcSubMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // tpPeopleList
+            // tpPersons
             // 
-            this.tpPeopleList.Controls.Add(this.ctrTpPeople1);
-            this.tpPeopleList.Location = new System.Drawing.Point(4, 4);
-            this.tpPeopleList.Name = "tpPeopleList";
-            this.tpPeopleList.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPeopleList.Size = new System.Drawing.Size(994, 675);
-            this.tpPeopleList.TabIndex = 0;
-            this.tpPeopleList.Text = "People";
-            this.tpPeopleList.UseVisualStyleBackColor = true;
+            this.tpPersons.Controls.Add(this.ctrTpPeople2);
+            this.tpPersons.Location = new System.Drawing.Point(4, 4);
+            this.tpPersons.Name = "tpPersons";
+            this.tpPersons.Padding = new System.Windows.Forms.Padding(3);
+            this.tpPersons.Size = new System.Drawing.Size(980, 607);
+            this.tpPersons.TabIndex = 0;
+            this.tpPersons.Text = "Persons";
+            this.tpPersons.UseVisualStyleBackColor = true;
             // 
-            // ctrTpPeople1
+            // ctrTpPeople2
             // 
-            this.ctrTpPeople1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ctrTpPeople1.Location = new System.Drawing.Point(3, 3);
-            this.ctrTpPeople1.Name = "ctrTpPeople1";
-            this.ctrTpPeople1.Size = new System.Drawing.Size(988, 669);
-            this.ctrTpPeople1.TabIndex = 0;
+            this.ctrTpPeople2.BackColor = System.Drawing.Color.White;
+            this.ctrTpPeople2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrTpPeople2.Location = new System.Drawing.Point(3, 3);
+            this.ctrTpPeople2.Name = "ctrTpPeople2";
+            this.ctrTpPeople2.Size = new System.Drawing.Size(974, 601);
+            this.ctrTpPeople2.TabIndex = 0;
             // 
-            // tpUsersList
+            // tpUsers
             // 
-            this.tpUsersList.Controls.Add(this.usTpUsers1);
-            this.tpUsersList.Location = new System.Drawing.Point(4, 4);
-            this.tpUsersList.Name = "tpUsersList";
-            this.tpUsersList.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUsersList.Size = new System.Drawing.Size(994, 675);
-            this.tpUsersList.TabIndex = 1;
-            this.tpUsersList.Text = "Users";
-            this.tpUsersList.UseVisualStyleBackColor = true;
+            this.tpUsers.Controls.Add(this.usTpUsers2);
+            this.tpUsers.Location = new System.Drawing.Point(4, 4);
+            this.tpUsers.Name = "tpUsers";
+            this.tpUsers.Padding = new System.Windows.Forms.Padding(3);
+            this.tpUsers.Size = new System.Drawing.Size(980, 607);
+            this.tpUsers.TabIndex = 1;
+            this.tpUsers.Text = "Users";
+            this.tpUsers.UseVisualStyleBackColor = true;
             // 
-            // usTpUsers1
+            // usTpUsers2
             // 
-            this.usTpUsers1.BackColor = System.Drawing.Color.White;
-            this.usTpUsers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usTpUsers1.Location = new System.Drawing.Point(3, 3);
-            this.usTpUsers1.Name = "usTpUsers1";
-            this.usTpUsers1.Size = new System.Drawing.Size(988, 669);
-            this.usTpUsers1.TabIndex = 0;
+            this.usTpUsers2.BackColor = System.Drawing.Color.White;
+            this.usTpUsers2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usTpUsers2.Location = new System.Drawing.Point(3, 3);
+            this.usTpUsers2.Name = "usTpUsers2";
+            this.usTpUsers2.Size = new System.Drawing.Size(974, 601);
+            this.usTpUsers2.TabIndex = 0;
             // 
-            // tpSettings
+            // tpLocalDrivingLicenseApplications
             // 
-            this.tpSettings.Controls.Add(this.msSettings);
-            this.tpSettings.Location = new System.Drawing.Point(4, 4);
-            this.tpSettings.Name = "tpSettings";
-            this.tpSettings.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSettings.Size = new System.Drawing.Size(994, 675);
-            this.tpSettings.TabIndex = 2;
-            this.tpSettings.Text = "Settings";
-            this.tpSettings.UseVisualStyleBackColor = true;
+            this.tpLocalDrivingLicenseApplications.Controls.Add(this.ucManageLocalDrivingLicenseApplications1);
+            this.tpLocalDrivingLicenseApplications.Location = new System.Drawing.Point(4, 4);
+            this.tpLocalDrivingLicenseApplications.Name = "tpLocalDrivingLicenseApplications";
+            this.tpLocalDrivingLicenseApplications.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLocalDrivingLicenseApplications.Size = new System.Drawing.Size(980, 607);
+            this.tpLocalDrivingLicenseApplications.TabIndex = 2;
+            this.tpLocalDrivingLicenseApplications.Text = "LDLApp";
+            this.tpLocalDrivingLicenseApplications.UseVisualStyleBackColor = true;
             // 
-            // msSettings
+            // ucManageLocalDrivingLicenseApplications1
             // 
-            this.msSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.msSettings.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.currentUserToolStripMenuItem,
-            this.changePasswordToolStripMenuItem,
-            this.logOutToolStripMenuItem});
-            this.msSettings.Location = new System.Drawing.Point(3, 3);
-            this.msSettings.Name = "msSettings";
-            this.msSettings.Size = new System.Drawing.Size(988, 48);
-            this.msSettings.TabIndex = 0;
-            this.msSettings.Text = "menuStrip1";
-            // 
-            // currentUserToolStripMenuItem
-            // 
-            this.currentUserToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentUserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.currentUserToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Card_identity_icon_32;
-            this.currentUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.currentUserToolStripMenuItem.Name = "currentUserToolStripMenuItem";
-            this.currentUserToolStripMenuItem.Size = new System.Drawing.Size(146, 44);
-            this.currentUserToolStripMenuItem.Text = "Current User";
-            this.currentUserToolStripMenuItem.Click += new System.EventHandler(this.currentUserToolStripMenuItem_Click);
-            // 
-            // changePasswordToolStripMenuItem
-            // 
-            this.changePasswordToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changePasswordToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.changePasswordToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_change_password_40;
-            this.changePasswordToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(190, 44);
-            this.changePasswordToolStripMenuItem.Text = "Change Password";
-            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
-            // 
-            // logOutToolStripMenuItem
-            // 
-            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.logOutToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_log_out_40;
-            this.logOutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(119, 44);
-            this.logOutToolStripMenuItem.Text = "Log out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
-            // tpApplications
-            // 
-            this.tpApplications.Controls.Add(this.msApplications);
-            this.tpApplications.Location = new System.Drawing.Point(4, 4);
-            this.tpApplications.Name = "tpApplications";
-            this.tpApplications.Padding = new System.Windows.Forms.Padding(3);
-            this.tpApplications.Size = new System.Drawing.Size(994, 675);
-            this.tpApplications.TabIndex = 3;
-            this.tpApplications.Text = "Applications";
-            this.tpApplications.UseVisualStyleBackColor = true;
+            this.ucManageLocalDrivingLicenseApplications1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucManageLocalDrivingLicenseApplications1.Location = new System.Drawing.Point(3, 3);
+            this.ucManageLocalDrivingLicenseApplications1.Name = "ucManageLocalDrivingLicenseApplications1";
+            this.ucManageLocalDrivingLicenseApplications1.Size = new System.Drawing.Size(974, 601);
+            this.ucManageLocalDrivingLicenseApplications1.TabIndex = 0;
             // 
             // msApplications
             // 
             this.msApplications.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.msApplications.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageApplicationsToolStripMenuItem,
+            this.drivingLicensesServicesToolStripMenuItem,
             this.applicationsTypesToolStripMenuItem,
-            this.testTypesToolStripMenuItem});
+            this.testTypesToolStripMenuItem,
+            this.settingsToolStripMenuItem});
             this.msApplications.Location = new System.Drawing.Point(3, 3);
             this.msApplications.Name = "msApplications";
-            this.msApplications.Size = new System.Drawing.Size(988, 40);
+            this.msApplications.Padding = new System.Windows.Forms.Padding(0);
+            this.msApplications.Size = new System.Drawing.Size(988, 36);
             this.msApplications.TabIndex = 0;
             this.msApplications.Text = "menuStrip1";
+            // 
+            // manageApplicationsToolStripMenuItem
+            // 
+            this.manageApplicationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.localDrivingLicenseApplicationsToolStripMenuItem,
+            this.intenationalLicenseApplicationsToolStripMenuItem});
+            this.manageApplicationsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageApplicationsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.manageApplicationsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Manage_Applications_32;
+            this.manageApplicationsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.manageApplicationsToolStripMenuItem.Name = "manageApplicationsToolStripMenuItem";
+            this.manageApplicationsToolStripMenuItem.Size = new System.Drawing.Size(208, 36);
+            this.manageApplicationsToolStripMenuItem.Text = "Manage Applications";
+            // 
+            // localDrivingLicenseApplicationsToolStripMenuItem
+            // 
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_address_32;
+            this.localDrivingLicenseApplicationsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Name = "localDrivingLicenseApplicationsToolStripMenuItem";
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size(343, 38);
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Text = "Local Driving License Applications";
+            this.localDrivingLicenseApplicationsToolStripMenuItem.Click += new System.EventHandler(this.localDrivingLicenseApplicationsToolStripMenuItem_Click);
+            // 
+            // intenationalLicenseApplicationsToolStripMenuItem
+            // 
+            this.intenationalLicenseApplicationsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.international_32;
+            this.intenationalLicenseApplicationsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.intenationalLicenseApplicationsToolStripMenuItem.Name = "intenationalLicenseApplicationsToolStripMenuItem";
+            this.intenationalLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size(343, 38);
+            this.intenationalLicenseApplicationsToolStripMenuItem.Text = "Intenational License Applications";
+            // 
+            // drivingLicensesServicesToolStripMenuItem
+            // 
+            this.drivingLicensesServicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newDrivingLicenseToolStripMenuItem});
+            this.drivingLicensesServicesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drivingLicensesServicesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.drivingLicensesServicesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Driving_services_32;
+            this.drivingLicensesServicesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.drivingLicensesServicesToolStripMenuItem.Name = "drivingLicensesServicesToolStripMenuItem";
+            this.drivingLicensesServicesToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.drivingLicensesServicesToolStripMenuItem.Text = "Driving Licenses Services";
+            // 
+            // newDrivingLicenseToolStripMenuItem
+            // 
+            this.newDrivingLicenseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.localDrivingLicenseToolStripMenuItem,
+            this.internationalDrivingLicenseToolStripMenuItem});
+            this.newDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.drivers_license_32;
+            this.newDrivingLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.newDrivingLicenseToolStripMenuItem.Name = "newDrivingLicenseToolStripMenuItem";
+            this.newDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
+            this.newDrivingLicenseToolStripMenuItem.Text = "New Driving License";
+            // 
+            // localDrivingLicenseToolStripMenuItem
+            // 
+            this.localDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_address_32;
+            this.localDrivingLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.localDrivingLicenseToolStripMenuItem.Name = "localDrivingLicenseToolStripMenuItem";
+            this.localDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(303, 38);
+            this.localDrivingLicenseToolStripMenuItem.Text = "Local Driving License";
+            this.localDrivingLicenseToolStripMenuItem.Click += new System.EventHandler(this.localDrivingLicenseToolStripMenuItem_Click);
+            // 
+            // internationalDrivingLicenseToolStripMenuItem
+            // 
+            this.internationalDrivingLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.international_32;
+            this.internationalDrivingLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.internationalDrivingLicenseToolStripMenuItem.Name = "internationalDrivingLicenseToolStripMenuItem";
+            this.internationalDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(303, 38);
+            this.internationalDrivingLicenseToolStripMenuItem.Text = "International Driving License";
             // 
             // applicationsTypesToolStripMenuItem
             // 
@@ -234,6 +313,61 @@
             this.applicationsTypesToolStripMenuItem.Text = "Applications types";
             this.applicationsTypesToolStripMenuItem.Click += new System.EventHandler(this.applicationsTypesToolStripMenuItem_Click);
             // 
+            // testTypesToolStripMenuItem
+            // 
+            this.testTypesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testTypesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.testTypesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Test_management_32;
+            this.testTypesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.testTypesToolStripMenuItem.Name = "testTypesToolStripMenuItem";
+            this.testTypesToolStripMenuItem.Size = new System.Drawing.Size(129, 36);
+            this.testTypesToolStripMenuItem.Text = "Test Types";
+            this.testTypesToolStripMenuItem.Click += new System.EventHandler(this.testTypesToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.AutoToolTip = true;
+            this.settingsToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.settingsToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.currentUserToolStripMenuItem1,
+            this.changePasswordToolStripMenuItem1,
+            this.logOutToolStripMenuItem1});
+            this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_settings_32;
+            this.settingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.settingsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(180, 0, 0, 0);
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(44, 36);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // currentUserToolStripMenuItem1
+            // 
+            this.currentUserToolStripMenuItem1.Image = global::DVLD_Project.Properties.Resources.person_male_icon_32;
+            this.currentUserToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.currentUserToolStripMenuItem1.Name = "currentUserToolStripMenuItem1";
+            this.currentUserToolStripMenuItem1.Size = new System.Drawing.Size(232, 46);
+            this.currentUserToolStripMenuItem1.Text = "Current User";
+            this.currentUserToolStripMenuItem1.Click += new System.EventHandler(this.currentUserToolStripMenuItem_Click);
+            // 
+            // changePasswordToolStripMenuItem1
+            // 
+            this.changePasswordToolStripMenuItem1.Image = global::DVLD_Project.Properties.Resources.icons8_change_password_40;
+            this.changePasswordToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.changePasswordToolStripMenuItem1.Name = "changePasswordToolStripMenuItem1";
+            this.changePasswordToolStripMenuItem1.Size = new System.Drawing.Size(232, 46);
+            this.changePasswordToolStripMenuItem1.Text = "Change Password";
+            this.changePasswordToolStripMenuItem1.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem1
+            // 
+            this.logOutToolStripMenuItem1.Image = global::DVLD_Project.Properties.Resources.turn_off_32;
+            this.logOutToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(232, 46);
+            this.logOutToolStripMenuItem1.Text = "Log out";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
             // pnlMainLeft
             // 
             this.pnlMainLeft.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
@@ -243,7 +377,6 @@
             this.pnlMainLeft.BorderRadius = 0;
             this.pnlMainLeft.BorderThickness = 0;
             this.pnlMainLeft.Controls.Add(this.btnApplications);
-            this.pnlMainLeft.Controls.Add(this.btnSettings);
             this.pnlMainLeft.Controls.Add(this.btnManageUsers);
             this.pnlMainLeft.Controls.Add(this.lblUsername);
             this.pnlMainLeft.Controls.Add(this.bunifuSeparator1);
@@ -346,100 +479,6 @@
             this.btnApplications.TextMarginLeft = 0;
             this.btnApplications.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnApplications.UseDefaultRadiusAndThickness = true;
-            this.btnApplications.Click += new System.EventHandler(this.btnApplications_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.AllowAnimations = true;
-            this.btnSettings.AllowMouseEffects = true;
-            this.btnSettings.AllowToggling = false;
-            this.btnSettings.AnimationSpeed = 200;
-            this.btnSettings.AutoGenerateColors = false;
-            this.btnSettings.AutoRoundBorders = true;
-            this.btnSettings.AutoSizeLeftIcon = true;
-            this.btnSettings.AutoSizeRightIcon = true;
-            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
-            this.btnSettings.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.btnSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSettings.BackgroundImage")));
-            this.btnSettings.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSettings.ButtonText = "Settings";
-            this.btnSettings.ButtonTextMarginLeft = 0;
-            this.btnSettings.ColorContrastOnClick = 45;
-            this.btnSettings.ColorContrastOnHover = 45;
-            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnSettings.CustomizableEdges = borderEdges2;
-            this.btnSettings.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSettings.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSettings.DisabledFillColor = System.Drawing.Color.Empty;
-            this.btnSettings.DisabledForecolor = System.Drawing.Color.Empty;
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSettings.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.IconLeft = global::DVLD_Project.Properties.Resources.icons8_settings_32;
-            this.btnSettings.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSettings.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnSettings.IconMarginLeft = 11;
-            this.btnSettings.IconPadding = 5;
-            this.btnSettings.IconRight = null;
-            this.btnSettings.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSettings.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSettings.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnSettings.IconSize = 25;
-            this.btnSettings.IdleBorderColor = System.Drawing.Color.Empty;
-            this.btnSettings.IdleBorderRadius = 0;
-            this.btnSettings.IdleBorderThickness = 0;
-            this.btnSettings.IdleFillColor = System.Drawing.Color.Empty;
-            this.btnSettings.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.icons8_settings_32;
-            this.btnSettings.IdleIconRightImage = null;
-            this.btnSettings.IndicateFocus = false;
-            this.btnSettings.Location = new System.Drawing.Point(0, 662);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSettings.OnDisabledState.BorderRadius = 39;
-            this.btnSettings.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSettings.OnDisabledState.BorderThickness = 1;
-            this.btnSettings.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSettings.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSettings.OnDisabledState.IconLeftImage = null;
-            this.btnSettings.OnDisabledState.IconRightImage = null;
-            this.btnSettings.onHoverState.BorderColor = System.Drawing.Color.Black;
-            this.btnSettings.onHoverState.BorderRadius = 39;
-            this.btnSettings.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSettings.onHoverState.BorderThickness = 1;
-            this.btnSettings.onHoverState.FillColor = System.Drawing.Color.Black;
-            this.btnSettings.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.onHoverState.IconLeftImage = null;
-            this.btnSettings.onHoverState.IconRightImage = null;
-            this.btnSettings.OnIdleState.BorderColor = System.Drawing.Color.Gray;
-            this.btnSettings.OnIdleState.BorderRadius = 39;
-            this.btnSettings.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSettings.OnIdleState.BorderThickness = 1;
-            this.btnSettings.OnIdleState.FillColor = System.Drawing.Color.Gray;
-            this.btnSettings.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.icons8_settings_32;
-            this.btnSettings.OnIdleState.IconRightImage = null;
-            this.btnSettings.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnSettings.OnPressedState.BorderRadius = 39;
-            this.btnSettings.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnSettings.OnPressedState.BorderThickness = 1;
-            this.btnSettings.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnSettings.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.OnPressedState.IconLeftImage = null;
-            this.btnSettings.OnPressedState.IconRightImage = null;
-            this.btnSettings.Size = new System.Drawing.Size(217, 39);
-            this.btnSettings.TabIndex = 3;
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSettings.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSettings.TextMarginLeft = 0;
-            this.btnSettings.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnSettings.UseDefaultRadiusAndThickness = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnManageUsers
             // 
@@ -460,11 +499,11 @@
             this.btnManageUsers.ColorContrastOnClick = 45;
             this.btnManageUsers.ColorContrastOnHover = 45;
             this.btnManageUsers.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnManageUsers.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnManageUsers.CustomizableEdges = borderEdges2;
             this.btnManageUsers.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManageUsers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageUsers.DisabledFillColor = System.Drawing.Color.Empty;
@@ -584,11 +623,11 @@
             this.btnManagePeople.ColorContrastOnClick = 45;
             this.btnManagePeople.ColorContrastOnHover = 45;
             this.btnManagePeople.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnManagePeople.CustomizableEdges = borderEdges4;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnManagePeople.CustomizableEdges = borderEdges3;
             this.btnManagePeople.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManagePeople.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManagePeople.DisabledFillColor = System.Drawing.Color.Empty;
@@ -675,43 +714,30 @@
             this.pbCurrentUser.TabStop = false;
             this.pbCurrentUser.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // testTypesToolStripMenuItem
-            // 
-            this.testTypesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testTypesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.testTypesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Test_management_32;
-            this.testTypesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.testTypesToolStripMenuItem.Name = "testTypesToolStripMenuItem";
-            this.testTypesToolStripMenuItem.Size = new System.Drawing.Size(129, 36);
-            this.testTypesToolStripMenuItem.Text = "Test Types";
-            this.testTypesToolStripMenuItem.Click += new System.EventHandler(this.testTypesToolStripMenuItem_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1219, 701);
-            this.Controls.Add(this.tcPagesMain);
+            this.Controls.Add(this.tcMain);
             this.Controls.Add(this.pnlMainLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.msSettings;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
-            this.tcPagesMain.ResumeLayout(false);
-            this.tpPeopleList.ResumeLayout(false);
-            this.tpUsersList.ResumeLayout(false);
-            this.tpSettings.ResumeLayout(false);
-            this.tpSettings.PerformLayout();
-            this.msSettings.ResumeLayout(false);
-            this.msSettings.PerformLayout();
-            this.tpApplications.ResumeLayout(false);
-            this.tpApplications.PerformLayout();
+            this.SizeChanged += new System.EventHandler(this.frmMain_SizeChanged);
+            this.tcMain.ResumeLayout(false);
+            this.tpMain.ResumeLayout(false);
+            this.tpMain.PerformLayout();
+            this.tcSubMain.ResumeLayout(false);
+            this.tpPersons.ResumeLayout(false);
+            this.tpUsers.ResumeLayout(false);
+            this.tpLocalDrivingLicenseApplications.ResumeLayout(false);
             this.msApplications.ResumeLayout(false);
             this.msApplications.PerformLayout();
             this.pnlMainLeft.ResumeLayout(false);
@@ -725,26 +751,34 @@
 
         private Bunifu.UI.WinForms.BunifuPanel pnlMainLeft;
         private Bunifu.UI.WinForms.BunifuPictureBox pbCurrentUser;
-        private Bunifu.UI.WinForms.BunifuPages tcPagesMain;
-        private System.Windows.Forms.TabPage tpPeopleList;
+        private Bunifu.UI.WinForms.BunifuPages tcMain;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnManagePeople;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.UI.WinForms.BunifuLabel lblUsername;
-        private ctrTpPeople ctrTpPeople1;
-        private System.Windows.Forms.TabPage tpUsersList;
-        private People.Controls.usTpUsers usTpUsers1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnManageUsers;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSettings;
-        private System.Windows.Forms.TabPage tpSettings;
-        private System.Windows.Forms.MenuStrip msSettings;
-        private System.Windows.Forms.ToolStripMenuItem currentUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnApplications;
-        private System.Windows.Forms.TabPage tpApplications;
+        private System.Windows.Forms.TabPage tpMain;
         private System.Windows.Forms.MenuStrip msApplications;
         private System.Windows.Forms.ToolStripMenuItem applicationsTypesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testTypesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem drivingLicensesServicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newDrivingLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem localDrivingLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem internationalDrivingLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem localDrivingLicenseApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intenationalLicenseApplicationsToolStripMenuItem;
+        private Bunifu.UI.WinForms.BunifuPages tcSubMain;
+        private System.Windows.Forms.TabPage tpPersons;
+        private System.Windows.Forms.TabPage tpUsers;
+        private ctrTpPeople ctrTpPeople2;
+        private People.Controls.usTpUsers usTpUsers2;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem currentUserToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
+        private System.Windows.Forms.TabPage tpLocalDrivingLicenseApplications;
+        private Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications ucManageLocalDrivingLicenseApplications1;
     }
 }
 

@@ -37,14 +37,14 @@
             this.ucTpApplicationsTypes1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucTpApplicationsTypes1.Location = new System.Drawing.Point(0, 0);
             this.ucTpApplicationsTypes1.Name = "ucTpApplicationsTypes1";
-            this.ucTpApplicationsTypes1.Size = new System.Drawing.Size(1062, 613);
+            this.ucTpApplicationsTypes1.Size = new System.Drawing.Size(649, 537);
             this.ucTpApplicationsTypes1.TabIndex = 0;
             // 
             // frmManageApplicationsTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 613);
+            this.ClientSize = new System.Drawing.Size(649, 537);
             this.Controls.Add(this.ucTpApplicationsTypes1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

@@ -21,18 +21,15 @@ namespace DVLD_Project.Users
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            clsUser User = clsUser.Find(txtUserName.Text.Trim(), txtPassword.Text.Trim());
-            if (User != null) 
+            string username = txtUserName.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            clsUser User = clsUser.Find(username, password);
+            if (User != null)
             {
                 clsGlobal.CurrentUser = User;
-                if(chkRememberMe.Checked)
-                {
-                    clsGlobal.RememberUsernameAndPassword(txtUserName.Text.Trim(), txtPassword.Text.Trim());
-                }
-                else
-                {
-                    clsGlobal.RememberUsernameAndPassword("", "");
-                }
+                clsGlobal.RememberUsernameAndPassword(chkRememberMe.Checked ? username : "", chkRememberMe.Checked ? password : "");
+
                 if (!User.IsActive)
                 {
                     MessageBox.Show("Your account is deactivated, Please contact your admin!", "Account deactivated", MessageBoxButtons.OK, MessageBoxIcon.Error);

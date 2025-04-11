@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu;
 using DVLD_Business1;
+using DVLD_Project.Applications.LocalDrivingLicenseApplications;
 using DVLD_Project.ApplicationsTypes;
 using DVLD_Project.GlobalClasses;
 using DVLD_Project.TestTypes;
@@ -23,8 +24,7 @@ namespace DVLD_Project
         {
             ManagePeople = 0,
             ManageUsers = 1,
-            Settings = 2,
-            Applications = 3
+            LDLApplications = 2,
         }
         public frmMain(frmLogin LoginForm)
         {
@@ -34,12 +34,14 @@ namespace DVLD_Project
 
         private void btnManagePeople_Click(object sender, EventArgs e)
         {
-            tcPagesMain.PageIndex = (int)PageIndex.ManagePeople;
+            tcMain.PageIndex = 0;
+            tcSubMain.PageIndex = (int)PageIndex.ManagePeople;
         }
 
         private void btnManageUsers_Click(object sender, EventArgs e)
         {
-            tcPagesMain.PageIndex = (int)PageIndex.ManageUsers;
+            tcMain.PageIndex = 0;
+            tcSubMain.PageIndex = (int)PageIndex.ManageUsers;
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -68,11 +70,6 @@ namespace DVLD_Project
             this.Close();
         }
 
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            tcPagesMain.PageIndex = (int)PageIndex.Settings;
-        }
-
         private void applicationsTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmManageApplicationsTypes manageApplicationsTypes = new frmManageApplicationsTypes())
@@ -81,10 +78,6 @@ namespace DVLD_Project
             }   
         }
 
-        private void btnApplications_Click(object sender, EventArgs e)
-        {
-            tcPagesMain.PageIndex = (int)PageIndex.Applications;
-        }
 
         private void testTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -92,6 +85,25 @@ namespace DVLD_Project
             {
                 frm.ShowDialog();
             }   
+        }
+
+        private void localDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(frmNewLocalDrivingLicenseApplication frm = new frmNewLocalDrivingLicenseApplication())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void frmMain_SizeChanged(object sender, EventArgs e)
+        {
+            settingsToolStripMenuItem.Margin = new Padding((this.Width - 1235) + 180, 0, 0, 0);
+        }
+
+        private void localDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tcMain.PageIndex = 0;
+            tcSubMain.PageIndex = (int)PageIndex.LDLApplications;
         }
     }
 }

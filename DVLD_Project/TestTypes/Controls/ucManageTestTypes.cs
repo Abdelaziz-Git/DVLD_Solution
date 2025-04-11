@@ -31,29 +31,28 @@ namespace DVLD_Project.TestTypes.Controls
         {
             LoadData();
         }
-
-        //private void EditApplicationTypeToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    if (dgvTestTypes.SelectedRows.Count > 0)
-        //    {
-        //        DataGridViewRow selectedRow = dgvTestTypes.SelectedRows[0];
-        //        if (selectedRow.Cells["clmnID"].Value != null && int.TryParse(selectedRow.Cells["clmnID"].Value.ToString(), out int applicationTypeId))
-        //        {
-        //            using (frmEditTestTypes frm = new frmEditTestTypes())
-        //            {
-        //                frm.ShowDialog();
-        //            }
-        //            LoadData();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Invalid application type selected.", "Edit Application Type", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Please select an application type to edit.", "Edit Application Type", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //    }
-        //}
+        private void EditTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dgvTestTypes.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvTestTypes.SelectedRows[0];
+                if (selectedRow.Cells["clmnID"].Value != null && int.TryParse(selectedRow.Cells["clmnID"].Value.ToString(), out int TestTypeId))
+                {
+                    using (frmEditTestTypes frm = new frmEditTestTypes(TestTypeId))
+                    {
+                        frm.ShowDialog();
+                    }
+                    LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Test type selected.", "Edit Test Type", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select an Test type to edit.", "Edit Test Type", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

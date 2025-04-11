@@ -56,7 +56,7 @@
             this.lblNumberOfRecords.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblNumberOfRecords.AutoSize = true;
             this.lblNumberOfRecords.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberOfRecords.Location = new System.Drawing.Point(409, 465);
+            this.lblNumberOfRecords.Location = new System.Drawing.Point(145, 436);
             this.lblNumberOfRecords.Name = "lblNumberOfRecords";
             this.lblNumberOfRecords.Size = new System.Drawing.Size(21, 15);
             this.lblNumberOfRecords.TabIndex = 33;
@@ -67,7 +67,7 @@
             this.lblRecords.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblRecords.AutoSize = true;
             this.lblRecords.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecords.Location = new System.Drawing.Point(337, 465);
+            this.lblRecords.Location = new System.Drawing.Point(73, 436);
             this.lblRecords.Name = "lblRecords";
             this.lblRecords.Size = new System.Drawing.Size(66, 15);
             this.lblRecords.TabIndex = 32;
@@ -82,7 +82,7 @@
             this.lblManageAppTypes.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblManageAppTypes.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManageAppTypes.ForeColor = System.Drawing.Color.Orange;
-            this.lblManageAppTypes.Location = new System.Drawing.Point(377, 137);
+            this.lblManageAppTypes.Location = new System.Drawing.Point(134, 136);
             this.lblManageAppTypes.Name = "lblManageAppTypes";
             this.lblManageAppTypes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblManageAppTypes.Size = new System.Drawing.Size(315, 32);
@@ -100,8 +100,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvApplicationsTypes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvApplicationsTypes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvApplicationsTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvApplicationsTypes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvApplicationsTypes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvApplicationsTypes.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dgvApplicationsTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvApplicationsTypes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -151,7 +150,7 @@
             this.dgvApplicationsTypes.HeaderBackColor = System.Drawing.Color.Orange;
             this.dgvApplicationsTypes.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvApplicationsTypes.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvApplicationsTypes.Location = new System.Drawing.Point(340, 198);
+            this.dgvApplicationsTypes.Location = new System.Drawing.Point(93, 197);
             this.dgvApplicationsTypes.MultiSelect = false;
             this.dgvApplicationsTypes.Name = "dgvApplicationsTypes";
             this.dgvApplicationsTypes.ReadOnly = true;
@@ -168,7 +167,7 @@
             this.dgvApplicationsTypes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dgvApplicationsTypes.RowTemplate.Height = 40;
             this.dgvApplicationsTypes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApplicationsTypes.Size = new System.Drawing.Size(389, 255);
+            this.dgvApplicationsTypes.Size = new System.Drawing.Size(396, 223);
             this.dgvApplicationsTypes.TabIndex = 25;
             this.dgvApplicationsTypes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Orange;
             // 
@@ -229,7 +228,7 @@
             this.pbManageApp.BorderRadius = 0;
             this.pbManageApp.Image = global::DVLD_Project.Properties.Resources.management_Applications;
             this.pbManageApp.IsCircle = true;
-            this.pbManageApp.Location = new System.Drawing.Point(476, 8);
+            this.pbManageApp.Location = new System.Drawing.Point(233, 7);
             this.pbManageApp.Name = "pbManageApp";
             this.pbManageApp.Size = new System.Drawing.Size(116, 116);
             this.pbManageApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -248,7 +247,7 @@
             this.Controls.Add(this.lblManageAppTypes);
             this.Controls.Add(this.dgvApplicationsTypes);
             this.Name = "ucTpApplicationsTypes";
-            this.Size = new System.Drawing.Size(1073, 675);
+            this.Size = new System.Drawing.Size(618, 480);
             this.Load += new System.EventHandler(this.ucTpApplicationsTypes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationsTypes)).EndInit();
             this.cmsListApplicationsTypes.ResumeLayout(false);

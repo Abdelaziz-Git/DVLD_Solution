@@ -97,3 +97,5 @@ C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Projec
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.Controls.ucManageTestTypes.resources
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.frmEditTestTypes.resources
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.frmManageTestTypes.resources
+C:\Users\ABDELAZIZ\source\repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.frmNewLocalDrivingLicenseApplication.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications.resources
