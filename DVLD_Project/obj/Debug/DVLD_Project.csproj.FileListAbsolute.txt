@@ -99,3 +99,10 @@ C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Projec
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.TestTypes.frmManageTestTypes.resources
 C:\Users\ABDELAZIZ\source\repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.frmNewLocalDrivingLicenseApplication.resources
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.Controls.ucApplicationCard.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls.ucLocalDrivingLicenseApplicationCard.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmVisionTestAppointements.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmScheduleTest.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmPracticalTestAppointements.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmWrittenTestAppointements.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmTakeTest.resources

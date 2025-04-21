@@ -181,5 +181,30 @@ namespace DVLD_DataAccess1
             }
             return dt.DefaultView;
         }
+        public static byte GetPassedTests(int localDrivingLicenseApplicationID)
+        {
+            byte passedTests = 0;
+            try
+            {
+                string query = @"select Count(TestAppointments.TestTypeID) From TestAppointments 
+                                 inner join Tests ON Tests.TestAppointmentID = TestAppointments.TestAppointmentID
+                                 where LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID
+                                 AND IsLocked = 1 AND Tests.TestResult = 1;";
+
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.CommandType = CommandType.Text;
+                    command.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", localDrivingLicenseApplicationID);
+                    connection.Open();
+                    passedTests = Convert.ToByte(command.ExecuteScalar());
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving passed tests count.", ex);
+            }
+            return passedTests;
+        }
     }
 }

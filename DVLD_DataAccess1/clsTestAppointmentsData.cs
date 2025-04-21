@@ -53,7 +53,6 @@ namespace DVLD_DataAccess1
 
             return appointment;
         }
-
         public static int AddNewTestAppointment(TestAppointmentsDTO appointment)
         {
             int newID = -1;
@@ -103,7 +102,6 @@ namespace DVLD_DataAccess1
 
             return newID;
         }
-
         public static bool UpdateTestAppointment(TestAppointmentsDTO appointment)
         {
             bool success = false;
@@ -215,6 +213,76 @@ namespace DVLD_DataAccess1
             }
 
             return appointmentsList;
+        }
+        public static List<TestAppointmentsDTO>GetTestAppointments(int LocalDrivingLicenseApplicationID, int TestTypeID)
+        {
+            List<TestAppointmentsDTO> appointmentsList = new List<TestAppointmentsDTO>();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                {
+                    string query = @"SELECT * FROM TestAppointments 
+                                     WHERE LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID 
+                                     AND TestTypeID = @TestTypeID;";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", LocalDrivingLicenseApplicationID);
+                        cmd.Parameters.AddWithValue("@TestTypeID", TestTypeID);
+                        connection.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                TestAppointmentsDTO appointment = new TestAppointmentsDTO
+                                {
+                                    TestAppointmentID = reader.GetInt32(reader.GetOrdinal("TestAppointmentID")),
+                                    LocalDrivingLicenseApplicationID = reader.GetInt32(reader.GetOrdinal("LocalDrivingLicenseApplicationID")),
+                                    TestTypeID = reader.GetInt32(reader.GetOrdinal("TestTypeID")),
+                                    AppointmentDate = reader.GetDateTime(reader.GetOrdinal("AppointmentDate")),
+                                    PaidFees = reader.GetDecimal(reader.GetOrdinal("PaidFees")),
+                                    IsLocked = reader.GetBoolean(reader.GetOrdinal("IsLocked")),
+                                    CreatedByUserID = reader.GetInt32(reader.GetOrdinal("CreatedByUserID")),
+                                    RetakeTestApplicationID = reader.IsDBNull(reader.GetOrdinal("RetakeTestApplicationID")) ?
+                                        (int?)null : reader.GetInt32(reader.GetOrdinal("RetakeTestApplicationID"))
+                                };
+                                appointmentsList.Add(appointment);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving test appointments", ex);
+            }
+            return appointmentsList;
+        }
+        public static byte GetNumberOfTrials(int localDrivingLicenseApplicationID, int testTypeID)
+        {
+            byte numberOfTrials = 0;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                {
+                    string query = @"SELECT COUNT(*) AS Trials FROM TestAppointments
+                                     inner join Tests on TestAppointments.TestAppointmentID = Tests.TestAppointmentID
+                                     WHERE LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID 
+                                     AND TestTypeID = @TestTypeID
+                                     AND Tests.TestResult = 0;";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@LocalDrivingLicenseApplicationID", localDrivingLicenseApplicationID);
+                        cmd.Parameters.AddWithValue("@TestTypeID", testTypeID);
+                        connection.Open();
+                        numberOfTrials = Convert.ToByte(cmd.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving number of trials", ex);
+            }
+            return numberOfTrials;
         }
     }
 }

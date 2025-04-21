@@ -141,12 +141,6 @@ namespace DVLD_Project
                 errorProvider1.SetError(txtNationalNo, "");
             }
         }
-        private void frmAddEditPerson_Load(object sender, EventArgs e)
-        {
-            SetDefaultValues();
-            if (_Mode == enMode.UpdateMode)
-                LoadData();
-        }
         private bool HandlePersonImage()
         {
             if(_Person.ImagePath != pbPerson.ImageLocation)
@@ -321,6 +315,13 @@ namespace DVLD_Project
             }
             
 
+        }
+
+        private void frmAddEditPerson_Shown(object sender, EventArgs e)
+        {
+            SetDefaultValues();
+            if (_Mode == enMode.UpdateMode)
+                LoadData();
         }
     }
 }

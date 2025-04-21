@@ -50,6 +50,43 @@ namespace DVLD_DataAccess1
 
             return test;
         }
+        public static TestsDTO GetTestByAppointmentID(int testAppointmentID)
+        {
+            TestsDTO test = null;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                {
+                    string query = "SELECT * FROM Tests WHERE TestAppointmentID = @TestAppointmentID;";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@TestAppointmentID", testAppointmentID);
+                        connection.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                test = new TestsDTO
+                                {
+                                    TestID = reader.GetInt32(reader.GetOrdinal("TestID")),
+                                    TestAppointmentID = reader.GetInt32(reader.GetOrdinal("TestAppointmentID")),
+                                    TestResult = reader.GetBoolean(reader.GetOrdinal("TestResult")),
+                                    Notes = reader.IsDBNull(reader.GetOrdinal("Notes")) ?
+                                            null : reader.GetString(reader.GetOrdinal("Notes")),
+                                    CreatedByUserID = reader.GetInt32(reader.GetOrdinal("CreatedByUserID"))
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving test information by appointment ID", ex);
+            }
+            return test;
+        }
 
         public static int AddNewTest(TestsDTO test)
         {

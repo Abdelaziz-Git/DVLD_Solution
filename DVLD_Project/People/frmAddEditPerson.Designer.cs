@@ -1530,7 +1530,7 @@ namespace DVLD_Project
             this.Name = "frmAddEditPerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Person";
-            this.Load += new System.EventHandler(this.frmAddEditPerson_Load);
+            this.Shown += new System.EventHandler(this.frmAddEditPerson_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pbPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFemale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMale)).EndInit();

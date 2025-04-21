@@ -13,7 +13,13 @@ namespace DVLD_Business1
         public int LocalDrivingLicenseApplicationID { get; set; }
         public int ApplicationID { get; set; }
         public int LicenseClassID { get; set; }
-
+        public byte PassedTest 
+        { 
+            get 
+            {
+                return clsLocalDrivingLicenseApplicationsData.GetPassedTests(LocalDrivingLicenseApplicationID);
+            } 
+        }
         public clsLocalDrivingLicenseApplications()
         {
             LocalDrivingLicenseApplicationID = -1;

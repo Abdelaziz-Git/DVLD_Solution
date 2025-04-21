@@ -139,6 +139,18 @@
     <Compile Include="ApplicationsTypes\frmManageApplicationsTypes.Designer.cs">
       <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\Controls\ucApplicationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Controls\ucApplicationCard.Designer.cs">
+      <DependentUpon>ucApplicationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\Controls\ucLocalDrivingLicenseApplicationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\Controls\ucLocalDrivingLicenseApplicationCard.Designer.cs">
+      <DependentUpon>ucLocalDrivingLicenseApplicationCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\LocalDrivingLicenseApplications\Controls\ucManageLocalDrivingLicenseApplications.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +171,36 @@
     </Compile>
     <Compile Include="People\Controls\ucPersonInfoWithFilter.Designer.cs">
       <DependentUpon>ucPersonInfoWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\frmPracticalTestAppointements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\frmPracticalTestAppointements.Designer.cs">
+      <DependentUpon>frmPracticalTestAppointements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\frmScheduleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\frmScheduleTest.Designer.cs">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.Designer.cs">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\frmVisionTestAppointements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\frmVisionTestAppointements.Designer.cs">
+      <DependentUpon>frmVisionTestAppointements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAppointments\frmWrittenTestAppointements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestAppointments\frmWrittenTestAppointements.Designer.cs">
+      <DependentUpon>frmWrittenTestAppointements.cs</DependentUpon>
     </Compile>
     <Compile Include="TestTypes\Controls\ucManageTestTypes.cs">
       <SubType>UserControl</SubType>
@@ -255,6 +297,12 @@
     <EmbeddedResource Include="ApplicationsTypes\frmManageApplicationsTypes.resx">
       <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Controls\ucApplicationCard.resx">
+      <DependentUpon>ucApplicationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\Controls\ucLocalDrivingLicenseApplicationCard.resx">
+      <DependentUpon>ucLocalDrivingLicenseApplicationCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\Controls\ucManageLocalDrivingLicenseApplications.resx">
       <DependentUpon>ucManageLocalDrivingLicenseApplications.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +311,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ucPersonInfoWithFilter.resx">
       <DependentUpon>ucPersonInfoWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\frmPracticalTestAppointements.resx">
+      <DependentUpon>frmPracticalTestAppointements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\frmScheduleTest.resx">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmTakeTest.resx">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\frmVisionTestAppointements.resx">
+      <DependentUpon>frmVisionTestAppointements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestAppointments\frmWrittenTestAppointements.resx">
+      <DependentUpon>frmWrittenTestAppointements.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestTypes\Controls\ucManageTestTypes.resx">
       <DependentUpon>ucManageTestTypes.cs</DependentUpon>
@@ -437,6 +500,11 @@
     <None Include="Resources\icons8-previous-48.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Trials-32.png" />
+    <None Include="Resources\Written test-128.png" />
+    <None Include="Resources\vision Test 256.png" />
+    <None Include="Resources\Vision Test.png" />
+    <None Include="Resources\Written test.png" />
     <None Include="Resources\turn-off-32.png" />
     <None Include="Resources\dollar-symbol 32.png" />
     <None Include="Resources\driver-license services.png" />
@@ -445,6 +513,7 @@
     <None Include="Resources\add-file -32.png" />
     <None Include="Resources\delete-32.png" />
     <None Include="Resources\add-32.png" />
+    <None Include="Resources\appointment 64.png" />
     <Content Include="Resources\edit applications Type.png" />
     <None Include="Resources\edit applications Type1.png" />
     <None Include="Resources\edit-text.png" />
@@ -466,6 +535,10 @@
     <Content Include="Resources\money.png" />
     <None Include="Resources\test-management-128.png" />
     <None Include="Resources\Test-management-32.png" />
+    <None Include="Resources\test-drive.png" />
+    <None Include="Resources\test-drive1.png" />
+    <None Include="Resources\test-drive-128.png" />
+    <None Include="Resources\Take test 32.png" />
     <Content Include="Resources\title.png" />
     <None Include="Resources\title1.png" />
   </ItemGroup>

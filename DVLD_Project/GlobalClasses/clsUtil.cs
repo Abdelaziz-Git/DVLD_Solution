@@ -14,7 +14,7 @@ namespace DVLD_Project.GlobalClasses
         public enum enApplicationStatus
         {
             New = 1,
-            Cancelled ,
+            Canceled ,
             Completed
         }
         public enum enApplicationType
@@ -25,7 +25,13 @@ namespace DVLD_Project.GlobalClasses
             ReplacementforaDamagedDrivingLicense,
             ReleaseDetainedDrivingLicenseService,
             NewInternationalLicense,
-            RetakTest
+            RetakeTest
+        }
+        public enum enTestTypes
+        {
+            VisionTest=1,
+            WrittenTest=2,
+            PracticalTest=3
         }
         public static string GetGUID()
         {

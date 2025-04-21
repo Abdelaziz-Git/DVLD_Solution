@@ -41,7 +41,11 @@ namespace DVLD_Business1
             TestsDTO dto = clsTestsData.GetTestByID(testID);
             return dto == null ? null : new clsTests(dto);
         }
-
+        public static clsTests FindByAppointmentID(int testAppointmentID)
+        {
+            TestsDTO dto = clsTestsData.GetTestByAppointmentID(testAppointmentID);
+            return dto == null ? null : new clsTests(dto);
+        }
         public bool Save()
         {
             TestsDTO dto = new TestsDTO
