@@ -75,6 +75,9 @@
             // 
             // gbPersonInfo
             // 
+            this.gbPersonInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbPersonInfo.BackColor = System.Drawing.Color.White;
             this.gbPersonInfo.BorderColor = System.Drawing.Color.LightGray;
             this.gbPersonInfo.BorderRadius = 10;
@@ -108,14 +111,13 @@
             this.gbPersonInfo.Controls.Add(this.lblNameText);
             this.gbPersonInfo.Controls.Add(this.lblPersonIDValue);
             this.gbPersonInfo.Controls.Add(this.lblPersonIDText);
-            this.gbPersonInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbPersonInfo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPersonInfo.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gbPersonInfo.LabelIndent = 10;
             this.gbPersonInfo.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.gbPersonInfo.Location = new System.Drawing.Point(0, 0);
             this.gbPersonInfo.Name = "gbPersonInfo";
-            this.gbPersonInfo.Size = new System.Drawing.Size(703, 285);
+            this.gbPersonInfo.Size = new System.Drawing.Size(663, 291);
             this.gbPersonInfo.TabIndex = 0;
             this.gbPersonInfo.TabStop = false;
             this.gbPersonInfo.Text = "Person information";
@@ -123,7 +125,6 @@
             // bunifuPictureBox9
             // 
             this.bunifuPictureBox9.AllowFocused = false;
-            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox9.AutoSizeHeight = true;
             this.bunifuPictureBox9.BorderRadius = 0;
             this.bunifuPictureBox9.Image = global::DVLD_Project.Properties.Resources.icons8_country_32;
@@ -139,7 +140,6 @@
             // bunifuPictureBox8
             // 
             this.bunifuPictureBox8.AllowFocused = false;
-            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox8.AutoSizeHeight = true;
             this.bunifuPictureBox8.BorderRadius = 0;
             this.bunifuPictureBox8.Image = global::DVLD_Project.Properties.Resources.icons8_phone_number_32;
@@ -155,7 +155,6 @@
             // bunifuPictureBox7
             // 
             this.bunifuPictureBox7.AllowFocused = false;
-            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox7.AutoSizeHeight = true;
             this.bunifuPictureBox7.BorderRadius = 0;
             this.bunifuPictureBox7.Image = global::DVLD_Project.Properties.Resources.icons8_date_32;
@@ -171,7 +170,6 @@
             // bunifuPictureBox6
             // 
             this.bunifuPictureBox6.AllowFocused = false;
-            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox6.AutoSizeHeight = true;
             this.bunifuPictureBox6.BorderRadius = 0;
             this.bunifuPictureBox6.Image = global::DVLD_Project.Properties.Resources.icons8_address_32;
@@ -187,7 +185,6 @@
             // bunifuPictureBox5
             // 
             this.bunifuPictureBox5.AllowFocused = false;
-            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox5.AutoSizeHeight = true;
             this.bunifuPictureBox5.BorderRadius = 0;
             this.bunifuPictureBox5.Image = global::DVLD_Project.Properties.Resources.icons8_email_32;
@@ -203,7 +200,6 @@
             // pbGendor
             // 
             this.pbGendor.AllowFocused = false;
-            this.pbGendor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbGendor.AutoSizeHeight = true;
             this.pbGendor.BorderRadius = 0;
             this.pbGendor.Image = global::DVLD_Project.Properties.Resources.person_male_icon_32;
@@ -219,7 +215,6 @@
             // bunifuPictureBox3
             // 
             this.bunifuPictureBox3.AllowFocused = false;
-            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox3.AutoSizeHeight = true;
             this.bunifuPictureBox3.BorderRadius = 0;
             this.bunifuPictureBox3.Image = global::DVLD_Project.Properties.Resources.Card_identity_icon_32;
@@ -235,7 +230,6 @@
             // bunifuPictureBox2
             // 
             this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox2.AutoSizeHeight = true;
             this.bunifuPictureBox2.BorderRadius = 0;
             this.bunifuPictureBox2.Image = global::DVLD_Project.Properties.Resources.Name_Icon__48;
@@ -251,7 +245,6 @@
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.icons8_key_32;
@@ -269,6 +262,7 @@
             this.btnEditPerson.AllowAnimations = true;
             this.btnEditPerson.AllowMouseEffects = true;
             this.btnEditPerson.AllowToggling = false;
+            this.btnEditPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditPerson.AnimationSpeed = 200;
             this.btnEditPerson.AutoGenerateColors = false;
             this.btnEditPerson.AutoRoundBorders = true;
@@ -313,7 +307,7 @@
             this.btnEditPerson.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.icons8_Edit_Person_32;
             this.btnEditPerson.IdleIconRightImage = null;
             this.btnEditPerson.IndicateFocus = false;
-            this.btnEditPerson.Location = new System.Drawing.Point(510, 32);
+            this.btnEditPerson.Location = new System.Drawing.Point(470, 32);
             this.btnEditPerson.Name = "btnEditPerson";
             this.btnEditPerson.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditPerson.OnDisabledState.BorderRadius = 39;
@@ -359,12 +353,12 @@
             // pbPerson
             // 
             this.pbPerson.AllowFocused = false;
-            this.pbPerson.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbPerson.AutoSizeHeight = true;
             this.pbPerson.BorderRadius = 87;
             this.pbPerson.Image = ((System.Drawing.Image)(resources.GetObject("pbPerson.Image")));
             this.pbPerson.IsCircle = true;
-            this.pbPerson.Location = new System.Drawing.Point(510, 90);
+            this.pbPerson.Location = new System.Drawing.Point(470, 90);
             this.pbPerson.Name = "pbPerson";
             this.pbPerson.Size = new System.Drawing.Size(175, 175);
             this.pbPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -650,7 +644,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.gbPersonInfo);
             this.Name = "ucPersonInfo";
-            this.Size = new System.Drawing.Size(703, 285);
+            this.Size = new System.Drawing.Size(663, 291);
             this.Load += new System.EventHandler(this.ucPersonInfo_Load);
             this.gbPersonInfo.ResumeLayout(false);
             this.gbPersonInfo.PerformLayout();

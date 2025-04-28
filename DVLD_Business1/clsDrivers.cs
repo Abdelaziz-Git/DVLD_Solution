@@ -14,6 +14,20 @@ namespace DVLD_Business1
         public int PersonID { get; set; }
         public int CreatedByUserID { get; set; }
         public DateTime CreatedDate { get; set; }
+        public clsPerson PersonInfo
+        {
+            get
+            {
+                return clsPerson.Find(this.PersonID);
+            }
+        }
+        public byte ActiveLicensesCount
+        {
+            get
+            {
+                return clsDriversData.GetActiveLicensesCount(this.DriverID);
+            }
+        }
 
         public clsDrivers()
         {

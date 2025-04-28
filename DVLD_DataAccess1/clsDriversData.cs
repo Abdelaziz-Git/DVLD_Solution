@@ -225,5 +225,28 @@ namespace DVLD_DataAccess1
 
             return driversList;
         }
+        public static byte GetActiveLicensesCount(int driverID)
+        {
+            byte count = 0;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                {
+                    string query = "SELECT COUNT(*) FROM Licenses WHERE DriverID = @DriverID AND IsActive = 1;";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@DriverID", driverID);
+                        connection.Open();
+                        count = Convert.ToByte(cmd.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error retrieving active license count", ex);
+            }
+            return count;
+        }
+
     }
 }

@@ -121,22 +121,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.cs">
+    <Compile Include="Applications\ApplicationsTypes\Controls\ucTpApplicationsTypes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.Designer.cs">
+    <Compile Include="Applications\ApplicationsTypes\Controls\ucTpApplicationsTypes.Designer.cs">
       <DependentUpon>ucTpApplicationsTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ApplicationsTypes\frmEditApplicationsTypes.cs">
+    <Compile Include="Applications\ApplicationsTypes\frmEditApplicationsTypes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicationsTypes\frmEditApplicationsTypes.Designer.cs">
+    <Compile Include="Applications\ApplicationsTypes\frmEditApplicationsTypes.Designer.cs">
       <DependentUpon>frmEditApplicationsTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ApplicationsTypes\frmManageApplicationsTypes.cs">
+    <Compile Include="Applications\ApplicationsTypes\frmManageApplicationsTypes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicationsTypes\frmManageApplicationsTypes.Designer.cs">
+    <Compile Include="Applications\ApplicationsTypes\frmManageApplicationsTypes.Designer.cs">
       <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Applications\Controls\ucApplicationCard.cs">
@@ -163,9 +163,51 @@
     <Compile Include="Applications\LocalDrivingLicenseApplications\frmNewLocalDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmNewLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmShowApplicationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\LocalDrivingLicenseApplications\frmShowApplicationDetails.Designer.cs">
+      <DependentUpon>frmShowApplicationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\Controls\ucListDrivers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drivers\Controls\ucListDrivers.Designer.cs">
+      <DependentUpon>ucListDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\Controls\ucDriverLicenseCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\Controls\ucDriverLicenseCard.Designer.cs">
+      <DependentUpon>ucDriverLicenseCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\Controls\ucDriverLicensesHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\Controls\ucDriverLicensesHistory.Designer.cs">
+      <DependentUpon>ucDriverLicensesHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\frmShowDriverLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmShowDriverLicenses.Designer.cs">
+      <DependentUpon>frmShowDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\frmIssueDrivingLicenseForFirstTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmIssueDrivingLicenseForFirstTime.Designer.cs">
+      <DependentUpon>frmIssueDrivingLicenseForFirstTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalClasses\clsGlobal.cs" />
     <Compile Include="GlobalClasses\clsUtil.cs" />
     <Compile Include="GlobalClasses\clsValidation.cs" />
+    <Compile Include="Licenses\frmLicenseCrad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmLicenseCrad.Designer.cs">
+      <DependentUpon>frmLicenseCrad.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\Controls\ucPersonInfoWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -288,13 +330,13 @@
     <Compile Include="Users\frmUserInfo.Designer.cs">
       <DependentUpon>frmUserInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ApplicationsTypes\Controls\ucTpApplicationsTypes.resx">
+    <EmbeddedResource Include="Applications\ApplicationsTypes\Controls\ucTpApplicationsTypes.resx">
       <DependentUpon>ucTpApplicationsTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ApplicationsTypes\frmEditApplicationsTypes.resx">
+    <EmbeddedResource Include="Applications\ApplicationsTypes\frmEditApplicationsTypes.resx">
       <DependentUpon>frmEditApplicationsTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ApplicationsTypes\frmManageApplicationsTypes.resx">
+    <EmbeddedResource Include="Applications\ApplicationsTypes\frmManageApplicationsTypes.resx">
       <DependentUpon>frmManageApplicationsTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Controls\ucApplicationCard.resx">
@@ -308,6 +350,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmNewLocalDrivingLicenseApplication.resx">
       <DependentUpon>frmNewLocalDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\frmShowApplicationDetails.resx">
+      <DependentUpon>frmShowApplicationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\Controls\ucListDrivers.resx">
+      <DependentUpon>ucListDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\Controls\ucDriverLicenseCard.resx">
+      <DependentUpon>ucDriverLicenseCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\Controls\ucDriverLicensesHistory.resx">
+      <DependentUpon>ucDriverLicensesHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmIssueDrivingLicenseForFirstTime.resx">
+      <DependentUpon>frmIssueDrivingLicenseForFirstTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmLicenseCrad.resx">
+      <DependentUpon>frmLicenseCrad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmShowDriverLicenses.resx">
+      <DependentUpon>frmShowDriverLicenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ucPersonInfoWithFilter.resx">
       <DependentUpon>ucPersonInfoWithFilter.cs</DependentUpon>
@@ -514,9 +577,12 @@
     <None Include="Resources\delete-32.png" />
     <None Include="Resources\add-32.png" />
     <None Include="Resources\appointment 64.png" />
+    <None Include="Resources\driver-32.png" />
+    <None Include="Resources\driver licenses 128.png" />
     <Content Include="Resources\edit applications Type.png" />
     <None Include="Resources\edit applications Type1.png" />
     <None Include="Resources\edit-text.png" />
+    <None Include="Resources\history licenses.png" />
     <Content Include="Resources\icons8-applications-32.png" />
     <None Include="Resources\icons8-applications-321.png" />
     <Content Include="Resources\icons8-change-password-40.png" />
@@ -530,6 +596,7 @@
     <None Include="Resources\international-32.png" />
     <None Include="Resources\Manage Applications-32.png" />
     <None Include="Resources\Manage Applications-128.png" />
+    <None Include="Resources\Issue license 32.png" />
     <Content Include="Resources\management Applications.png" />
     <None Include="Resources\management Applications1.png" />
     <Content Include="Resources\money.png" />

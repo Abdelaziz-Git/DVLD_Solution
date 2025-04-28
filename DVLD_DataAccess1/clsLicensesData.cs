@@ -118,7 +118,30 @@ namespace DVLD_DataAccess1
             }
             return exists;
         }
-
+        public static bool IsDetained(int licenseID)
+        {
+            bool isDetained = false;
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
+                {
+                    string query = "select 1 from DetainedLicenses where LicenseID = @LicenseID and IsRelease = 0;";
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@LicenseID", licenseID);
+                        connection.Open();
+                        var result = cmd.ExecuteScalar();
+                        isDetained = result != null && Convert.ToBoolean(result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while checking if the license is detained.", ex);
+            }
+            return isDetained;
+        }
         public static List<LicensesDTO> GetLicensesByLicenseClassID(int licenseClassID)
         {
             List<LicensesDTO> licenses = new List<LicensesDTO>();

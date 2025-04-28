@@ -106,3 +106,10 @@ C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Projec
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmPracticalTestAppointements.resources
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmWrittenTestAppointements.resources
 C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Tests.frmTakeTest.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.frmIssueDrivingLicenseForFirstTime.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Licenses.Controls.ucDriverLicenseCard.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Licenses.frmLicenseCrad.resources
+C:\Users\ABDELAZIZ\source\repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Applications.LocalDrivingLicenseApplications.frmShowApplicationDetails.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Drivers.Controls.ucListDrivers.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Licenses.Controls.ucDriverLicensesHistory.resources
+C:\Users\ABDELAZIZ\Source\Repos\DVLD_Solution\DVLD_Project\obj\Debug\DVLD_Project.Licenses.frmShowDriverLicenses.resources

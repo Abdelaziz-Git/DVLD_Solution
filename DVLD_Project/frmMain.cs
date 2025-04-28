@@ -25,6 +25,7 @@ namespace DVLD_Project
             ManagePeople = 0,
             ManageUsers = 1,
             LDLApplications = 2,
+            Drivers = 3,
         }
         public frmMain(frmLogin LoginForm)
         {
@@ -97,13 +98,19 @@ namespace DVLD_Project
 
         private void frmMain_SizeChanged(object sender, EventArgs e)
         {
-            settingsToolStripMenuItem.Margin = new Padding((this.Width - 1235) + 180, 0, 0, 0);
+            settingsToolStripMenuItem.Margin = new Padding((this.Width - 1235) + 76, 0, 0, 0);
         }
 
         private void localDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tcMain.PageIndex = 0;
             tcSubMain.PageIndex = (int)PageIndex.LDLApplications;
+        }
+
+        private void DriversToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tcSubMain.PageIndex = (int)PageIndex.Drivers;
+            ucListDrivers1.FillDataGridViewDrivers();
         }
     }
 }

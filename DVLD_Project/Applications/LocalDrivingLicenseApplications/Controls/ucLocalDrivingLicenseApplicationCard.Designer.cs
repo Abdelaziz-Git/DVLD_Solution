@@ -111,6 +111,7 @@
             this.ToolTip1.SetToolTip(this.linkLblShowLicenseInfo, "");
             this.ToolTip1.SetToolTipIcon(this.linkLblShowLicenseInfo, null);
             this.ToolTip1.SetToolTipTitle(this.linkLblShowLicenseInfo, "");
+            this.linkLblShowLicenseInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLblShowLicenseInfo_LinkClicked);
             this.linkLblShowLicenseInfo.MouseHover += new System.EventHandler(this.linkLblShowLicenseInfo_MouseHover);
             // 
             // bunifuPictureBox2

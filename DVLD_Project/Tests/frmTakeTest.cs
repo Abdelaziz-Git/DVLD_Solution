@@ -118,20 +118,7 @@ namespace DVLD_Project.Tests
                     MessageBox.Show("Failed to lock test appointment. Please retake test.");
                     return;
                 }
-                if (_Mode == enMode.TakePracticalTest)
-                {
-                    clsApplications App = clsApplications.Find(clsLocalDrivingLicenseApplications.Find
-                        (_TestAppointment.LocalDrivingLicenseApplicationID).ApplicationID);
-                    App.ApplicationStatus = (int)clsUtil.enApplicationStatus.Completed;
-                    App.LastStatusDate = DateTime.Now;
-                    if (!App.Save())
-                    {
-                        clsTests.Delete(NewTest.TestID);
-                        MessageBox.Show("Failed to update application status. Please retake test");
-                        return;
-                    }
-                }
-
+           
                 lblTestID.Text = NewTest.TestID.ToString();
                 MessageBox.Show("Test result saved successfully.");
                 btnSave.Enabled = false;

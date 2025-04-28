@@ -161,69 +161,81 @@ namespace DVLD_Project.Tests
             }
             
         }
+        private void SaveDataOnAddNewMode()
+        {
+            _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
+            _TestAppointment.IsLocked = false;
+            _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.Id;
+            _TestAppointment.TestTypeID = _TestType.Id;
+            _TestAppointment.RetakeTestApplicationID = null;
+            _TestAppointment.AppointmentDate = dpTestAppointment.Value;
+            if (decimal.TryParse(lblTotalFees.Text, out decimal totalFees) == false)
+            {
+                MessageBox.Show("Invalid total fees!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            _TestAppointment.PaidFees = totalFees;
+
+            if (_TestAppointment.Save())
+            {
+                _Mode = enMode.Update;
+                MessageBox.Show("Test appointment scheduled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to schedule test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void SaveDataOnUpdateMode()
+        {
+            _TestAppointment.AppointmentDate = dpTestAppointment.Value;
+            if (_TestAppointment.Save())
+            {
+                MessageBox.Show("Test appointment updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to update test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void SaveDataOnRetakeTestMode()
+        {
+            _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
+            _TestAppointment.IsLocked = false;
+            _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.Id;
+            _TestAppointment.TestTypeID = _TestType.Id;
+            _TestAppointment.RetakeTestApplicationID = _RetakTestApplication.ApplicationID;
+            _TestAppointment.AppointmentDate = dpTestAppointment.Value;
+            if (decimal.TryParse(lblTotalFees.Text, out decimal totalFees) == false)
+            {
+                MessageBox.Show("Invalid total fees!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            _TestAppointment.PaidFees = totalFees;
+
+            if (_TestAppointment.Save())
+            {
+                _Mode = enMode.Update;
+                MessageBox.Show("Retake test appointment scheduled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to schedule retake test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void SaveData()
         {
             if (_Mode == enMode.AddNew)
             {
-                _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
-                _TestAppointment.IsLocked = false;
-                _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.Id;
-                _TestAppointment.TestTypeID = _TestType.Id;
-                _TestAppointment.RetakeTestApplicationID = null;
-                _TestAppointment.AppointmentDate = dpTestAppointment.Value;
-                if(decimal.TryParse(lblTotalFees.Text, out decimal totalFees) == false)
-                {
-                    MessageBox.Show("Invalid total fees!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                _TestAppointment.PaidFees = totalFees;
-
-                if (_TestAppointment.Save())
-                {
-                    _Mode = enMode.Update;
-                    MessageBox.Show("Test appointment scheduled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Failed to schedule test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                SaveDataOnAddNewMode();
             }
             else if (_Mode == enMode.Update)
             {
-                _TestAppointment.AppointmentDate = dpTestAppointment.Value;
-                if (_TestAppointment.Save())
-                {
-                    MessageBox.Show("Test appointment updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Failed to update test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                SaveDataOnUpdateMode();
             }
             else if (_Mode == enMode.RetakeTest)
             {
-                _TestAppointment.LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
-                _TestAppointment.IsLocked = false;
-                _TestAppointment.CreatedByUserID = clsGlobal.CurrentUser.Id;
-                _TestAppointment.TestTypeID = _TestType.Id;
-                _TestAppointment.RetakeTestApplicationID = _RetakTestApplication.ApplicationID;
-                _TestAppointment.AppointmentDate = dpTestAppointment.Value;
-                if (decimal.TryParse(lblTotalFees.Text, out decimal totalFees) == false)
-                {
-                    MessageBox.Show("Invalid total fees!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                _TestAppointment.PaidFees = totalFees;
-                
-                if (_TestAppointment.Save())
-                {
-                    _Mode = enMode.Update;
-                    MessageBox.Show("Retake test appointment scheduled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Failed to schedule retake test appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                SaveDataOnRetakeTestMode();
             }
         }
 

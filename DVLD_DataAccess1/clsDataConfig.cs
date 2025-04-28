@@ -9,5 +9,7 @@ namespace DVLD_DataAccess1
     public class clsDataConfig
     {
         public static string ConnectionString = "Server=.;DataBase=DVLD_DB;User Id=sa;Password=123456;";
+        //public static string ConnectionString = "Server=.\\SQLEXPRESS;DataBase=DVLD_DB;User Id=sa;Password=123456;";
+
     }
 }

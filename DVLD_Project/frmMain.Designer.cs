@@ -43,6 +43,7 @@
             this.usTpUsers2 = new DVLD_Project.People.Controls.usTpUsers();
             this.tpLocalDrivingLicenseApplications = new System.Windows.Forms.TabPage();
             this.ucManageLocalDrivingLicenseApplications1 = new DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications();
+            this.tpDrivers = new System.Windows.Forms.TabPage();
             this.msApplications = new System.Windows.Forms.MenuStrip();
             this.manageApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localDrivingLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +54,7 @@
             this.internationalDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicationsTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DriversToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.currentUserToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,12 +66,14 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnManagePeople = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pbCurrentUser = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.ucListDrivers1 = new DVLD_Project.Drivers.Controls.ucListDrivers();
             this.tcMain.SuspendLayout();
             this.tpMain.SuspendLayout();
             this.tcSubMain.SuspendLayout();
             this.tpPersons.SuspendLayout();
             this.tpUsers.SuspendLayout();
             this.tpLocalDrivingLicenseApplications.SuspendLayout();
+            this.tpDrivers.SuspendLayout();
             this.msApplications.SuspendLayout();
             this.pnlMainLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
@@ -124,22 +128,23 @@
             // tcSubMain
             // 
             this.tcSubMain.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tcSubMain.AllowTransitions = false;
+            this.tcSubMain.AllowTransitions = true;
             this.tcSubMain.Controls.Add(this.tpPersons);
             this.tcSubMain.Controls.Add(this.tpUsers);
             this.tcSubMain.Controls.Add(this.tpLocalDrivingLicenseApplications);
+            this.tcSubMain.Controls.Add(this.tpDrivers);
             this.tcSubMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcSubMain.Location = new System.Drawing.Point(3, 39);
             this.tcSubMain.Multiline = true;
             this.tcSubMain.Name = "tcSubMain";
-            this.tcSubMain.Page = this.tpLocalDrivingLicenseApplications;
-            this.tcSubMain.PageIndex = 2;
-            this.tcSubMain.PageName = "tpLocalDrivingLicenseApplications";
-            this.tcSubMain.PageTitle = "LDLApp";
+            this.tcSubMain.Page = this.tpDrivers;
+            this.tcSubMain.PageIndex = 3;
+            this.tcSubMain.PageName = "tpDrivers";
+            this.tcSubMain.PageTitle = "Drivers";
             this.tcSubMain.SelectedIndex = 0;
             this.tcSubMain.Size = new System.Drawing.Size(988, 633);
             this.tcSubMain.TabIndex = 1;
-            animation1.AnimateOnlyDifferences = false;
+            animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
             animation1.LeafCoeff = 0F;
             animation1.MaxTime = 1F;
@@ -147,7 +152,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -155,7 +160,7 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.tcSubMain.Transition = animation1;
-            this.tcSubMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.tcSubMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Scale;
             // 
             // tpPersons
             // 
@@ -216,6 +221,17 @@
             this.ucManageLocalDrivingLicenseApplications1.Size = new System.Drawing.Size(974, 601);
             this.ucManageLocalDrivingLicenseApplications1.TabIndex = 0;
             // 
+            // tpDrivers
+            // 
+            this.tpDrivers.Controls.Add(this.ucListDrivers1);
+            this.tpDrivers.Location = new System.Drawing.Point(4, 4);
+            this.tpDrivers.Name = "tpDrivers";
+            this.tpDrivers.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDrivers.Size = new System.Drawing.Size(980, 607);
+            this.tpDrivers.TabIndex = 3;
+            this.tpDrivers.Text = "Drivers";
+            this.tpDrivers.UseVisualStyleBackColor = true;
+            // 
             // msApplications
             // 
             this.msApplications.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
@@ -224,6 +240,7 @@
             this.drivingLicensesServicesToolStripMenuItem,
             this.applicationsTypesToolStripMenuItem,
             this.testTypesToolStripMenuItem,
+            this.DriversToolStripMenuItem,
             this.settingsToolStripMenuItem});
             this.msApplications.Location = new System.Drawing.Point(3, 3);
             this.msApplications.Name = "msApplications";
@@ -324,6 +341,17 @@
             this.testTypesToolStripMenuItem.Text = "Test Types";
             this.testTypesToolStripMenuItem.Click += new System.EventHandler(this.testTypesToolStripMenuItem_Click);
             // 
+            // DriversToolStripMenuItem
+            // 
+            this.DriversToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriversToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.DriversToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.driver_32;
+            this.DriversToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.DriversToolStripMenuItem.Name = "DriversToolStripMenuItem";
+            this.DriversToolStripMenuItem.Size = new System.Drawing.Size(105, 36);
+            this.DriversToolStripMenuItem.Text = "Drivers";
+            this.DriversToolStripMenuItem.Click += new System.EventHandler(this.DriversToolStripMenuItem_Click);
+            // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.AutoToolTip = true;
@@ -336,7 +364,7 @@
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_settings_32;
             this.settingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.settingsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(180, 0, 0, 0);
+            this.settingsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(76, 0, 0, 0);
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(44, 36);
             this.settingsToolStripMenuItem.Text = "Settings";
@@ -714,6 +742,15 @@
             this.pbCurrentUser.TabStop = false;
             this.pbCurrentUser.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
+            // ucListDrivers1
+            // 
+            this.ucListDrivers1.BackColor = System.Drawing.Color.White;
+            this.ucListDrivers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucListDrivers1.Location = new System.Drawing.Point(3, 3);
+            this.ucListDrivers1.Name = "ucListDrivers1";
+            this.ucListDrivers1.Size = new System.Drawing.Size(974, 601);
+            this.ucListDrivers1.TabIndex = 0;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,6 +775,7 @@
             this.tpPersons.ResumeLayout(false);
             this.tpUsers.ResumeLayout(false);
             this.tpLocalDrivingLicenseApplications.ResumeLayout(false);
+            this.tpDrivers.ResumeLayout(false);
             this.msApplications.ResumeLayout(false);
             this.msApplications.PerformLayout();
             this.pnlMainLeft.ResumeLayout(false);
@@ -779,6 +817,9 @@
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
         private System.Windows.Forms.TabPage tpLocalDrivingLicenseApplications;
         private Applications.LocalDrivingLicenseApplications.Controls.ucManageLocalDrivingLicenseApplications ucManageLocalDrivingLicenseApplications1;
+        private System.Windows.Forms.ToolStripMenuItem DriversToolStripMenuItem;
+        private System.Windows.Forms.TabPage tpDrivers;
+        private Drivers.Controls.ucListDrivers ucListDrivers1;
     }
 }
 

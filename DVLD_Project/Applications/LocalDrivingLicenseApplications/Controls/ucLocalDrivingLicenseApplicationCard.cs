@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVLD_Business1;
+using DVLD_Project.Licenses;
 
 namespace DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls
 {
@@ -66,6 +67,17 @@ namespace DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls
         private void ucLocalDrivingLicenseApplicationCard_Load(object sender, EventArgs e)
         {
             bunifuPictureBox8.Anchor = AnchorStyles.Left | AnchorStyles.Top; 
+        }
+
+        private void linkLblShowLicenseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(_LocalDrivingLicenseApplication != null)
+            {
+                using (frmLicenseCrad frm = new frmLicenseCrad(clsLicenses.FindByApplicationID(_LocalDrivingLicenseApplication.ApplicationID).LicenseID))
+                {
+                    frm.ShowDialog();
+                }
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace DVLD_Business1
     {
         public enum enMode { AddNewMode = 0, UpdateMode = 1 }
         public enMode Mode { get; private set; } = enMode.AddNewMode;
-
+        public enum enIssueReason { FirstTime = 1, Renew, ReplacementForDamaged, ReplacementForLost }
         public int LicenseID { get; private set; }
         public int ApplicationID { get; set; }
         public int LicenseClassID { get; set; }
@@ -21,6 +21,19 @@ namespace DVLD_Business1
         public byte IssueReason { get; set; }
         public bool IsActive { get; set; }
         public int CreatedByUserID { get; set; }
+        public string ClassName 
+        {
+            get 
+            {
+                if (LicenseClassID == -1)
+                    return string.Empty;
+                else
+                {
+                    clsLicenseClasses licenseClass = clsLicenseClasses.Find(LicenseClassID);
+                    return (licenseClass == null) ? string.Empty : licenseClass.ClassName;
+                }
+            }
+        }
 
         public clsLicenses()
         {
@@ -54,6 +67,10 @@ namespace DVLD_Business1
             Mode = enMode.UpdateMode;
         }
 
+        public static bool IsDetained(int licenseID)
+        {
+            return clsLicensesData.IsDetained(licenseID);
+        }
         public static clsLicenses Find(int licenseID)
         {
             LicensesDTO dto = clsLicensesData.GetLicenseInfoByID(licenseID);
