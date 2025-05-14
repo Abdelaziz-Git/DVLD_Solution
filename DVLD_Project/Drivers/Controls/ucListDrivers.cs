@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVLD_Business1;
 using Bunifu.UI.WinForms.Helpers.Transitions;
+using DVLD_Project.Licenses;
 
 namespace DVLD_Project.Drivers.Controls
 {
@@ -84,7 +85,8 @@ namespace DVLD_Project.Drivers.Controls
             else if (ddFilterBy.SelectedIndex == (int)enFilterBy.NationalNo ||
                 ddFilterBy.SelectedIndex == (int)enFilterBy.FullName)
             {
-                FilteredDrivers = clsDrivers.GetAllDrivers().Where(DriverPersonInfo => DriverPersonInfo.PersonInfo.GetPropValue(filterBy).ToString().ToLower().Contains(filterValue)).ToList();
+                FilteredDrivers = clsDrivers.GetAllDrivers().Where(DriverPersonInfo => DriverPersonInfo.PersonInfo.GetPropValue(filterBy).
+                ToString().ToLower().Contains(filterValue)).ToList();
             }
 
             dgvDrivers.Rows.Clear();
@@ -100,6 +102,18 @@ namespace DVLD_Project.Drivers.Controls
                  );
             }
             lblRecords.Text = dgvDrivers.Rows.Count.ToString();
+        }
+        private void HandleRowClicked()
+        {
+            if (!int.TryParse(dgvDrivers.SelectedRows[0].Cells["clmnDriverID"].Value.ToString(), out int driverID))
+            {
+                MessageBox.Show("Invalid Driver ID.\nPlease try again.");
+                return;
+            }
+            using (frmShowDriverLicenses frm = new frmShowDriverLicenses(driverID))
+            {
+                frm.ShowDialog();
+            }
         }
 
         // Events
@@ -126,6 +140,16 @@ namespace DVLD_Project.Drivers.Controls
         private void txtFind_TextChanged(object sender, EventArgs e)
         {
             HandleFilter();
+        }
+
+        private void showDriverLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HandleRowClicked();
+        }
+
+        private void dgvDrivers_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            HandleRowClicked();
         }
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="ApplicationTypeDTO.cs" />
     <Compile Include="CountryDTO.cs" />
     <Compile Include="DriversDTO.cs" />
+    <Compile Include="InternationalLicensesDTO.cs" />
     <Compile Include="LicenseClassesDTO.cs" />
     <Compile Include="LicensesDTO.cs" />
     <Compile Include="LocalDrivingLicenseApplicationsDTO.cs" />

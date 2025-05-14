@@ -113,6 +113,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Change_license__32 {
+            get {
+                object obj = ResourceManager.GetObject("Change license -32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_32 {
             get {
                 object obj = ResourceManager.GetObject("delete_32", resourceCulture);
@@ -483,6 +493,16 @@ namespace DVLD_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_search_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_settings_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-settings-32", resourceCulture);
@@ -636,6 +656,16 @@ namespace DVLD_Project.Properties {
         internal static System.Drawing.Bitmap person_male_icon_32 {
             get {
                 object obj = ResourceManager.GetObject("person-male-icon 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap renew_license_32 {
+            get {
+                object obj = ResourceManager.GetObject("renew_license_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

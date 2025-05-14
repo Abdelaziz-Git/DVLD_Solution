@@ -20,16 +20,30 @@ namespace DVLD_Project.Licenses.Controls
         {
             InitializeComponent();
         }
+        public clsLicenses LicenseInfo
+        {
+            get 
+            {
+                return _License;
+            }
+           
+        }
         clsLicenses _License = null;
         clsPerson _Person = null;
         public bool LoadLicenseInfo(int LicenseID)
         {
             _License = clsLicenses.Find(LicenseID);
             if (_License == null)
+            {
+                SetDefaultValues();
                 return false;
+            }
             _Person = clsPerson.Find(clsDrivers.Find(_License.DriverID).PersonID);
             if (_Person == null)
+            {
+                SetDefaultValues();
                 return false;
+            }
             lblLicense.Text = clsLicenseClasses.Find(_License.LicenseClassID).ClassName;
             lblName.Text = _Person.FullName;
             lblNationalNo.Text = _Person.NationalNo;
@@ -81,6 +95,7 @@ namespace DVLD_Project.Licenses.Controls
             lblDriverID.Text = "N/A";
             lblexpirationDate.Text = "N/A";
             lblissueReason.Text = "N/A";
+            pbPerson.Image = Resources.icons8_male_100;
         }
     }
 }

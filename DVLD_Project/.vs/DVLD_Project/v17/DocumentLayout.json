@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|c:\\users\\abdelaziz\\source\\repos\\dvld_solution\\dvld_project\\licenses\\controls\\ucdriverlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:licenses\\controls\\ucdriverlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\licenses\\controls\\ucdriverlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:licenses\\controls\\ucdriverlicenseshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{09ECC59D-A606-45BA-9CF0-C0D0D3132AF9}|DVLD_Project.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -24,12 +41,51 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ucDriverLicensesHistory.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "RelativeDocumentMoniker": "Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "RelativeToolTip": "Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwIcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:50:24.373Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ucDriverLicensesHistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "RelativeDocumentMoniker": "Licenses\\Controls\\ucDriverLicensesHistory.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\Licenses\\Controls\\ucDriverLicensesHistory.cs [Design]",
+              "RelativeToolTip": "Licenses\\Controls\\ucDriverLicensesHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:47:50.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:28:35.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\ABDELAZIZ\\source\\repos\\DVLD_Solution\\DVLD_Project\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:03:22.888Z"
             }
           ]
         },

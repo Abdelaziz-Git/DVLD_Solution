@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucListDrivers));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -51,8 +52,11 @@
             this.clmnActiveLicenses = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.cmsDriversList = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDriverLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cmsDriversList.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblRecords
@@ -261,6 +265,7 @@
             this.clmFullName,
             this.clmnDate,
             this.clmnActiveLicenses});
+            this.dgvDrivers.ContextMenuStrip = this.cmsDriversList;
             this.dgvDrivers.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvDrivers.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvDrivers.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -309,6 +314,7 @@
             this.dgvDrivers.Size = new System.Drawing.Size(635, 365);
             this.dgvDrivers.TabIndex = 11;
             this.dgvDrivers.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvDrivers.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDrivers_CellMouseDoubleClick);
             // 
             // clmnDriverID
             // 
@@ -375,6 +381,23 @@
             this.lblTitle.TabIndex = 9;
             this.lblTitle.Text = "Mange Drivers";
             // 
+            // cmsDriversList
+            // 
+            this.cmsDriversList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsDriversList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDriverLicensesToolStripMenuItem});
+            this.cmsDriversList.Name = "cmsDriversList";
+            this.cmsDriversList.Size = new System.Drawing.Size(236, 42);
+            // 
+            // showDriverLicensesToolStripMenuItem
+            // 
+            this.showDriverLicensesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_show_details_32;
+            this.showDriverLicensesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showDriverLicensesToolStripMenuItem.Name = "showDriverLicensesToolStripMenuItem";
+            this.showDriverLicensesToolStripMenuItem.Size = new System.Drawing.Size(235, 38);
+            this.showDriverLicensesToolStripMenuItem.Text = "Show driver licenses";
+            this.showDriverLicensesToolStripMenuItem.Click += new System.EventHandler(this.showDriverLicensesToolStripMenuItem_Click);
+            // 
             // ucListDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,6 +416,7 @@
             this.Load += new System.EventHandler(this.ucListDrivers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.cmsDriversList.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +437,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmFullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnActiveLicenses;
+        private System.Windows.Forms.ContextMenuStrip cmsDriversList;
+        private System.Windows.Forms.ToolStripMenuItem showDriverLicensesToolStripMenuItem;
     }
 }

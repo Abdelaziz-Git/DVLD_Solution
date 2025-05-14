@@ -44,7 +44,6 @@ namespace DVLD_Project.Licenses
                 return;
             }
             ucDriverLicensesHistory1.LoadDriverLicensesHistory(Driver.DriverID);
-            ucPersonInfo1.LoadPersonInfo(Driver.PersonID);
         }
     }
 }

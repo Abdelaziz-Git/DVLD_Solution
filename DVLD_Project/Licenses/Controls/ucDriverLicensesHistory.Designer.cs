@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDriverLicensesHistory));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -57,16 +58,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tpInternationalLicenses = new System.Windows.Forms.TabPage();
-            this.dgvInternationalLicenses = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgvInternationalLicenses = new System.Windows.Forms.DataGridView();
+            this.clmnInternationalLicenseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnLocalLicenseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnDriverName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnIssueDateInter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnExpirationDateInter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmnIsActiveInter = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblRecordsInter = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bunifuGroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tcLicenses.SuspendLayout();
@@ -74,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicenses)).BeginInit();
             this.tpInternationalLicenses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGroupBox1
@@ -361,7 +368,7 @@
             this.dgvLocalLicenses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
@@ -375,6 +382,7 @@
             this.clmnIssueDate,
             this.clmnExpirationDate,
             this.clmnIsActive});
+            this.dgvLocalLicenses.ContextMenuStrip = this.contextMenuStrip2;
             this.dgvLocalLicenses.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvLocalLicenses.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvLocalLicenses.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -393,14 +401,14 @@
             this.dgvLocalLicenses.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvLocalLicenses.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvLocalLicenses.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLocalLicenses.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLocalLicenses.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvLocalLicenses.EnableHeadersVisualStyles = false;
             this.dgvLocalLicenses.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvLocalLicenses.HeaderBackColor = System.Drawing.Color.MidnightBlue;
@@ -409,18 +417,18 @@
             this.dgvLocalLicenses.Location = new System.Drawing.Point(36, 57);
             this.dgvLocalLicenses.Name = "dgvLocalLicenses";
             this.dgvLocalLicenses.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLocalLicenses.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLocalLicenses.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLocalLicenses.RowHeadersVisible = false;
             this.dgvLocalLicenses.RowTemplate.Height = 40;
             this.dgvLocalLicenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLocalLicenses.Size = new System.Drawing.Size(660, 319);
+            this.dgvLocalLicenses.Size = new System.Drawing.Size(660, 325);
             this.dgvLocalLicenses.TabIndex = 4;
             this.dgvLocalLicenses.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -456,6 +464,9 @@
             // 
             // clmnExpirationDate
             // 
+            dataGridViewCellStyle3.Format = "D";
+            dataGridViewCellStyle3.NullValue = null;
+            this.clmnExpirationDate.DefaultCellStyle = dataGridViewCellStyle3;
             this.clmnExpirationDate.HeaderText = "Expiration Date";
             this.clmnExpirationDate.Name = "clmnExpirationDate";
             this.clmnExpirationDate.ReadOnly = true;
@@ -502,6 +513,7 @@
             // 
             // tpInternationalLicenses
             // 
+            this.tpInternationalLicenses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tpInternationalLicenses.Controls.Add(this.dgvInternationalLicenses);
             this.tpInternationalLicenses.Controls.Add(this.lblRecordsInter);
             this.tpInternationalLicenses.Controls.Add(this.label4);
@@ -509,140 +521,130 @@
             this.tpInternationalLicenses.Location = new System.Drawing.Point(4, 4);
             this.tpInternationalLicenses.Name = "tpInternationalLicenses";
             this.tpInternationalLicenses.Padding = new System.Windows.Forms.Padding(3);
-            this.tpInternationalLicenses.Size = new System.Drawing.Size(742, 418);
+            this.tpInternationalLicenses.Size = new System.Drawing.Size(739, 412);
             this.tpInternationalLicenses.TabIndex = 1;
             this.tpInternationalLicenses.Text = "International";
             this.tpInternationalLicenses.UseVisualStyleBackColor = true;
             // 
             // dgvInternationalLicenses
             // 
-            this.dgvInternationalLicenses.AllowCustomTheming = true;
             this.dgvInternationalLicenses.AllowUserToAddRows = false;
             this.dgvInternationalLicenses.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.dgvInternationalLicenses.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvInternationalLicenses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvInternationalLicenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dgvInternationalLicenses.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dgvInternationalLicenses.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvInternationalLicenses.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvInternationalLicenses.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvInternationalLicenses.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvInternationalLicenses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvInternationalLicenses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvInternationalLicenses.ColumnHeadersHeight = 40;
+            this.dgvInternationalLicenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInternationalLicenses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewCheckBoxColumn1});
-            this.dgvInternationalLicenses.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvInternationalLicenses.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvInternationalLicenses.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvInternationalLicenses.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvInternationalLicenses.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvInternationalLicenses.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvInternationalLicenses.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.MidnightBlue;
-            this.dgvInternationalLicenses.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvInternationalLicenses.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.MidnightBlue;
-            this.dgvInternationalLicenses.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.CurrentTheme.Name = null;
-            this.dgvInternationalLicenses.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvInternationalLicenses.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvInternationalLicenses.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvInternationalLicenses.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.clmnInternationalLicenseID,
+            this.clmnLocalLicenseID,
+            this.clmnDriverName,
+            this.clmnIssueDateInter,
+            this.clmnExpirationDateInter,
+            this.clmnIsActiveInter});
+            this.dgvInternationalLicenses.ContextMenuStrip = this.contextMenuStrip1;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvInternationalLicenses.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvInternationalLicenses.EnableHeadersVisualStyles = false;
-            this.dgvInternationalLicenses.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvInternationalLicenses.HeaderBackColor = System.Drawing.Color.MidnightBlue;
-            this.dgvInternationalLicenses.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvInternationalLicenses.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvInternationalLicenses.Location = new System.Drawing.Point(42, 60);
+            this.dgvInternationalLicenses.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvInternationalLicenses.Location = new System.Drawing.Point(40, 67);
+            this.dgvInternationalLicenses.MultiSelect = false;
             this.dgvInternationalLicenses.Name = "dgvInternationalLicenses";
             this.dgvInternationalLicenses.ReadOnly = true;
+            this.dgvInternationalLicenses.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvInternationalLicenses.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvInternationalLicenses.RowHeadersVisible = false;
-            this.dgvInternationalLicenses.RowTemplate.Height = 40;
             this.dgvInternationalLicenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInternationalLicenses.Size = new System.Drawing.Size(662, 319);
+            this.dgvInternationalLicenses.Size = new System.Drawing.Size(647, 314);
             this.dgvInternationalLicenses.TabIndex = 8;
-            this.dgvInternationalLicenses.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // dataGridViewTextBoxColumn1
+            // clmnInternationalLicenseID
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 49;
+            this.clmnInternationalLicenseID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.clmnInternationalLicenseID.HeaderText = "ID";
+            this.clmnInternationalLicenseID.Name = "clmnInternationalLicenseID";
+            this.clmnInternationalLicenseID.ReadOnly = true;
+            this.clmnInternationalLicenseID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.clmnInternationalLicenseID.Width = 51;
             // 
-            // dataGridViewTextBoxColumn2
+            // clmnLocalLicenseID
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "App ID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 84;
+            this.clmnLocalLicenseID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.clmnLocalLicenseID.HeaderText = "Local license ID";
+            this.clmnLocalLicenseID.Name = "clmnLocalLicenseID";
+            this.clmnLocalLicenseID.ReadOnly = true;
+            this.clmnLocalLicenseID.Width = 147;
             // 
-            // dataGridViewTextBoxColumn3
+            // clmnDriverName
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Class name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 150;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 200;
+            this.clmnDriverName.HeaderText = "Driver name";
+            this.clmnDriverName.Name = "clmnDriverName";
+            this.clmnDriverName.ReadOnly = true;
+            this.clmnDriverName.Width = 150;
             // 
-            // dataGridViewTextBoxColumn4
+            // clmnIssueDateInter
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Issue date";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 107;
+            this.clmnIssueDateInter.HeaderText = "Issue date";
+            this.clmnIssueDateInter.Name = "clmnIssueDateInter";
+            this.clmnIssueDateInter.ReadOnly = true;
+            this.clmnIssueDateInter.Width = 150;
             // 
-            // dataGridViewTextBoxColumn5
+            // clmnExpirationDateInter
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Expiration Date";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 144;
+            this.clmnExpirationDateInter.HeaderText = "Expiry date";
+            this.clmnExpirationDateInter.Name = "clmnExpirationDateInter";
+            this.clmnExpirationDateInter.ReadOnly = true;
+            this.clmnExpirationDateInter.Width = 150;
             // 
-            // dataGridViewCheckBoxColumn1
+            // clmnIsActiveInter
             // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Is Active";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Width = 76;
+            this.clmnIsActiveInter.HeaderText = "Is active";
+            this.clmnIsActiveInter.Name = "clmnIsActiveInter";
+            this.clmnIsActiveInter.ReadOnly = true;
+            this.clmnIsActiveInter.Width = 80;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDetailsToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(186, 42);
+            // 
+            // showDetailsToolStripMenuItem
+            // 
+            this.showDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDetailsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_show_details_32;
+            this.showDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(185, 38);
+            this.showDetailsToolStripMenuItem.Text = "Show details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // lblRecordsInter
             // 
             this.lblRecordsInter.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblRecordsInter.AutoSize = true;
-            this.lblRecordsInter.Location = new System.Drawing.Point(125, 384);
+            this.lblRecordsInter.Location = new System.Drawing.Point(123, 384);
             this.lblRecordsInter.Name = "lblRecordsInter";
             this.lblRecordsInter.Size = new System.Drawing.Size(54, 21);
             this.lblRecordsInter.TabIndex = 7;
@@ -652,7 +654,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 384);
+            this.label4.Location = new System.Drawing.Point(36, 384);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 21);
             this.label4.TabIndex = 6;
@@ -664,11 +666,28 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(263, 12);
+            this.label5.Location = new System.Drawing.Point(261, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(222, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "International licenses";
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip2.Name = "contextMenuStrip1";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(197, 64);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Image = global::DVLD_Project.Properties.Resources.icons8_show_details_32;
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 38);
+            this.toolStripMenuItem1.Text = "Show details";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // ucDriverLicensesHistory
             // 
@@ -688,6 +707,8 @@
             this.tpInternationalLicenses.ResumeLayout(false);
             this.tpInternationalLicenses.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -709,16 +730,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnIssueDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmnExpirationDate;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clmnIsActive;
-        private Bunifu.UI.WinForms.BunifuDataGridView dgvInternationalLicenses;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.Label lblRecordsInter;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnInternational;
+        private System.Windows.Forms.DataGridView dgvInternationalLicenses;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnInternationalLicenseID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnLocalLicenseID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnDriverName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnIssueDateInter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmnExpirationDateInter;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clmnIsActiveInter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

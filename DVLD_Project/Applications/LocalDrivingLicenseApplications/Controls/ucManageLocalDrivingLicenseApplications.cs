@@ -43,7 +43,7 @@ namespace DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls
         }
 
         // Methods
-        private void LoadData(DataView dataView)
+        public void LoadData(DataView dataView)
         {
             dgvDrivingLicenseApplications.Rows.Clear();
             foreach (DataRowView dv in dataView)

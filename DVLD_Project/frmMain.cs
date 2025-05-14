@@ -10,8 +10,12 @@ using System.Windows.Forms;
 using Bunifu;
 using DVLD_Business1;
 using DVLD_Project.Applications.LocalDrivingLicenseApplications;
+using DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls;
+using DVLD_Project.Applications.RenewLicenseApplications;
+using DVLD_Project.Applications.ReplacementForDamagedOrLostLicenses;
 using DVLD_Project.ApplicationsTypes;
 using DVLD_Project.GlobalClasses;
+using DVLD_Project.Licenses.International;
 using DVLD_Project.TestTypes;
 using DVLD_Project.Users;
 
@@ -19,37 +23,42 @@ namespace DVLD_Project
 {
     public partial class frmMain : Form
     {
+        // Properties
         frmLogin _LoginForm;
+
+        // Enums
         enum PageIndex
         {
             ManagePeople = 0,
             ManageUsers = 1,
             LDLApplications = 2,
             Drivers = 3,
+            InternationalLicenses=4
         }
+
+        // Constructor
         public frmMain(frmLogin LoginForm)
         {
             InitializeComponent();
             _LoginForm = LoginForm;
         }
 
+
+        // Events
         private void btnManagePeople_Click(object sender, EventArgs e)
         {
             tcMain.PageIndex = 0;
             tcSubMain.PageIndex = (int)PageIndex.ManagePeople;
         }
-
         private void btnManageUsers_Click(object sender, EventArgs e)
         {
             tcMain.PageIndex = 0;
             tcSubMain.PageIndex = (int)PageIndex.ManageUsers;
         }
-
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             _LoginForm.Show();
         }
-
         private void currentUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmUserInfo userInfo = new frmUserInfo(clsGlobal.CurrentUser.Id))
@@ -57,7 +66,6 @@ namespace DVLD_Project
                 userInfo.ShowDialog();
             }   
         }
-
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmChangePassword changePassword = new frmChangePassword(clsGlobal.CurrentUser.Id))
@@ -65,12 +73,10 @@ namespace DVLD_Project
                 changePassword.ShowDialog();
             }
         }
-
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void applicationsTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmManageApplicationsTypes manageApplicationsTypes = new frmManageApplicationsTypes())
@@ -78,8 +84,6 @@ namespace DVLD_Project
                 manageApplicationsTypes.ShowDialog();
             }   
         }
-
-
         private void testTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmManageTestTypes frm = new frmManageTestTypes())
@@ -87,7 +91,6 @@ namespace DVLD_Project
                 frm.ShowDialog();
             }   
         }
-
         private void localDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using(frmNewLocalDrivingLicenseApplication frm = new frmNewLocalDrivingLicenseApplication())
@@ -95,22 +98,52 @@ namespace DVLD_Project
                 frm.ShowDialog();
             }
         }
-
         private void frmMain_SizeChanged(object sender, EventArgs e)
         {
-            settingsToolStripMenuItem.Margin = new Padding((this.Width - 1235) + 76, 0, 0, 0);
+            settingsToolStripMenuItem.Margin = new Padding((this.Width - 1235) + 196, 0, 0, 0);
         }
-
         private void localDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tcMain.PageIndex = 0;
             tcSubMain.PageIndex = (int)PageIndex.LDLApplications;
+            ucManageLocalDrivingLicenseApplications1.LoadData(clsLocalDrivingLicenseApplications.GetAllDataView());
         }
-
         private void DriversToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tcSubMain.PageIndex = (int)PageIndex.Drivers;
             ucListDrivers1.FillDataGridViewDrivers();
+        }
+        private void internationalDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(frmAddNewInternationalLicense frm = new frmAddNewInternationalLicense())
+            {
+                frm.ShowDialog();
+            }
+        }
+        private void intenationalLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tcSubMain.PageIndex = (int)PageIndex.InternationalLicenses;
+            ucManageInternationalDrivingLicenseApplications1.RefreshAndFillDataGridViewInternationalLicenseApplications();
+        }
+        private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using(frmRenewLicense  frm = new frmRenewLicense())
+            { frm.ShowDialog(); }
+        }
+        private void replacementForDamagedOrLostLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (frmReplacementForDamagedOrLostLicenses frm = new frmReplacementForDamagedOrLostLicenses())
+            {
+                frm.ShowDialog();
+            }
+        }
+        private void tlsLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            pbCurrentUser.ImageLocation = clsGlobal.CurrentUser.PersonInfo.ImagePath;
         }
     }
 }
