@@ -125,7 +125,7 @@ namespace DVLD_DataAccess1
             {
                 using (SqlConnection connection = new SqlConnection(clsDataConfig.ConnectionString))
                 {
-                    string query = "select 1 from DetainedLicenses where LicenseID = @LicenseID and IsRelease = 0;";
+                    string query = "select 1 from DetainedLicenses where LicenseID = @LicenseID and (IsRelease = 0 or IsRelease is null);";
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
                         cmd.CommandType = CommandType.Text;

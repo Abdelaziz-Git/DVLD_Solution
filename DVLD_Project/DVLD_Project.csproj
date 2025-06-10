@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -53,8 +53,15 @@
   <PropertyGroup>
     <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DVLD System icon 32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DVLD_Project.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
@@ -148,6 +155,24 @@
     </Compile>
     <Compile Include="Applications\Controls\ucApplicationCard.Designer.cs">
       <DependentUpon>ucApplicationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\Controls\ucManageDetainedLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\Controls\ucManageDetainedLicenses.Designer.cs">
+      <DependentUpon>ucManageDetainedLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\frmDetainLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\frmDetainLicense.Designer.cs">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\frmReleaseLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\DetainedLicenses\frmReleaseLicense.Designer.cs">
+      <DependentUpon>frmReleaseLicense.cs</DependentUpon>
     </Compile>
     <Compile Include="Applications\LocalDrivingLicenseApplications\Controls\ucLocalDrivingLicenseApplicationCard.cs">
       <SubType>UserControl</SubType>
@@ -387,6 +412,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\Controls\ucApplicationCard.resx">
       <DependentUpon>ucApplicationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\DetainedLicenses\Controls\ucManageDetainedLicenses.resx">
+      <DependentUpon>ucManageDetainedLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\DetainedLicenses\frmDetainLicense.resx">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\DetainedLicenses\frmReleaseLicense.resx">
+      <DependentUpon>frmReleaseLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplications\Controls\ucLocalDrivingLicenseApplicationCard.resx">
       <DependentUpon>ucLocalDrivingLicenseApplicationCard.cs</DependentUpon>
@@ -647,6 +681,7 @@
     <None Include="Resources\driver-32.png" />
     <None Include="Resources\driver licenses 128.png" />
     <None Include="Resources\Change license -32.png" />
+    <Content Include="DVLD System icon 32.ico" />
     <Content Include="Resources\edit applications Type.png" />
     <None Include="Resources\edit applications Type1.png" />
     <None Include="Resources\edit-text.png" />
@@ -676,6 +711,12 @@
     <None Include="Resources\test-drive-128.png" />
     <None Include="Resources\Take test 32.png" />
     <None Include="Resources\renew-license-32.png" />
+    <None Include="Resources\Police-32.png" />
+    <None Include="Resources\Release_32.png" />
+    <None Include="Resources\Police_128.png" />
+    <None Include="Resources\Police detain -32.png" />
+    <None Include="Resources\Setting-32.png" />
+    <None Include="Resources\service-32.png" />
     <Content Include="Resources\title.png" />
     <None Include="Resources\title1.png" />
   </ItemGroup>

@@ -54,14 +54,14 @@
             this.clmnIssueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnExpirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmnStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.cmsListInternationalLicenses = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLicensesHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenseApplications)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.cmsListInternationalLicenses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddInternationalLicense
@@ -412,6 +412,34 @@
             this.clmnStatus.ReadOnly = true;
             this.clmnStatus.Width = 78;
             // 
+            // cmsListInternationalLicenses
+            // 
+            this.cmsListInternationalLicenses.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showLicenseToolStripMenuItem,
+            this.showLicensesHistoryToolStripMenuItem});
+            this.cmsListInternationalLicenses.Name = "cmsListInternationalLicenses";
+            this.cmsListInternationalLicenses.Size = new System.Drawing.Size(257, 80);
+            // 
+            // showLicenseToolStripMenuItem
+            // 
+            this.showLicenseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.driver_license_services;
+            this.showLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
+            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(256, 38);
+            this.showLicenseToolStripMenuItem.Text = "Show License";
+            this.showLicenseToolStripMenuItem.Click += new System.EventHandler(this.showLicenseToolStripMenuItem_Click);
+            // 
+            // showLicensesHistoryToolStripMenuItem
+            // 
+            this.showLicensesHistoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showLicensesHistoryToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.history_licenses;
+            this.showLicensesHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showLicensesHistoryToolStripMenuItem.Name = "showLicensesHistoryToolStripMenuItem";
+            this.showLicensesHistoryToolStripMenuItem.Size = new System.Drawing.Size(256, 38);
+            this.showLicensesHistoryToolStripMenuItem.Text = "Show Licenses History";
+            this.showLicensesHistoryToolStripMenuItem.Click += new System.EventHandler(this.showLicensesHistoryToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -435,38 +463,11 @@
             this.lblTitle.TabIndex = 9;
             this.lblTitle.Text = "International License Applications";
             // 
-            // cmsListInternationalLicenses
-            // 
-            this.cmsListInternationalLicenses.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showLicenseToolStripMenuItem,
-            this.showLicensesHistoryToolStripMenuItem});
-            this.cmsListInternationalLicenses.Name = "cmsListInternationalLicenses";
-            this.cmsListInternationalLicenses.Size = new System.Drawing.Size(257, 102);
-            // 
-            // showLicenseToolStripMenuItem
-            // 
-            this.showLicenseToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showLicenseToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.driver_license_services;
-            this.showLicenseToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
-            this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(256, 38);
-            this.showLicenseToolStripMenuItem.Text = "Show License";
-            this.showLicenseToolStripMenuItem.Click += new System.EventHandler(this.showLicenseToolStripMenuItem_Click);
-            // 
-            // showLicensesHistoryToolStripMenuItem
-            // 
-            this.showLicensesHistoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showLicensesHistoryToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.history_licenses;
-            this.showLicensesHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showLicensesHistoryToolStripMenuItem.Name = "showLicensesHistoryToolStripMenuItem";
-            this.showLicensesHistoryToolStripMenuItem.Size = new System.Drawing.Size(256, 38);
-            this.showLicensesHistoryToolStripMenuItem.Text = "Show Licenses History";
-            this.showLicensesHistoryToolStripMenuItem.Click += new System.EventHandler(this.showLicensesHistoryToolStripMenuItem_Click);
-            // 
             // ucManageInternationalDrivingLicenseApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnAddInternationalLicense);
             this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.bunifuLabel1);
@@ -480,8 +481,8 @@
             this.Size = new System.Drawing.Size(865, 656);
             this.Load += new System.EventHandler(this.ucManageInternationalDrivingLicenseApplications_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenseApplications)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cmsListInternationalLicenses.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

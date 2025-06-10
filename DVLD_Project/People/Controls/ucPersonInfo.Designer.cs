@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPersonInfo));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.gbPersonInfo = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.bunifuPictureBox9 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -75,9 +75,7 @@
             // 
             // gbPersonInfo
             // 
-            this.gbPersonInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbPersonInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gbPersonInfo.BackColor = System.Drawing.Color.White;
             this.gbPersonInfo.BorderColor = System.Drawing.Color.LightGray;
             this.gbPersonInfo.BorderRadius = 10;
@@ -115,9 +113,9 @@
             this.gbPersonInfo.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gbPersonInfo.LabelIndent = 10;
             this.gbPersonInfo.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.gbPersonInfo.Location = new System.Drawing.Point(0, 0);
+            this.gbPersonInfo.Location = new System.Drawing.Point(4, 0);
             this.gbPersonInfo.Name = "gbPersonInfo";
-            this.gbPersonInfo.Size = new System.Drawing.Size(663, 291);
+            this.gbPersonInfo.Size = new System.Drawing.Size(663, 289);
             this.gbPersonInfo.TabIndex = 0;
             this.gbPersonInfo.TabStop = false;
             this.gbPersonInfo.Text = "Person information";
@@ -125,11 +123,12 @@
             // bunifuPictureBox9
             // 
             this.bunifuPictureBox9.AllowFocused = false;
+            this.bunifuPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox9.AutoSizeHeight = true;
             this.bunifuPictureBox9.BorderRadius = 0;
             this.bunifuPictureBox9.Image = global::DVLD_Project.Properties.Resources.icons8_country_32;
             this.bunifuPictureBox9.IsCircle = true;
-            this.bunifuPictureBox9.Location = new System.Drawing.Point(379, 200);
+            this.bunifuPictureBox9.Location = new System.Drawing.Point(347, 166);
             this.bunifuPictureBox9.Name = "bunifuPictureBox9";
             this.bunifuPictureBox9.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,11 +139,12 @@
             // bunifuPictureBox8
             // 
             this.bunifuPictureBox8.AllowFocused = false;
+            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox8.AutoSizeHeight = true;
             this.bunifuPictureBox8.BorderRadius = 0;
             this.bunifuPictureBox8.Image = global::DVLD_Project.Properties.Resources.icons8_phone_number_32;
             this.bunifuPictureBox8.IsCircle = true;
-            this.bunifuPictureBox8.Location = new System.Drawing.Point(379, 158);
+            this.bunifuPictureBox8.Location = new System.Drawing.Point(58, 158);
             this.bunifuPictureBox8.Name = "bunifuPictureBox8";
             this.bunifuPictureBox8.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,11 +155,12 @@
             // bunifuPictureBox7
             // 
             this.bunifuPictureBox7.AllowFocused = false;
+            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox7.AutoSizeHeight = true;
             this.bunifuPictureBox7.BorderRadius = 0;
             this.bunifuPictureBox7.Image = global::DVLD_Project.Properties.Resources.icons8_date_32;
             this.bunifuPictureBox7.IsCircle = true;
-            this.bunifuPictureBox7.Location = new System.Drawing.Point(379, 115);
+            this.bunifuPictureBox7.Location = new System.Drawing.Point(357, 71);
             this.bunifuPictureBox7.Name = "bunifuPictureBox7";
             this.bunifuPictureBox7.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,11 +171,12 @@
             // bunifuPictureBox6
             // 
             this.bunifuPictureBox6.AllowFocused = false;
+            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox6.AutoSizeHeight = true;
             this.bunifuPictureBox6.BorderRadius = 0;
             this.bunifuPictureBox6.Image = global::DVLD_Project.Properties.Resources.icons8_address_32;
             this.bunifuPictureBox6.IsCircle = true;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(94, 244);
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(68, 241);
             this.bunifuPictureBox6.Name = "bunifuPictureBox6";
             this.bunifuPictureBox6.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,11 +187,12 @@
             // bunifuPictureBox5
             // 
             this.bunifuPictureBox5.AllowFocused = false;
+            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox5.AutoSizeHeight = true;
             this.bunifuPictureBox5.BorderRadius = 0;
             this.bunifuPictureBox5.Image = global::DVLD_Project.Properties.Resources.icons8_email_32;
             this.bunifuPictureBox5.IsCircle = true;
-            this.bunifuPictureBox5.Location = new System.Drawing.Point(94, 200);
+            this.bunifuPictureBox5.Location = new System.Drawing.Point(55, 200);
             this.bunifuPictureBox5.Name = "bunifuPictureBox5";
             this.bunifuPictureBox5.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,21 +203,23 @@
             // pbGendor
             // 
             this.pbGendor.AllowFocused = false;
+            this.pbGendor.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbGendor.AutoSizeHeight = true;
             this.pbGendor.BorderRadius = 0;
             this.pbGendor.Image = global::DVLD_Project.Properties.Resources.person_male_icon_32;
             this.pbGendor.IsCircle = true;
-            this.pbGendor.Location = new System.Drawing.Point(94, 158);
+            this.pbGendor.Location = new System.Drawing.Point(343, 115);
             this.pbGendor.Name = "pbGendor";
             this.pbGendor.Size = new System.Drawing.Size(24, 24);
             this.pbGendor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbGendor.TabIndex = 23;
             this.pbGendor.TabStop = false;
             this.pbGendor.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
-            // 
+             // 
             // bunifuPictureBox3
             // 
             this.bunifuPictureBox3.AllowFocused = false;
+            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox3.AutoSizeHeight = true;
             this.bunifuPictureBox3.BorderRadius = 0;
             this.bunifuPictureBox3.Image = global::DVLD_Project.Properties.Resources.Card_identity_icon_32;
@@ -230,11 +235,12 @@
             // bunifuPictureBox2
             // 
             this.bunifuPictureBox2.AllowFocused = false;
+            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox2.AutoSizeHeight = true;
             this.bunifuPictureBox2.BorderRadius = 0;
             this.bunifuPictureBox2.Image = global::DVLD_Project.Properties.Resources.Name_Icon__48;
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(94, 71);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(64, 68);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,11 +251,12 @@
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bunifuPictureBox1.AutoSizeHeight = true;
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::DVLD_Project.Properties.Resources.icons8_key_32;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(94, 32);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(82, 32);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(24, 24);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +269,7 @@
             this.btnEditPerson.AllowAnimations = true;
             this.btnEditPerson.AllowMouseEffects = true;
             this.btnEditPerson.AllowToggling = false;
-            this.btnEditPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditPerson.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEditPerson.AnimationSpeed = 200;
             this.btnEditPerson.AutoGenerateColors = false;
             this.btnEditPerson.AutoRoundBorders = true;
@@ -277,11 +284,11 @@
             this.btnEditPerson.ColorContrastOnClick = 45;
             this.btnEditPerson.ColorContrastOnHover = 45;
             this.btnEditPerson.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnEditPerson.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnEditPerson.CustomizableEdges = borderEdges2;
             this.btnEditPerson.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditPerson.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditPerson.DisabledFillColor = System.Drawing.Color.Empty;
@@ -353,26 +360,27 @@
             // pbPerson
             // 
             this.pbPerson.AllowFocused = false;
-            this.pbPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPerson.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbPerson.AutoSizeHeight = true;
-            this.pbPerson.BorderRadius = 87;
+            this.pbPerson.BorderRadius = 10;
             this.pbPerson.Image = ((System.Drawing.Image)(resources.GetObject("pbPerson.Image")));
             this.pbPerson.IsCircle = true;
-            this.pbPerson.Location = new System.Drawing.Point(470, 90);
+            this.pbPerson.Location = new System.Drawing.Point(507, 115);
             this.pbPerson.Name = "pbPerson";
-            this.pbPerson.Size = new System.Drawing.Size(175, 175);
+            this.pbPerson.Size = new System.Drawing.Size(138, 138);
             this.pbPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPerson.TabIndex = 18;
             this.pbPerson.TabStop = false;
-            this.pbPerson.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pbPerson.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // lblAddressValue
             // 
             this.lblAddressValue.AllowParentOverrides = false;
+            this.lblAddressValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAddressValue.AutoEllipsis = false;
             this.lblAddressValue.CursorType = null;
             this.lblAddressValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblAddressValue.Location = new System.Drawing.Point(129, 248);
+            this.lblAddressValue.Location = new System.Drawing.Point(98, 245);
             this.lblAddressValue.Name = "lblAddressValue";
             this.lblAddressValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAddressValue.Size = new System.Drawing.Size(12, 17);
@@ -384,10 +392,11 @@
             // lblAddressText
             // 
             this.lblAddressText.AllowParentOverrides = false;
+            this.lblAddressText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAddressText.AutoEllipsis = false;
             this.lblAddressText.CursorType = null;
             this.lblAddressText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddressText.Location = new System.Drawing.Point(9, 248);
+            this.lblAddressText.Location = new System.Drawing.Point(9, 245);
             this.lblAddressText.Name = "lblAddressText";
             this.lblAddressText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAddressText.Size = new System.Drawing.Size(53, 17);
@@ -399,10 +408,11 @@
             // lblEmailValue
             // 
             this.lblEmailValue.AllowParentOverrides = false;
+            this.lblEmailValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmailValue.AutoEllipsis = false;
             this.lblEmailValue.CursorType = null;
             this.lblEmailValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblEmailValue.Location = new System.Drawing.Point(129, 204);
+            this.lblEmailValue.Location = new System.Drawing.Point(85, 204);
             this.lblEmailValue.Name = "lblEmailValue";
             this.lblEmailValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblEmailValue.Size = new System.Drawing.Size(12, 17);
@@ -414,6 +424,7 @@
             // lblEmailText
             // 
             this.lblEmailText.AllowParentOverrides = false;
+            this.lblEmailText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmailText.AutoEllipsis = false;
             this.lblEmailText.CursorType = null;
             this.lblEmailText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -429,10 +440,11 @@
             // lblCountryValue
             // 
             this.lblCountryValue.AllowParentOverrides = false;
+            this.lblCountryValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCountryValue.AutoEllipsis = false;
             this.lblCountryValue.CursorType = null;
             this.lblCountryValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblCountryValue.Location = new System.Drawing.Point(412, 204);
+            this.lblCountryValue.Location = new System.Drawing.Point(379, 170);
             this.lblCountryValue.Name = "lblCountryValue";
             this.lblCountryValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCountryValue.Size = new System.Drawing.Size(12, 17);
@@ -444,10 +456,11 @@
             // lblCountryText
             // 
             this.lblCountryText.AllowParentOverrides = false;
+            this.lblCountryText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCountryText.AutoEllipsis = false;
             this.lblCountryText.CursorType = null;
             this.lblCountryText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountryText.Location = new System.Drawing.Point(310, 204);
+            this.lblCountryText.Location = new System.Drawing.Point(288, 170);
             this.lblCountryText.Name = "lblCountryText";
             this.lblCountryText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCountryText.Size = new System.Drawing.Size(53, 17);
@@ -459,10 +472,11 @@
             // lblGenderValue
             // 
             this.lblGenderValue.AllowParentOverrides = false;
+            this.lblGenderValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGenderValue.AutoEllipsis = false;
             this.lblGenderValue.CursorType = null;
             this.lblGenderValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblGenderValue.Location = new System.Drawing.Point(129, 162);
+            this.lblGenderValue.Location = new System.Drawing.Point(379, 119);
             this.lblGenderValue.Name = "lblGenderValue";
             this.lblGenderValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblGenderValue.Size = new System.Drawing.Size(12, 17);
@@ -474,10 +488,11 @@
             // lblGenderText
             // 
             this.lblGenderText.AllowParentOverrides = false;
+            this.lblGenderText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGenderText.AutoEllipsis = false;
             this.lblGenderText.CursorType = null;
             this.lblGenderText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGenderText.Location = new System.Drawing.Point(9, 162);
+            this.lblGenderText.Location = new System.Drawing.Point(288, 119);
             this.lblGenderText.Name = "lblGenderText";
             this.lblGenderText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblGenderText.Size = new System.Drawing.Size(49, 17);
@@ -489,10 +504,11 @@
             // lblPhoneValue
             // 
             this.lblPhoneValue.AllowParentOverrides = false;
+            this.lblPhoneValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPhoneValue.AutoEllipsis = false;
             this.lblPhoneValue.CursorType = null;
             this.lblPhoneValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblPhoneValue.Location = new System.Drawing.Point(412, 162);
+            this.lblPhoneValue.Location = new System.Drawing.Point(88, 162);
             this.lblPhoneValue.Name = "lblPhoneValue";
             this.lblPhoneValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPhoneValue.Size = new System.Drawing.Size(12, 17);
@@ -504,10 +520,11 @@
             // lblPhoneText
             // 
             this.lblPhoneText.AllowParentOverrides = false;
+            this.lblPhoneText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPhoneText.AutoEllipsis = false;
             this.lblPhoneText.CursorType = null;
             this.lblPhoneText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhoneText.Location = new System.Drawing.Point(310, 162);
+            this.lblPhoneText.Location = new System.Drawing.Point(9, 162);
             this.lblPhoneText.Name = "lblPhoneText";
             this.lblPhoneText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPhoneText.Size = new System.Drawing.Size(43, 17);
@@ -519,10 +536,11 @@
             // lblBirthDateValue
             // 
             this.lblBirthDateValue.AllowParentOverrides = false;
+            this.lblBirthDateValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBirthDateValue.AutoEllipsis = false;
             this.lblBirthDateValue.CursorType = null;
             this.lblBirthDateValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblBirthDateValue.Location = new System.Drawing.Point(412, 119);
+            this.lblBirthDateValue.Location = new System.Drawing.Point(390, 75);
             this.lblBirthDateValue.Name = "lblBirthDateValue";
             this.lblBirthDateValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblBirthDateValue.Size = new System.Drawing.Size(12, 17);
@@ -534,10 +552,11 @@
             // lblBirthDateText
             // 
             this.lblBirthDateText.AllowParentOverrides = false;
+            this.lblBirthDateText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBirthDateText.AutoEllipsis = false;
             this.lblBirthDateText.CursorType = null;
             this.lblBirthDateText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDateText.Location = new System.Drawing.Point(310, 119);
+            this.lblBirthDateText.Location = new System.Drawing.Point(288, 75);
             this.lblBirthDateText.Name = "lblBirthDateText";
             this.lblBirthDateText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblBirthDateText.Size = new System.Drawing.Size(65, 17);
@@ -549,10 +568,11 @@
             // lblNationalNoValue
             // 
             this.lblNationalNoValue.AllowParentOverrides = false;
+            this.lblNationalNoValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNationalNoValue.AutoEllipsis = false;
             this.lblNationalNoValue.CursorType = null;
             this.lblNationalNoValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblNationalNoValue.Location = new System.Drawing.Point(129, 119);
+            this.lblNationalNoValue.Location = new System.Drawing.Point(124, 119);
             this.lblNationalNoValue.Name = "lblNationalNoValue";
             this.lblNationalNoValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNationalNoValue.Size = new System.Drawing.Size(12, 17);
@@ -564,6 +584,7 @@
             // lblNationalNoText
             // 
             this.lblNationalNoText.AllowParentOverrides = false;
+            this.lblNationalNoText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNationalNoText.AutoEllipsis = false;
             this.lblNationalNoText.CursorType = null;
             this.lblNationalNoText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -579,10 +600,11 @@
             // lblNameValue
             // 
             this.lblNameValue.AllowParentOverrides = false;
+            this.lblNameValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNameValue.AutoEllipsis = false;
             this.lblNameValue.CursorType = null;
             this.lblNameValue.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblNameValue.Location = new System.Drawing.Point(129, 75);
+            this.lblNameValue.Location = new System.Drawing.Point(94, 72);
             this.lblNameValue.Name = "lblNameValue";
             this.lblNameValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNameValue.Size = new System.Drawing.Size(12, 17);
@@ -594,10 +616,11 @@
             // lblNameText
             // 
             this.lblNameText.AllowParentOverrides = false;
+            this.lblNameText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNameText.AutoEllipsis = false;
             this.lblNameText.CursorType = null;
             this.lblNameText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameText.Location = new System.Drawing.Point(9, 75);
+            this.lblNameText.Location = new System.Drawing.Point(9, 72);
             this.lblNameText.Name = "lblNameText";
             this.lblNameText.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblNameText.Size = new System.Drawing.Size(40, 17);
@@ -609,10 +632,11 @@
             // lblPersonIDValue
             // 
             this.lblPersonIDValue.AllowParentOverrides = false;
+            this.lblPersonIDValue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPersonIDValue.AutoEllipsis = false;
             this.lblPersonIDValue.CursorType = null;
             this.lblPersonIDValue.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonIDValue.Location = new System.Drawing.Point(129, 36);
+            this.lblPersonIDValue.Location = new System.Drawing.Point(112, 36);
             this.lblPersonIDValue.Name = "lblPersonIDValue";
             this.lblPersonIDValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPersonIDValue.Size = new System.Drawing.Size(23, 17);
@@ -624,6 +648,7 @@
             // lblPersonIDText
             // 
             this.lblPersonIDText.AllowParentOverrides = false;
+            this.lblPersonIDText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPersonIDText.AutoEllipsis = false;
             this.lblPersonIDText.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblPersonIDText.CursorType = System.Windows.Forms.Cursors.Default;
@@ -641,10 +666,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gbPersonInfo);
             this.Name = "ucPersonInfo";
-            this.Size = new System.Drawing.Size(663, 291);
+            this.Size = new System.Drawing.Size(670, 292);
             this.Load += new System.EventHandler(this.ucPersonInfo_Load);
             this.gbPersonInfo.ResumeLayout(false);
             this.gbPersonInfo.PerformLayout();

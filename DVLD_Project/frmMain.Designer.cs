@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation3 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.tcMain = new Bunifu.UI.WinForms.BunifuPages();
             this.tpMain = new System.Windows.Forms.TabPage();
             this.tcSubMain = new Bunifu.UI.WinForms.BunifuPages();
@@ -53,6 +56,8 @@
             this.ucListDrivers1 = new DVLD_Project.Drivers.Controls.ucListDrivers();
             this.tpInternationalLicenses = new System.Windows.Forms.TabPage();
             this.ucManageInternationalDrivingLicenseApplications1 = new DVLD_Project.Licenses.International.Controls.ucManageInternationalDrivingLicenseApplications();
+            this.tpDetainedLicenses = new System.Windows.Forms.TabPage();
+            this.ucManageDetainedLicenses1 = new DVLD_Project.Applications.DetainedLicenses.Controls.ucManageDetainedLicenses();
             this.msApplications = new System.Windows.Forms.MenuStrip();
             this.manageApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localDrivingLicenseApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,9 +76,14 @@
             this.changePasswordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMainLeft = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnDetainedLicenses = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnReleaseLicense = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnDetainLicense = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAddInternationalLicense = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tlsLogOut = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddNewLicense = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnTestsTypes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnApplicationsTypes = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnReplaceLicense = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnDrivers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -83,8 +93,6 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnManagePeople = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pbCurrentUser = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tlsLogOut = new System.Windows.Forms.ToolStripMenuItem();
             this.tcMain.SuspendLayout();
             this.tpMain.SuspendLayout();
             this.tcSubMain.SuspendLayout();
@@ -93,10 +101,11 @@
             this.tpLocalDrivingLicenseApplications.SuspendLayout();
             this.tpDrivers.SuspendLayout();
             this.tpInternationalLicenses.SuspendLayout();
+            this.tpDetainedLicenses.SuspendLayout();
             this.msApplications.SuspendLayout();
             this.pnlMainLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
             this.SuspendLayout();
             // 
             // tcMain
@@ -115,22 +124,22 @@
             this.tcMain.SelectedIndex = 0;
             this.tcMain.Size = new System.Drawing.Size(1002, 701);
             this.tcMain.TabIndex = 3;
-            animation3.AnimateOnlyDifferences = false;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.tcMain.Transition = animation3;
+            animation2.AnimateOnlyDifferences = false;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.tcMain.Transition = animation2;
             this.tcMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tpMain
@@ -154,33 +163,34 @@
             this.tcSubMain.Controls.Add(this.tpLocalDrivingLicenseApplications);
             this.tcSubMain.Controls.Add(this.tpDrivers);
             this.tcSubMain.Controls.Add(this.tpInternationalLicenses);
+            this.tcSubMain.Controls.Add(this.tpDetainedLicenses);
             this.tcSubMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcSubMain.Location = new System.Drawing.Point(3, 39);
             this.tcSubMain.Multiline = true;
             this.tcSubMain.Name = "tcSubMain";
-            this.tcSubMain.Page = this.tpInternationalLicenses;
-            this.tcSubMain.PageIndex = 4;
-            this.tcSubMain.PageName = "tpInternationalLicenses";
-            this.tcSubMain.PageTitle = "Intern.Licenses";
+            this.tcSubMain.Page = this.tpDetainedLicenses;
+            this.tcSubMain.PageIndex = 5;
+            this.tcSubMain.PageName = "tpDetainedLicenses";
+            this.tcSubMain.PageTitle = "Detained Licenses";
             this.tcSubMain.SelectedIndex = 0;
             this.tcSubMain.Size = new System.Drawing.Size(988, 633);
             this.tcSubMain.TabIndex = 1;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.tcSubMain.Transition = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.tcSubMain.Transition = animation1;
             this.tcSubMain.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
             // tpPersons
@@ -274,11 +284,32 @@
             // 
             // ucManageInternationalDrivingLicenseApplications1
             // 
+            this.ucManageInternationalDrivingLicenseApplications1.BackColor = System.Drawing.Color.White;
             this.ucManageInternationalDrivingLicenseApplications1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucManageInternationalDrivingLicenseApplications1.Location = new System.Drawing.Point(0, 0);
             this.ucManageInternationalDrivingLicenseApplications1.Name = "ucManageInternationalDrivingLicenseApplications1";
             this.ucManageInternationalDrivingLicenseApplications1.Size = new System.Drawing.Size(980, 607);
             this.ucManageInternationalDrivingLicenseApplications1.TabIndex = 0;
+            // 
+            // tpDetainedLicenses
+            // 
+            this.tpDetainedLicenses.BackColor = System.Drawing.Color.White;
+            this.tpDetainedLicenses.Controls.Add(this.ucManageDetainedLicenses1);
+            this.tpDetainedLicenses.Location = new System.Drawing.Point(4, 4);
+            this.tpDetainedLicenses.Name = "tpDetainedLicenses";
+            this.tpDetainedLicenses.Padding = new System.Windows.Forms.Padding(3);
+            this.tpDetainedLicenses.Size = new System.Drawing.Size(980, 607);
+            this.tpDetainedLicenses.TabIndex = 5;
+            this.tpDetainedLicenses.Text = "Detained Licenses";
+            // 
+            // ucManageDetainedLicenses1
+            // 
+            this.ucManageDetainedLicenses1.BackColor = System.Drawing.Color.White;
+            this.ucManageDetainedLicenses1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucManageDetainedLicenses1.Location = new System.Drawing.Point(3, 3);
+            this.ucManageDetainedLicenses1.Name = "ucManageDetainedLicenses1";
+            this.ucManageDetainedLicenses1.Size = new System.Drawing.Size(974, 601);
+            this.ucManageDetainedLicenses1.TabIndex = 0;
             // 
             // msApplications
             // 
@@ -336,7 +367,7 @@
             this.replacementForDamagedOrLostLicenseToolStripMenuItem});
             this.drivingLicensesServicesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drivingLicensesServicesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.drivingLicensesServicesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Driving_services_32;
+            this.drivingLicensesServicesToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.service_32;
             this.drivingLicensesServicesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.drivingLicensesServicesToolStripMenuItem.Name = "drivingLicensesServicesToolStripMenuItem";
             this.drivingLicensesServicesToolStripMenuItem.Size = new System.Drawing.Size(115, 36);
@@ -432,7 +463,7 @@
             this.changePasswordToolStripMenuItem1,
             this.logOutToolStripMenuItem1});
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.icons8_settings_32;
+            this.settingsToolStripMenuItem.Image = global::DVLD_Project.Properties.Resources.Setting_32;
             this.settingsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.settingsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(196, 0, 0, 0);
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
@@ -474,10 +505,13 @@
             this.pnlMainLeft.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(115)))), ((int)(((byte)(123)))));
             this.pnlMainLeft.BorderRadius = 0;
             this.pnlMainLeft.BorderThickness = 0;
+            this.pnlMainLeft.Controls.Add(this.btnDetainedLicenses);
+            this.pnlMainLeft.Controls.Add(this.btnReleaseLicense);
+            this.pnlMainLeft.Controls.Add(this.btnDetainLicense);
             this.pnlMainLeft.Controls.Add(this.btnAddInternationalLicense);
             this.pnlMainLeft.Controls.Add(this.menuStrip1);
             this.pnlMainLeft.Controls.Add(this.btnAddNewLicense);
-            this.pnlMainLeft.Controls.Add(this.bunifuButton21);
+            this.pnlMainLeft.Controls.Add(this.btnTestsTypes);
             this.pnlMainLeft.Controls.Add(this.btnApplicationsTypes);
             this.pnlMainLeft.Controls.Add(this.btnReplaceLicense);
             this.pnlMainLeft.Controls.Add(this.btnDrivers);
@@ -493,6 +527,282 @@
             this.pnlMainLeft.ShowBorders = true;
             this.pnlMainLeft.Size = new System.Drawing.Size(217, 701);
             this.pnlMainLeft.TabIndex = 0;
+            // 
+            // btnDetainedLicenses
+            // 
+            this.btnDetainedLicenses.AllowAnimations = true;
+            this.btnDetainedLicenses.AllowMouseEffects = true;
+            this.btnDetainedLicenses.AllowToggling = false;
+            this.btnDetainedLicenses.AnimationSpeed = 200;
+            this.btnDetainedLicenses.AutoGenerateColors = false;
+            this.btnDetainedLicenses.AutoRoundBorders = true;
+            this.btnDetainedLicenses.AutoSizeLeftIcon = true;
+            this.btnDetainedLicenses.AutoSizeRightIcon = true;
+            this.btnDetainedLicenses.BackColor = System.Drawing.Color.Transparent;
+            this.btnDetainedLicenses.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnDetainedLicenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetainedLicenses.BackgroundImage")));
+            this.btnDetainedLicenses.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainedLicenses.ButtonText = "Detained licenses";
+            this.btnDetainedLicenses.ButtonTextMarginLeft = 0;
+            this.btnDetainedLicenses.ColorContrastOnClick = 45;
+            this.btnDetainedLicenses.ColorContrastOnHover = 45;
+            this.btnDetainedLicenses.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnDetainedLicenses.CustomizableEdges = borderEdges1;
+            this.btnDetainedLicenses.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDetainedLicenses.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDetainedLicenses.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnDetainedLicenses.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnDetainedLicenses.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnDetainedLicenses.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetainedLicenses.ForeColor = System.Drawing.Color.White;
+            this.btnDetainedLicenses.IconLeft = global::DVLD_Project.Properties.Resources.Police_detain__32;
+            this.btnDetainedLicenses.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetainedLicenses.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDetainedLicenses.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnDetainedLicenses.IconMarginLeft = 11;
+            this.btnDetainedLicenses.IconPadding = 5;
+            this.btnDetainedLicenses.IconRight = null;
+            this.btnDetainedLicenses.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDetainedLicenses.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDetainedLicenses.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnDetainedLicenses.IconSize = 25;
+            this.btnDetainedLicenses.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnDetainedLicenses.IdleBorderRadius = 0;
+            this.btnDetainedLicenses.IdleBorderThickness = 0;
+            this.btnDetainedLicenses.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnDetainedLicenses.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Police_detain__32;
+            this.btnDetainedLicenses.IdleIconRightImage = null;
+            this.btnDetainedLicenses.IndicateFocus = false;
+            this.btnDetainedLicenses.Location = new System.Drawing.Point(0, 527);
+            this.btnDetainedLicenses.Name = "btnDetainedLicenses";
+            this.btnDetainedLicenses.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDetainedLicenses.OnDisabledState.BorderRadius = 39;
+            this.btnDetainedLicenses.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainedLicenses.OnDisabledState.BorderThickness = 1;
+            this.btnDetainedLicenses.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnDetainedLicenses.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnDetainedLicenses.OnDisabledState.IconLeftImage = null;
+            this.btnDetainedLicenses.OnDisabledState.IconRightImage = null;
+            this.btnDetainedLicenses.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDetainedLicenses.onHoverState.BorderRadius = 39;
+            this.btnDetainedLicenses.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainedLicenses.onHoverState.BorderThickness = 1;
+            this.btnDetainedLicenses.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDetainedLicenses.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainedLicenses.onHoverState.IconLeftImage = null;
+            this.btnDetainedLicenses.onHoverState.IconRightImage = null;
+            this.btnDetainedLicenses.OnIdleState.BorderColor = System.Drawing.Color.Gray;
+            this.btnDetainedLicenses.OnIdleState.BorderRadius = 39;
+            this.btnDetainedLicenses.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainedLicenses.OnIdleState.BorderThickness = 1;
+            this.btnDetainedLicenses.OnIdleState.FillColor = System.Drawing.Color.Gray;
+            this.btnDetainedLicenses.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainedLicenses.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.Police_detain__32;
+            this.btnDetainedLicenses.OnIdleState.IconRightImage = null;
+            this.btnDetainedLicenses.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDetainedLicenses.OnPressedState.BorderRadius = 39;
+            this.btnDetainedLicenses.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainedLicenses.OnPressedState.BorderThickness = 1;
+            this.btnDetainedLicenses.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDetainedLicenses.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainedLicenses.OnPressedState.IconLeftImage = null;
+            this.btnDetainedLicenses.OnPressedState.IconRightImage = null;
+            this.btnDetainedLicenses.Size = new System.Drawing.Size(217, 39);
+            this.btnDetainedLicenses.TabIndex = 13;
+            this.btnDetainedLicenses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetainedLicenses.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDetainedLicenses.TextMarginLeft = 0;
+            this.btnDetainedLicenses.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnDetainedLicenses.UseDefaultRadiusAndThickness = true;
+            this.btnDetainedLicenses.Click += new System.EventHandler(this.btnDetainedLicenses_Click);
+            // 
+            // btnReleaseLicense
+            // 
+            this.btnReleaseLicense.AllowAnimations = true;
+            this.btnReleaseLicense.AllowMouseEffects = true;
+            this.btnReleaseLicense.AllowToggling = false;
+            this.btnReleaseLicense.AnimationSpeed = 200;
+            this.btnReleaseLicense.AutoGenerateColors = false;
+            this.btnReleaseLicense.AutoRoundBorders = true;
+            this.btnReleaseLicense.AutoSizeLeftIcon = true;
+            this.btnReleaseLicense.AutoSizeRightIcon = true;
+            this.btnReleaseLicense.BackColor = System.Drawing.Color.Transparent;
+            this.btnReleaseLicense.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnReleaseLicense.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReleaseLicense.BackgroundImage")));
+            this.btnReleaseLicense.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnReleaseLicense.ButtonText = "Release license";
+            this.btnReleaseLicense.ButtonTextMarginLeft = 0;
+            this.btnReleaseLicense.ColorContrastOnClick = 45;
+            this.btnReleaseLicense.ColorContrastOnHover = 45;
+            this.btnReleaseLicense.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnReleaseLicense.CustomizableEdges = borderEdges2;
+            this.btnReleaseLicense.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnReleaseLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnReleaseLicense.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnReleaseLicense.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnReleaseLicense.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnReleaseLicense.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReleaseLicense.ForeColor = System.Drawing.Color.White;
+            this.btnReleaseLicense.IconLeft = global::DVLD_Project.Properties.Resources.Release_32;
+            this.btnReleaseLicense.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReleaseLicense.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnReleaseLicense.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnReleaseLicense.IconMarginLeft = 11;
+            this.btnReleaseLicense.IconPadding = 5;
+            this.btnReleaseLicense.IconRight = null;
+            this.btnReleaseLicense.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReleaseLicense.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnReleaseLicense.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnReleaseLicense.IconSize = 25;
+            this.btnReleaseLicense.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnReleaseLicense.IdleBorderRadius = 0;
+            this.btnReleaseLicense.IdleBorderThickness = 0;
+            this.btnReleaseLicense.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnReleaseLicense.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Release_32;
+            this.btnReleaseLicense.IdleIconRightImage = null;
+            this.btnReleaseLicense.IndicateFocus = false;
+            this.btnReleaseLicense.Location = new System.Drawing.Point(0, 482);
+            this.btnReleaseLicense.Name = "btnReleaseLicense";
+            this.btnReleaseLicense.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnReleaseLicense.OnDisabledState.BorderRadius = 39;
+            this.btnReleaseLicense.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnReleaseLicense.OnDisabledState.BorderThickness = 1;
+            this.btnReleaseLicense.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnReleaseLicense.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnReleaseLicense.OnDisabledState.IconLeftImage = null;
+            this.btnReleaseLicense.OnDisabledState.IconRightImage = null;
+            this.btnReleaseLicense.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReleaseLicense.onHoverState.BorderRadius = 39;
+            this.btnReleaseLicense.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnReleaseLicense.onHoverState.BorderThickness = 1;
+            this.btnReleaseLicense.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReleaseLicense.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnReleaseLicense.onHoverState.IconLeftImage = null;
+            this.btnReleaseLicense.onHoverState.IconRightImage = null;
+            this.btnReleaseLicense.OnIdleState.BorderColor = System.Drawing.Color.Gray;
+            this.btnReleaseLicense.OnIdleState.BorderRadius = 39;
+            this.btnReleaseLicense.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnReleaseLicense.OnIdleState.BorderThickness = 1;
+            this.btnReleaseLicense.OnIdleState.FillColor = System.Drawing.Color.Gray;
+            this.btnReleaseLicense.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnReleaseLicense.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.Release_32;
+            this.btnReleaseLicense.OnIdleState.IconRightImage = null;
+            this.btnReleaseLicense.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnReleaseLicense.OnPressedState.BorderRadius = 39;
+            this.btnReleaseLicense.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnReleaseLicense.OnPressedState.BorderThickness = 1;
+            this.btnReleaseLicense.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnReleaseLicense.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnReleaseLicense.OnPressedState.IconLeftImage = null;
+            this.btnReleaseLicense.OnPressedState.IconRightImage = null;
+            this.btnReleaseLicense.Size = new System.Drawing.Size(217, 39);
+            this.btnReleaseLicense.TabIndex = 12;
+            this.btnReleaseLicense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReleaseLicense.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnReleaseLicense.TextMarginLeft = 0;
+            this.btnReleaseLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnReleaseLicense.UseDefaultRadiusAndThickness = true;
+            this.btnReleaseLicense.Click += new System.EventHandler(this.btnReleaseLicense_Click);
+            // 
+            // btnDetainLicense
+            // 
+            this.btnDetainLicense.AllowAnimations = true;
+            this.btnDetainLicense.AllowMouseEffects = true;
+            this.btnDetainLicense.AllowToggling = false;
+            this.btnDetainLicense.AnimationSpeed = 200;
+            this.btnDetainLicense.AutoGenerateColors = false;
+            this.btnDetainLicense.AutoRoundBorders = true;
+            this.btnDetainLicense.AutoSizeLeftIcon = true;
+            this.btnDetainLicense.AutoSizeRightIcon = true;
+            this.btnDetainLicense.BackColor = System.Drawing.Color.Transparent;
+            this.btnDetainLicense.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnDetainLicense.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetainLicense.BackgroundImage")));
+            this.btnDetainLicense.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainLicense.ButtonText = "Detain license";
+            this.btnDetainLicense.ButtonTextMarginLeft = 0;
+            this.btnDetainLicense.ColorContrastOnClick = 45;
+            this.btnDetainLicense.ColorContrastOnHover = 45;
+            this.btnDetainLicense.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnDetainLicense.CustomizableEdges = borderEdges3;
+            this.btnDetainLicense.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDetainLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDetainLicense.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnDetainLicense.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnDetainLicense.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnDetainLicense.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetainLicense.ForeColor = System.Drawing.Color.White;
+            this.btnDetainLicense.IconLeft = global::DVLD_Project.Properties.Resources.Police_32;
+            this.btnDetainLicense.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetainLicense.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDetainLicense.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnDetainLicense.IconMarginLeft = 11;
+            this.btnDetainLicense.IconPadding = 5;
+            this.btnDetainLicense.IconRight = null;
+            this.btnDetainLicense.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDetainLicense.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDetainLicense.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnDetainLicense.IconSize = 25;
+            this.btnDetainLicense.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnDetainLicense.IdleBorderRadius = 0;
+            this.btnDetainLicense.IdleBorderThickness = 0;
+            this.btnDetainLicense.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnDetainLicense.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Police_32;
+            this.btnDetainLicense.IdleIconRightImage = null;
+            this.btnDetainLicense.IndicateFocus = false;
+            this.btnDetainLicense.Location = new System.Drawing.Point(1, 437);
+            this.btnDetainLicense.Name = "btnDetainLicense";
+            this.btnDetainLicense.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDetainLicense.OnDisabledState.BorderRadius = 39;
+            this.btnDetainLicense.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainLicense.OnDisabledState.BorderThickness = 1;
+            this.btnDetainLicense.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnDetainLicense.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnDetainLicense.OnDisabledState.IconLeftImage = null;
+            this.btnDetainLicense.OnDisabledState.IconRightImage = null;
+            this.btnDetainLicense.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDetainLicense.onHoverState.BorderRadius = 39;
+            this.btnDetainLicense.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainLicense.onHoverState.BorderThickness = 1;
+            this.btnDetainLicense.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDetainLicense.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainLicense.onHoverState.IconLeftImage = null;
+            this.btnDetainLicense.onHoverState.IconRightImage = null;
+            this.btnDetainLicense.OnIdleState.BorderColor = System.Drawing.Color.Gray;
+            this.btnDetainLicense.OnIdleState.BorderRadius = 39;
+            this.btnDetainLicense.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainLicense.OnIdleState.BorderThickness = 1;
+            this.btnDetainLicense.OnIdleState.FillColor = System.Drawing.Color.Gray;
+            this.btnDetainLicense.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainLicense.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.Police_32;
+            this.btnDetainLicense.OnIdleState.IconRightImage = null;
+            this.btnDetainLicense.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDetainLicense.OnPressedState.BorderRadius = 39;
+            this.btnDetainLicense.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnDetainLicense.OnPressedState.BorderThickness = 1;
+            this.btnDetainLicense.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDetainLicense.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnDetainLicense.OnPressedState.IconLeftImage = null;
+            this.btnDetainLicense.OnPressedState.IconRightImage = null;
+            this.btnDetainLicense.Size = new System.Drawing.Size(217, 39);
+            this.btnDetainLicense.TabIndex = 11;
+            this.btnDetainLicense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetainLicense.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDetainLicense.TextMarginLeft = 0;
+            this.btnDetainLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnDetainLicense.UseDefaultRadiusAndThickness = true;
+            this.btnDetainLicense.Click += new System.EventHandler(this.btnDetainLicense_Click);
             // 
             // btnAddInternationalLicense
             // 
@@ -513,11 +823,11 @@
             this.btnAddInternationalLicense.ColorContrastOnClick = 45;
             this.btnAddInternationalLicense.ColorContrastOnHover = 45;
             this.btnAddInternationalLicense.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnAddInternationalLicense.CustomizableEdges = borderEdges10;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnAddInternationalLicense.CustomizableEdges = borderEdges4;
             this.btnAddInternationalLicense.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddInternationalLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddInternationalLicense.DisabledFillColor = System.Drawing.Color.Empty;
@@ -584,6 +894,31 @@
             this.btnAddInternationalLicense.TextMarginLeft = 0;
             this.btnAddInternationalLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnAddInternationalLicense.UseDefaultRadiusAndThickness = true;
+            this.btnAddInternationalLicense.Click += new System.EventHandler(this.btnAddInternationalLicense_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsLogOut});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 661);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(217, 40);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tlsLogOut
+            // 
+            this.tlsLogOut.AutoSize = false;
+            this.tlsLogOut.BackColor = System.Drawing.Color.Silver;
+            this.tlsLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tlsLogOut.Image = global::DVLD_Project.Properties.Resources.turn_off_32;
+            this.tlsLogOut.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tlsLogOut.Name = "tlsLogOut";
+            this.tlsLogOut.Size = new System.Drawing.Size(210, 36);
+            this.tlsLogOut.Text = "Log out";
+            this.tlsLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tlsLogOut.Click += new System.EventHandler(this.tlsLogOut_Click);
             // 
             // btnAddNewLicense
             // 
@@ -604,11 +939,11 @@
             this.btnAddNewLicense.ColorContrastOnClick = 45;
             this.btnAddNewLicense.ColorContrastOnHover = 45;
             this.btnAddNewLicense.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnAddNewLicense.CustomizableEdges = borderEdges11;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnAddNewLicense.CustomizableEdges = borderEdges5;
             this.btnAddNewLicense.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddNewLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddNewLicense.DisabledFillColor = System.Drawing.Color.Empty;
@@ -675,97 +1010,99 @@
             this.btnAddNewLicense.TextMarginLeft = 0;
             this.btnAddNewLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnAddNewLicense.UseDefaultRadiusAndThickness = true;
+            this.btnAddNewLicense.Click += new System.EventHandler(this.btnAddNewLicense_Click);
             // 
-            // bunifuButton21
+            // btnTestsTypes
             // 
-            this.bunifuButton21.AllowAnimations = true;
-            this.bunifuButton21.AllowMouseEffects = true;
-            this.bunifuButton21.AllowToggling = false;
-            this.bunifuButton21.AnimationSpeed = 200;
-            this.bunifuButton21.AutoGenerateColors = false;
-            this.bunifuButton21.AutoRoundBorders = true;
-            this.bunifuButton21.AutoSizeLeftIcon = true;
-            this.bunifuButton21.AutoSizeRightIcon = true;
-            this.bunifuButton21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton21.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.bunifuButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.BackgroundImage")));
-            this.bunifuButton21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.ButtonText = "Tests types";
-            this.bunifuButton21.ButtonTextMarginLeft = 0;
-            this.bunifuButton21.ColorContrastOnClick = 45;
-            this.bunifuButton21.ColorContrastOnHover = 45;
-            this.bunifuButton21.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.bunifuButton21.CustomizableEdges = borderEdges12;
-            this.bunifuButton21.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton21.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton21.DisabledFillColor = System.Drawing.Color.Empty;
-            this.bunifuButton21.DisabledForecolor = System.Drawing.Color.Empty;
-            this.bunifuButton21.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            this.bunifuButton21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButton21.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton21.IconLeft = global::DVLD_Project.Properties.Resources.Test_management_32;
-            this.bunifuButton21.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton21.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton21.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton21.IconMarginLeft = 11;
-            this.bunifuButton21.IconPadding = 5;
-            this.bunifuButton21.IconRight = null;
-            this.bunifuButton21.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton21.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton21.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton21.IconSize = 25;
-            this.bunifuButton21.IdleBorderColor = System.Drawing.Color.Empty;
-            this.bunifuButton21.IdleBorderRadius = 0;
-            this.bunifuButton21.IdleBorderThickness = 0;
-            this.bunifuButton21.IdleFillColor = System.Drawing.Color.Empty;
-            this.bunifuButton21.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Test_management_32;
-            this.bunifuButton21.IdleIconRightImage = null;
-            this.bunifuButton21.IndicateFocus = false;
-            this.bunifuButton21.Location = new System.Drawing.Point(0, 392);
-            this.bunifuButton21.Name = "bunifuButton21";
-            this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton21.OnDisabledState.BorderRadius = 39;
-            this.bunifuButton21.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton21.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton21.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton21.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton21.OnDisabledState.IconRightImage = null;
-            this.bunifuButton21.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuButton21.onHoverState.BorderRadius = 39;
-            this.bunifuButton21.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.onHoverState.BorderThickness = 1;
-            this.bunifuButton21.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuButton21.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton21.onHoverState.IconLeftImage = null;
-            this.bunifuButton21.onHoverState.IconRightImage = null;
-            this.bunifuButton21.OnIdleState.BorderColor = System.Drawing.Color.Gray;
-            this.bunifuButton21.OnIdleState.BorderRadius = 39;
-            this.bunifuButton21.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.OnIdleState.BorderThickness = 1;
-            this.bunifuButton21.OnIdleState.FillColor = System.Drawing.Color.Gray;
-            this.bunifuButton21.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton21.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.Test_management_32;
-            this.bunifuButton21.OnIdleState.IconRightImage = null;
-            this.bunifuButton21.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton21.OnPressedState.BorderRadius = 39;
-            this.bunifuButton21.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.bunifuButton21.OnPressedState.BorderThickness = 1;
-            this.bunifuButton21.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton21.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton21.OnPressedState.IconLeftImage = null;
-            this.bunifuButton21.OnPressedState.IconRightImage = null;
-            this.bunifuButton21.Size = new System.Drawing.Size(217, 39);
-            this.bunifuButton21.TabIndex = 8;
-            this.bunifuButton21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton21.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton21.TextMarginLeft = 0;
-            this.bunifuButton21.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.bunifuButton21.UseDefaultRadiusAndThickness = true;
+            this.btnTestsTypes.AllowAnimations = true;
+            this.btnTestsTypes.AllowMouseEffects = true;
+            this.btnTestsTypes.AllowToggling = false;
+            this.btnTestsTypes.AnimationSpeed = 200;
+            this.btnTestsTypes.AutoGenerateColors = false;
+            this.btnTestsTypes.AutoRoundBorders = true;
+            this.btnTestsTypes.AutoSizeLeftIcon = true;
+            this.btnTestsTypes.AutoSizeRightIcon = true;
+            this.btnTestsTypes.BackColor = System.Drawing.Color.Transparent;
+            this.btnTestsTypes.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.btnTestsTypes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTestsTypes.BackgroundImage")));
+            this.btnTestsTypes.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnTestsTypes.ButtonText = "Tests types";
+            this.btnTestsTypes.ButtonTextMarginLeft = 0;
+            this.btnTestsTypes.ColorContrastOnClick = 45;
+            this.btnTestsTypes.ColorContrastOnHover = 45;
+            this.btnTestsTypes.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnTestsTypes.CustomizableEdges = borderEdges6;
+            this.btnTestsTypes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTestsTypes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnTestsTypes.DisabledFillColor = System.Drawing.Color.Empty;
+            this.btnTestsTypes.DisabledForecolor = System.Drawing.Color.Empty;
+            this.btnTestsTypes.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnTestsTypes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestsTypes.ForeColor = System.Drawing.Color.White;
+            this.btnTestsTypes.IconLeft = global::DVLD_Project.Properties.Resources.Test_management_32;
+            this.btnTestsTypes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTestsTypes.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnTestsTypes.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnTestsTypes.IconMarginLeft = 11;
+            this.btnTestsTypes.IconPadding = 5;
+            this.btnTestsTypes.IconRight = null;
+            this.btnTestsTypes.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTestsTypes.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnTestsTypes.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnTestsTypes.IconSize = 25;
+            this.btnTestsTypes.IdleBorderColor = System.Drawing.Color.Empty;
+            this.btnTestsTypes.IdleBorderRadius = 0;
+            this.btnTestsTypes.IdleBorderThickness = 0;
+            this.btnTestsTypes.IdleFillColor = System.Drawing.Color.Empty;
+            this.btnTestsTypes.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Test_management_32;
+            this.btnTestsTypes.IdleIconRightImage = null;
+            this.btnTestsTypes.IndicateFocus = false;
+            this.btnTestsTypes.Location = new System.Drawing.Point(0, 392);
+            this.btnTestsTypes.Name = "btnTestsTypes";
+            this.btnTestsTypes.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnTestsTypes.OnDisabledState.BorderRadius = 39;
+            this.btnTestsTypes.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnTestsTypes.OnDisabledState.BorderThickness = 1;
+            this.btnTestsTypes.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnTestsTypes.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnTestsTypes.OnDisabledState.IconLeftImage = null;
+            this.btnTestsTypes.OnDisabledState.IconRightImage = null;
+            this.btnTestsTypes.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTestsTypes.onHoverState.BorderRadius = 39;
+            this.btnTestsTypes.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnTestsTypes.onHoverState.BorderThickness = 1;
+            this.btnTestsTypes.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTestsTypes.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnTestsTypes.onHoverState.IconLeftImage = null;
+            this.btnTestsTypes.onHoverState.IconRightImage = null;
+            this.btnTestsTypes.OnIdleState.BorderColor = System.Drawing.Color.Gray;
+            this.btnTestsTypes.OnIdleState.BorderRadius = 39;
+            this.btnTestsTypes.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnTestsTypes.OnIdleState.BorderThickness = 1;
+            this.btnTestsTypes.OnIdleState.FillColor = System.Drawing.Color.Gray;
+            this.btnTestsTypes.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnTestsTypes.OnIdleState.IconLeftImage = global::DVLD_Project.Properties.Resources.Test_management_32;
+            this.btnTestsTypes.OnIdleState.IconRightImage = null;
+            this.btnTestsTypes.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnTestsTypes.OnPressedState.BorderRadius = 39;
+            this.btnTestsTypes.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnTestsTypes.OnPressedState.BorderThickness = 1;
+            this.btnTestsTypes.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnTestsTypes.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnTestsTypes.OnPressedState.IconLeftImage = null;
+            this.btnTestsTypes.OnPressedState.IconRightImage = null;
+            this.btnTestsTypes.Size = new System.Drawing.Size(217, 39);
+            this.btnTestsTypes.TabIndex = 8;
+            this.btnTestsTypes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTestsTypes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTestsTypes.TextMarginLeft = 0;
+            this.btnTestsTypes.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnTestsTypes.UseDefaultRadiusAndThickness = true;
+            this.btnTestsTypes.Click += new System.EventHandler(this.btnTestsTypes_Click);
             // 
             // btnApplicationsTypes
             // 
@@ -786,11 +1123,11 @@
             this.btnApplicationsTypes.ColorContrastOnClick = 45;
             this.btnApplicationsTypes.ColorContrastOnHover = 45;
             this.btnApplicationsTypes.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnApplicationsTypes.CustomizableEdges = borderEdges13;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnApplicationsTypes.CustomizableEdges = borderEdges7;
             this.btnApplicationsTypes.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnApplicationsTypes.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnApplicationsTypes.DisabledFillColor = System.Drawing.Color.Empty;
@@ -857,6 +1194,7 @@
             this.btnApplicationsTypes.TextMarginLeft = 0;
             this.btnApplicationsTypes.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnApplicationsTypes.UseDefaultRadiusAndThickness = true;
+            this.btnApplicationsTypes.Click += new System.EventHandler(this.btnApplicationsTypes_Click);
             // 
             // btnReplaceLicense
             // 
@@ -877,11 +1215,11 @@
             this.btnReplaceLicense.ColorContrastOnClick = 45;
             this.btnReplaceLicense.ColorContrastOnHover = 45;
             this.btnReplaceLicense.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnReplaceLicense.CustomizableEdges = borderEdges14;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnReplaceLicense.CustomizableEdges = borderEdges8;
             this.btnReplaceLicense.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnReplaceLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnReplaceLicense.DisabledFillColor = System.Drawing.Color.Empty;
@@ -948,6 +1286,7 @@
             this.btnReplaceLicense.TextMarginLeft = 0;
             this.btnReplaceLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnReplaceLicense.UseDefaultRadiusAndThickness = true;
+            this.btnReplaceLicense.Click += new System.EventHandler(this.btnReplaceLicense_Click);
             // 
             // btnDrivers
             // 
@@ -968,11 +1307,11 @@
             this.btnDrivers.ColorContrastOnClick = 45;
             this.btnDrivers.ColorContrastOnHover = 45;
             this.btnDrivers.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btnDrivers.CustomizableEdges = borderEdges15;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnDrivers.CustomizableEdges = borderEdges9;
             this.btnDrivers.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDrivers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDrivers.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1039,6 +1378,7 @@
             this.btnDrivers.TextMarginLeft = 0;
             this.btnDrivers.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnDrivers.UseDefaultRadiusAndThickness = true;
+            this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
             // 
             // btnRenewLicense
             // 
@@ -1059,11 +1399,11 @@
             this.btnRenewLicense.ColorContrastOnClick = 45;
             this.btnRenewLicense.ColorContrastOnHover = 45;
             this.btnRenewLicense.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btnRenewLicense.CustomizableEdges = borderEdges16;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnRenewLicense.CustomizableEdges = borderEdges10;
             this.btnRenewLicense.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRenewLicense.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRenewLicense.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1130,6 +1470,7 @@
             this.btnRenewLicense.TextMarginLeft = 0;
             this.btnRenewLicense.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnRenewLicense.UseDefaultRadiusAndThickness = true;
+            this.btnRenewLicense.Click += new System.EventHandler(this.btnRenewLicense_Click);
             // 
             // btnManageUsers
             // 
@@ -1150,11 +1491,11 @@
             this.btnManageUsers.ColorContrastOnClick = 45;
             this.btnManageUsers.ColorContrastOnHover = 45;
             this.btnManageUsers.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.btnManageUsers.CustomizableEdges = borderEdges17;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btnManageUsers.CustomizableEdges = borderEdges11;
             this.btnManageUsers.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManageUsers.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageUsers.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1180,7 +1521,7 @@
             this.btnManageUsers.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.Manage_People_Icon_48;
             this.btnManageUsers.IdleIconRightImage = null;
             this.btnManageUsers.IndicateFocus = false;
-            this.btnManageUsers.Location = new System.Drawing.Point(0, 482);
+            this.btnManageUsers.Location = new System.Drawing.Point(1, 615);
             this.btnManageUsers.Name = "btnManageUsers";
             this.btnManageUsers.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageUsers.OnDisabledState.BorderRadius = 39;
@@ -1190,7 +1531,7 @@
             this.btnManageUsers.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.btnManageUsers.OnDisabledState.IconLeftImage = null;
             this.btnManageUsers.OnDisabledState.IconRightImage = null;
-            this.btnManageUsers.onHoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnManageUsers.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnManageUsers.onHoverState.BorderRadius = 39;
             this.btnManageUsers.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.btnManageUsers.onHoverState.BorderThickness = 1;
@@ -1274,11 +1615,11 @@
             this.btnManagePeople.ColorContrastOnClick = 45;
             this.btnManagePeople.ColorContrastOnHover = 45;
             this.btnManagePeople.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.btnManagePeople.CustomizableEdges = borderEdges18;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btnManagePeople.CustomizableEdges = borderEdges12;
             this.btnManagePeople.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnManagePeople.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManagePeople.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1304,7 +1645,7 @@
             this.btnManagePeople.IdleIconLeftImage = global::DVLD_Project.Properties.Resources.People_icon_100;
             this.btnManagePeople.IdleIconRightImage = null;
             this.btnManagePeople.IndicateFocus = false;
-            this.btnManagePeople.Location = new System.Drawing.Point(0, 437);
+            this.btnManagePeople.Location = new System.Drawing.Point(1, 570);
             this.btnManagePeople.Name = "btnManagePeople";
             this.btnManagePeople.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManagePeople.OnDisabledState.BorderRadius = 39;
@@ -1365,30 +1706,6 @@
             this.pbCurrentUser.TabStop = false;
             this.pbCurrentUser.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tlsLogOut});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 661);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(217, 40);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // tlsLogOut
-            // 
-            this.tlsLogOut.AutoSize = false;
-            this.tlsLogOut.BackColor = System.Drawing.Color.Silver;
-            this.tlsLogOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tlsLogOut.Image = global::DVLD_Project.Properties.Resources.turn_off_32;
-            this.tlsLogOut.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.tlsLogOut.Name = "tlsLogOut";
-            this.tlsLogOut.Size = new System.Drawing.Size(210, 36);
-            this.tlsLogOut.Text = "Log out";
-            this.tlsLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tlsLogOut.Click += new System.EventHandler(this.tlsLogOut_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1399,6 +1716,7 @@
             this.Controls.Add(this.pnlMainLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
@@ -1417,13 +1735,14 @@
             this.tpLocalDrivingLicenseApplications.ResumeLayout(false);
             this.tpDrivers.ResumeLayout(false);
             this.tpInternationalLicenses.ResumeLayout(false);
+            this.tpDetainedLicenses.ResumeLayout(false);
             this.msApplications.ResumeLayout(false);
             this.msApplications.PerformLayout();
             this.pnlMainLeft.ResumeLayout(false);
             this.pnlMainLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1470,11 +1789,16 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDrivers;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReplaceLicense;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnApplicationsTypes;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnTestsTypes;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAddInternationalLicense;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAddNewLicense;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tlsLogOut;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDetainLicense;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReleaseLicense;
+        private System.Windows.Forms.TabPage tpDetainedLicenses;
+        private Applications.DetainedLicenses.Controls.ucManageDetainedLicenses ucManageDetainedLicenses1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDetainedLicenses;
     }
 }
 

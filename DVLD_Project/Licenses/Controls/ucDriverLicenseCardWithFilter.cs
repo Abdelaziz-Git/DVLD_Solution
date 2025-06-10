@@ -29,6 +29,12 @@ namespace DVLD_Project.Licenses.Controls
         {
             return ucDriverLicenseCard1.LoadLicenseInfo(LicenseID);
         }
+        public void PerformClickButtonFind(int LicenseID)
+        {
+            txtLicenseID.Text = LicenseID.ToString().Trim();
+            btnFind.PerformClick();
+            gpFilter.Enabled = false;
+        }
 
         // Event Handlers
         private void txtLicenseID_KeyPress(object sender, KeyPressEventArgs e)
@@ -60,5 +66,6 @@ namespace DVLD_Project.Licenses.Controls
             OnLicenseSelected?.Invoke(ucDriverLicenseCard1.LicenseInfo);
 
         }
+
     }
 }

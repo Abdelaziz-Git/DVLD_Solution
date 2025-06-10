@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblManageUsers.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 24pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtFilterValue.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMsAAAAgCAYAAAC8eIxyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEfSURBVHhe7dwtTsRQGIXhWcZIJJIlIEcikUiWMLK7Qp6b
-        1DWVFRVNm6YCdgCKkq8/k6FkkoPu+yTH3F77pu4eDgD+T9JR0qOkjLGd7yTpbtvIRNJDSuk9pTQyxqZ9
-        SnrZhnJMKX3EhaIoxqZpxq7rGNvl2rYdy7Jcg/mKH8l1LE/xIS4AmNV1PQUj6XwdSxaHURSAWd/3ayzZ
-        n1jiFwRgFj0QC2AgFsBELICJWAATsQAmYgFMxAKYiAUwEQtgIhbARCyAiVgAE7EAJmIBTMQCmIgFMBEL
-        YCIWwEQsgIlYANOtWF7jsKqq7X1gt27Fch+HsXgOKS4xtucNwzDmef69xHK6xLIEc16DYYxd9vYrlNXy
-        GPL2gWTG9rrnbSMADD8Da4llXncMfgAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD/SURBVHhe7dw9SsRQFIbhKV2aG3AJLsI9WLkau/zcZKqA
+        RboUVtNZBBlxwBAyXITIDCLHOs8DX3fal9vd3Q74n6Iobtu2fSnLcjGzcsk91HV9fxFKSumu67pxHMcF
+        +JZ76Pv+PaX0sMbSNM3r8Xi8voXNm6Zpqarqc40lPznA73IfYoEAsUCQWCBILBAkFggSCwSJBYLEAkFi
+        gSCxQJBYIEgsECQWCBILBIkFgsQCQWKBILFAkFggSCwQJBYIEgsEiQWCLmJJKb2dTqfrG9i8eZ7zJ3vT
+        GkvTNI/DMHxcH8LWHQ6Hr/1+/7zGkrVt+5SfGzP7WQ6lKIqbi1iAv50Bp0Z7l8RA6xkAAAAASUVORK5C
+        YII=
 </value>
   </data>
   <metadata name="cmsListUsers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

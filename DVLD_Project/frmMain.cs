@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu;
 using DVLD_Business1;
+using DVLD_Project.Applications.DetainedLicenses;
 using DVLD_Project.Applications.LocalDrivingLicenseApplications;
 using DVLD_Project.Applications.LocalDrivingLicenseApplications.Controls;
 using DVLD_Project.Applications.RenewLicenseApplications;
@@ -29,11 +30,12 @@ namespace DVLD_Project
         // Enums
         enum PageIndex
         {
-            ManagePeople = 0,
-            ManageUsers = 1,
-            LDLApplications = 2,
-            Drivers = 3,
-            InternationalLicenses=4
+            ManagePeople  ,
+            ManageUsers ,
+            LDLApplications ,
+            Drivers ,
+            InternationalLicenses,
+            DetainedLicenses
         }
 
         // Constructor
@@ -144,6 +146,79 @@ namespace DVLD_Project
         private void frmMain_Load(object sender, EventArgs e)
         {
             pbCurrentUser.ImageLocation = clsGlobal.CurrentUser.PersonInfo.ImagePath;
+        }
+
+        private void btnDetainLicense_Click(object sender, EventArgs e)
+        {
+            using (frmDetainLicense frm = new frmDetainLicense()) { frm.ShowDialog(); }
+            ucManageDetainedLicenses1.Refresh_dgvDetainedLicenses();
+        }
+
+        private void btnReleaseLicense_Click(object sender, EventArgs e)
+        {
+            using (frmReleaseLicense frm =new frmReleaseLicense())
+            {
+                frm.ShowDialog();
+            }
+            ucManageDetainedLicenses1.Refresh_dgvDetainedLicenses();
+        }
+
+        private void btnDetainedLicenses_Click(object sender, EventArgs e)
+        {
+            tcSubMain.PageIndex = (byte)PageIndex.DetainedLicenses;
+            ucManageDetainedLicenses1.Refresh_dgvDetainedLicenses();
+        }
+
+        private void btnAddNewLicense_Click(object sender, EventArgs e)
+        {
+            using (frmNewLocalDrivingLicenseApplication frm = new frmNewLocalDrivingLicenseApplication())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void btnAddInternationalLicense_Click(object sender, EventArgs e)
+        {
+            using (frmAddNewInternationalLicense frm = new frmAddNewInternationalLicense())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void btnDrivers_Click(object sender, EventArgs e)
+        {
+            tcSubMain.PageIndex = (int)PageIndex.Drivers;
+            ucListDrivers1.FillDataGridViewDrivers();
+        }
+
+        private void btnRenewLicense_Click(object sender, EventArgs e)
+        {
+            using (frmRenewLicense frm = new frmRenewLicense())
+            { frm.ShowDialog(); }
+        }
+
+        private void btnReplaceLicense_Click(object sender, EventArgs e)
+        {
+            using (frmReplacementForDamagedOrLostLicenses frm = new frmReplacementForDamagedOrLostLicenses())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void btnApplicationsTypes_Click(object sender, EventArgs e)
+        {
+            using (frmManageApplicationsTypes manageApplicationsTypes = new frmManageApplicationsTypes())
+            {
+                manageApplicationsTypes.ShowDialog();
+            }
+        }
+
+        private void btnTestsTypes_Click(object sender, EventArgs e)
+        {
+            using (frmManageTestTypes frm = new frmManageTestTypes())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }
